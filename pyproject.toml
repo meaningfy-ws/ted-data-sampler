@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ted-data-sampler"
+version = "0.1.0"
+description = "Generator of test data sets for Mapping Suites"
+authors = ["Meaningfy <hi@meaningfy.ws>"]
+readme = "README.md"
+
+# In case of packaging the project into an sdist or a wheel and perhaps publish it to a package index.
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12.6"
+pip = "18.1" # Need an older version to avoid error with pendulum from ted_sws module
+ted_sws = { git = "https://github.com/OP-TED/ted-rdf-conversion-pipeline.git", tag = "2.0.0-rc.4" }
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
