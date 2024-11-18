@@ -9,10 +9,16 @@ readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.12.6"
-pip = "18.1" # Need an older version to avoid error with pendulum from ted_sws module
-ted_sws = { git = "https://github.com/OP-TED/ted-rdf-conversion-pipeline.git", tag = "2.0.0-rc.4" }
+python = "^3.9.20"
+jupyter = "^1.1.1"
+numpy = "<2.0.0"
+ted-sws = { git = "https://github.com/OP-TED/ted-rdf-conversion-pipeline.git", rev = "2.0.0-rc.4" }
+tqdm = "^4.67.0"
+pydantic = "^1.9.0"
 
+
+[tool.poetry.scripts]
+data-sampler-cli = "ted_data_sampler.core.entrypoints.cmd.data_sampler:main"
 
 [build-system]
 requires = ["poetry-core"]
