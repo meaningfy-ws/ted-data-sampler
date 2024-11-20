@@ -16,9 +16,10 @@ ted-sws = { git = "https://github.com/OP-TED/ted-rdf-conversion-pipeline.git", r
 tqdm = "^4.67.0"
 pydantic = "^1.9.0"
 
-
 [tool.poetry.scripts]
 data-sampler-cli = "ted_data_sampler.core.entrypoints.cmd.data_sampler:main"
+data-coverage-cli = "ted_data_sampler.core.entrypoints.cmd.data_coverage:main"
+detect-eforms-cli = "ted_data_sampler.core.entrypoints.cmd.detect_eforms:main"
 
 [build-system]
 requires = ["poetry-core"]
