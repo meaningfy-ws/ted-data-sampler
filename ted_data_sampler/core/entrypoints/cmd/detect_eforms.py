@@ -20,10 +20,10 @@ def main():
     output_file_path = Path(args.output_file)
     notices_folder_path = Path(args.notices_folder)
 
-    if not output_file_path.is_dir():
+    if not output_file_path.is_file():
         raise EformDetectorException(f"Folder {output_file_path} does not exist")
 
-    if not notices_folder_path.is_file():
+    if not notices_folder_path.is_dir():
         raise EformDetectorException(f"File {notices_folder_path} does not exist")
 
 
