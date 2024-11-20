@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><ContractNotice xmlns="urn:oasis:names:specification:ubl:schema:xsd:ContractNotice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:efac="http://data.europa.eu/p27/eforms-ubl-extension-aggregate-components/1" xmlns:efbc="http://data.europa.eu/p27/eforms-ubl-extension-basic-components/1" xmlns:efext="http://data.europa.eu/p27/eforms-ubl-extensions/1" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2">
+   <ext:UBLExtensions>
+      <ext:UBLExtension>
+         <ext:ExtensionContent>
+            <efext:EformsExtension>
+               <efac:Changes>
+                  <efbc:ChangedNoticeIdentifier>413741-2024</efbc:ChangedNoticeIdentifier>
+                  <efac:ChangeReason>
+                     <cbc:ReasonCode listName="change-corrig-justification">update-add</cbc:ReasonCode>
+                  </efac:ChangeReason>
+               </efac:Changes>
+               <efac:NoticeSubType>
+                  <cbc:SubTypeCode listName="notice-subtype">16</cbc:SubTypeCode>
+               </efac:NoticeSubType>
+               <efac:Organizations>
+                  <efac:Organization>
+                     <efac:Company>
+                        <cbc:WebsiteURI>https://zim.lodz.bip-e.pl</cbc:WebsiteURI>
+                        <cac:PartyIdentification>
+                           <cbc:ID>ORG-0001</cbc:ID>
+                        </cac:PartyIdentification>
+                        <cac:PartyName>
+                           <cbc:Name languageID="POL">Miasto Łódź – Zarząd Inwestycji Miejskich</cbc:Name>
+                        </cac:PartyName>
+                        <cac:PostalAddress>
+                           <cbc:StreetName>Piotrkowska 175</cbc:StreetName>
+                           <cbc:CityName>Łódź</cbc:CityName>
+                           <cbc:PostalZone>90-447</cbc:PostalZone>
+                           <cbc:CountrySubentityCode listName="nuts">PL711</cbc:CountrySubentityCode>
+                           <cac:Country>
+                              <cbc:IdentificationCode listName="country">POL</cbc:IdentificationCode>
+                           </cac:Country>
+                        </cac:PostalAddress>
+                        <cac:PartyLegalEntity>
+                           <cbc:CompanyID>NIP: 7252132934</cbc:CompanyID>
+                        </cac:PartyLegalEntity>
+                        <cac:Contact>
+                           <cbc:Name>Wydział Zamówień Publicznych</cbc:Name>
+                           <cbc:Telephone>42 272 62 94</cbc:Telephone>
+                           <cbc:ElectronicMail>zamowienia@zim.uml.lodz.pl</cbc:ElectronicMail>
+                        </cac:Contact>
+                     </efac:Company>
+                  </efac:Organization>
+                  <efac:Organization>
+                     <efac:Company>
+                        <cac:PartyIdentification>
+                           <cbc:ID>ORG-0002</cbc:ID>
+                        </cac:PartyIdentification>
+                        <cac:PartyName>
+                           <cbc:Name languageID="POL">Krajowa Izba Odwoławcza</cbc:Name>
+                        </cac:PartyName>
+                        <cac:PostalAddress>
+                           <cbc:StreetName>Postępu 17A</cbc:StreetName>
+                           <cbc:CityName>Warszawa</cbc:CityName>
+                           <cbc:PostalZone>02-676</cbc:PostalZone>
+                           <cbc:CountrySubentityCode listName="nuts">PL911</cbc:CountrySubentityCode>
+                           <cac:Country>
+                              <cbc:IdentificationCode listName="country">POL</cbc:IdentificationCode>
+                           </cac:Country>
+                        </cac:PostalAddress>
+                        <cac:PartyLegalEntity>
+                           <cbc:CompanyID>NIP: 5262239325</cbc:CompanyID>
+                        </cac:PartyLegalEntity>
+                        <cac:Contact>
+                           <cbc:Name>Departament Odwołań</cbc:Name>
+                           <cbc:Telephone>224587801</cbc:Telephone>
+                           <cbc:ElectronicMail>odwolania@uzp.gov.pl</cbc:ElectronicMail>
+                        </cac:Contact>
+                     </efac:Company>
+                  </efac:Organization>
+               </efac:Organizations>
+            <efac:Publication><efbc:NoticePublicationID schemeName="ojs-notice-id">00468697-2024</efbc:NoticePublicationID><efbc:GazetteID schemeName="ojs-id">151/2024</efbc:GazetteID><efbc:PublicationDate>2024-08-05+02:00</efbc:PublicationDate></efac:Publication></efext:EformsExtension>
+         </ext:ExtensionContent>
+      </ext:UBLExtension>
+   </ext:UBLExtensions>
+   <cbc:UBLVersionID>2.3</cbc:UBLVersionID>
+   <cbc:CustomizationID>eforms-sdk-1.11</cbc:CustomizationID>
+   <cbc:ID schemeName="notice-id">27866296-b033-419b-bf98-a8e62a8b74bd</cbc:ID>
+   <cbc:ContractFolderID>8253f36b-7e4d-4417-a4bd-5f7f9a4b366d</cbc:ContractFolderID>
+   <cbc:IssueDate>2024-08-02Z</cbc:IssueDate>
+   <cbc:IssueTime>11:03:11Z</cbc:IssueTime>
+   <cbc:VersionID>01</cbc:VersionID>
+   <cbc:RequestedPublicationDate>2024-08-05Z</cbc:RequestedPublicationDate>
+   <cbc:RegulatoryDomain>32014L0024</cbc:RegulatoryDomain>
+   <cbc:NoticeTypeCode listName="competition">cn-standard</cbc:NoticeTypeCode>
+   <cbc:NoticeLanguageCode listName="language">POL</cbc:NoticeLanguageCode>
+   <cac:ContractingParty>
+      <cac:ContractingPartyType>
+         <cbc:PartyTypeCode listName="buyer-legal-type">la</cbc:PartyTypeCode>
+      </cac:ContractingPartyType>
+      <cac:ContractingActivity>
+         <cbc:ActivityTypeCode listName="authority-activity">gen-pub</cbc:ActivityTypeCode>
+      </cac:ContractingActivity>
+      <cac:Party>
+         <cac:PartyIdentification>
+            <cbc:ID>ORG-0001</cbc:ID>
+         </cac:PartyIdentification>
+      </cac:Party>
+   </cac:ContractingParty>
+   <cac:TenderingTerms>
+      <cac:ProcurementLegislationDocumentReference>
+         <cbc:ID>LocalLegalBasis</cbc:ID>
+         <cbc:DocumentDescription languageID="POL">przetarg nieograniczony - wartość zamówienia przekracza progi unijne - art. 132 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych</cbc:DocumentDescription>
+      </cac:ProcurementLegislationDocumentReference>
+      <cac:TendererQualificationRequest>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">liq-admin</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Przesłanka wykluczenia określona w art. 109 ust. 1 pkt 4 ustawy Pzp, w zakresie w jakim dotyczy ona zarządzania aktywami wykonawcy przez likwidatora lub sąd.</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">prep-confl</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Przesłanka wykluczenia określona w art. 108 ust. 1 pkt 6 ustawy Pzp.</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">susp-act</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Przesłanka wykluczenia określona w art. 109 ust. 1 pkt 4 ustawy Pzp, w zakresie w jakim dotyczy ona zawieszenia prowadzonej działalności.</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">bankr-nat</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Przesłanka wykluczenia określona w art. 109 ust. 1 pkt 4 ustawy Pzp, w zakresie w jakim dotyczy ona w podobnej sytuacji jak określone art. 109 ust. 1 pkt 4 ustawy Pzp, wynikającej z podobnej procedury, przewidzianej w przepisach miejsca wszczęcia tej procedury.</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">partic-confl</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Podstawa wykluczenia, o której mowa w art. 109 ust. 1 pkt 6 ustawy Pzp.</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">corruption</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Przesłanka wykluczenia określona w art. 108 ust. 1 pkt 1 i 2 ustawy Pzp w odniesieniu do przestępstw wymienionych w art. 228-230a lub 250a Kodeksu karnego, art. 46 lub art. 48 ustawy o sporcie lub art. 54 ust. 1-4 ustawy o refundacji leków, środków spożywczych specjalnego przeznaczenia żywieniowego oraz wyrobów medycznych.</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">fraud</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Podstawy wykluczenia wskazane w art. 108 ust. 1 pkt 1 i 2 ustawy Pzp w odniesieniu do przestępstwa, o którym mowa w art. 286 Kodeksu karnego, jak również przestępstw skarbowych, o których mowa w art. 108 ust. 1 pkt 1 lit. g) ustawy.</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">envir-law</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Podstawy wykluczenia wskazane w: - art. 109 ust. 1 pkt 2 lit. a ustawy Pzp, w zakresie w jakim odnosi się do skazania za przestępstwa wymienione w art. 181 -188 Kodeksu karnego (przestępstwa przeciwko środowisku); - art. 109 ust. 1 pkt 2 lit. b ustawy Pzp, w zakresie w jakim odnosi się do ukarania za wykroczenie przeciwko środowisku; - art. 109 ust. 1 pkt 2 lit. c ustawy Pzp, w zakresie w jakim odnosi się do wydania ostatecznej decyzji administracyjnej o naruszeniu obowiązków wynikających z prawa ochrony środowiska; - art. 109 ust. 1 pkt 3 ustawy Pzp.</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">labour-law</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Podstawy wykluczenia wskazane w: - art. 108 ust. 1 pkt 1 lit h i pkt 2 ustawy Pzp, jeśli osoby występujące po jego stronie zamawiającego zostały ukarane za przestępstwo, o którym mowa w art. 9 ust. 1 i 3 lub art. 10 ustawy z dnia 15 czerwca 2012 r. o skutkach powierzania wykonywania pracy cudzoziemcom przebywającym wbrew przepisom na terytorium Rzeczypospolitej Polskiej; - art. 109 ust. 1 pkt 2 lit. a ustawy Pzp, w zakresie w jakim odnosi się do skazania za przestępstwa wymienione w
+art. 218-221 Kodeksu karnego (przestępstwa przeciwko prawom osób wykonujących pracę zarobkową); - art. 109 ust. 1 pkt 2 lit. b ustawy Pzp, w zakresie w jakim odnosi się do ukarania za wykroczenie przeciwko prawom pracownika; - art. 109 ust. 1 pkt 2 lit. c ustawy Pzp, w zakresie w jakim odnosi się do wydania ostatecznej decyzji administracyjnej o naruszeniu obowiązków wynikających z prawa pracy; - art. 109 ust. 1 pkt 3 ustawy Pzp.</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">socsec-law</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Podstawa wykluczenia wskazana w art. 109 ust. 1 pkt 2 lit. c ustawy Pzp, w zakresie w jakim odnosi się do wydania ostatecznej decyzji administracyjnej o naruszeniu obowiązków wynikających z prawa pracy</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">insolvency</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Przesłanka wykluczenia określona w art. 109 ust. 1 pkt 4 ustawy Pzp, w zakresie w jakim dotyczy ona do otwarcia likwidacji wykonawcy.</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">socsec-pay</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Podstawy wykluczenia, o których mowa w art. 108 ust. 1 pkt 3 ustawy Pzp oraz art. 109 ust. 1 pkt 1 ustawy Pzp w zakresie w jakim dotyczą one opłat lub składek na ubezpieczenie społeczne lub zdrowotne.</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">tax-pay</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Podstawy wykluczenia, o których mowa w art. 108 ust. 1 pkt 3 ustawy Pzp oraz art. 109 ust. 1 pkt 1 ustawy Pzp w zakresie w jakim dotyczą one podatków i opłat.</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">nati-ground</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Postawy wykluczenia dotyczące: - wykluczenia wykonawcy w przypadku skazania za przestępstwo, o którym mowa w art. 47 ustawy o sporcie; - wykluczenia wykonawcy w przypadku skazania za przestępstwa przeciwko wiarygodności dokumentów i przestępstwa przeciwko obrotowi gospodarczemu (art. 108 ust. 1 pkt 1 lit. g) i pkt 2 ustawy Pzp), tj. za przestępstwa, o których mowa w art. 270- 277d Kodeksu karnego [przestępstwa wiarygodności dokumentów] i przestępstwa, o których mowa w art. 296-307 Kodeksu karnego [przestępstwa przeciwko obrotowi gospodarczemu], z wyjątkiem przestępstwa udaremniania lub utrudniania stwierdzenia przestępnego pochodzenia pieniędzy lub ukrywania ich pochodzenia, o którym mowa w art. 299 Kodeksu karnego; - wykluczenia wykonawcy, wobec którego prawomocnie orzeczono zakaz ubiegania się o zamówienia publiczne (art. 108 ust. 1 pkt 4 ustawy Pzp); zakaz orzekany jest wobec podmiotu zbiorowego w oparciu o przepisy ustawy z dnia 28 października 2002 r. o odpowiedzialności podmiotów zbiorowych za czyny zabronione pod groźbą kary, a wobec osoby fizycznej w oparciu o przepisy Kodeks u postępowania karnego; - postaw wykluczenia wskazanych art. 7 ust. 1 ustawy z dnia 13 kwietnia 2022 – o szczególnych rozwiązaniach w zakresie przeciwdziałania wspieraniu agresji na Ukrainę oraz służących ochronie bezpieczeństwa narodowego.</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">distorsion</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Przesłanka wykluczenia określona w art. 108 ust. 1 pkt 5 ustawy Pzp.</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">human-traffic</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Podstawy wykluczenia wskazane w art. 108 ust. 1 pkt 1 i 2 ustawy Pzp w odniesieniu do przestępstwa powierzenia wykonywania pracy małoletniemu cudzoziemcowi, o którym mowa w art. 9 ust. 2 ustawy z dnia 15 czerwca 2012 r. - o skutkach powierzania wykonywania pracy cudzoziemcom przebywającym wbrew przepisom na terytorium Rzeczypospolitej Polskiej, oraz handlu ludźmi, o którym mowa w art. 189a Kodeksu karnego.</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">finan-laund</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Przesłanka wykluczenia wskazana w art. 108 ust. 1 pkt 1 i 2 ustawy Pzp w odniesieniu do przestępstw wskazanych w 299 lub art. 165a Kodeksu karnego.</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">terr-offence</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Przesłanka wykluczenia wskazana w art. 108 ust. 1 pkt 1 i 2 ustawy Pzp, która dotyczy przestępstwa przestępstwa terrorystyczne lub przestępstwa związane z działalnością
+terrorystyczną, czyli przestępstwa o charakterze terrorystycznym, o których mowa w art. 115 par. 20 Kodeksu karnego.</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">sanction</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Podstawa wykluczenia, o której mowa w art. 109 ust. 1 pkt 7 ustawy Pzp.</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">crime-org</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Przesłanka wykluczenia określona w art. 108 ust. 1 pkt 1 i 2 ustawy Pzp w odniesieniu do przestępstwa wskazanego w art. 258 Kodeksu karnego.</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">cred-arran</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Przesłanka wykluczenia określona w art. 109 ust. 1 pkt 4 ustawy Pzp, w zakresie w jakim dotyczy ona układu z wierzycielami.</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">bankruptcy</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Przesłanka wykluczenia określona w art. 109 ust. 1 pkt 4 ustawy Pzp, w zakresie w jakim dotyczy ona ogłoszenia upadłości.</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">prof-misconduct</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Podstawa wykluczenia, o której mowa w art. 109 ust. 1 pkt 5 ustawy Pzp.</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">misrepresent</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Podstawy wykluczenia wskazane w art. 109 ust. 1 pkt 8 - 10 ustawy Pzp.</cbc:Description>
+         </cac:SpecificTendererRequirement>
+      </cac:TendererQualificationRequest>
+   </cac:TenderingTerms>
+   <cac:TenderingProcess>
+      <ext:UBLExtensions>
+         <ext:UBLExtension>
+            <ext:ExtensionContent>
+               <efext:EformsExtension>
+                  <efbc:ProcedureRelaunchIndicator>false</efbc:ProcedureRelaunchIndicator>
+               </efext:EformsExtension>
+            </ext:ExtensionContent>
+         </ext:UBLExtension>
+      </ext:UBLExtensions>
+      <cbc:Description languageID="POL">1. Dokumenty zamówienia w tym obejmujące zmiany i wyjaśnienia treści SWZ oraz inne dokumenty bezpośrednio związane z postępowaniem o udzielenie
+zamówienia udostępniane będą na stronie internetowej prowadzonego postępowania pod adresem: https://zim.lodz.bip-e.pl/zim/zamowienia-publiczne/15474,Budowa-nowego-budynku-szkoly-wraz-z-sala-gimnastyczna-oraz-rozbudowa-i-moderniza.html  2. W celu potwierdzenia braku podstaw wykluczenia Wykonawcy z udziału w postępowaniu o udzielenie zamówienia publicznego, Zamawiający żąda złożenia następujących podmiotowych środków dowodowych: 2.1. informacji z Krajowego Rejestru Karnego w zakresie: 2.1.1. art. 108 ust. 1 pkt 1 i 2 ustawy Pzp, 2.1.2. art. 108 ust. 1 pkt 4 ustawy Pzp, dotyczącej orzeczenia zakazu ubiegania się o zamówienie publiczne tytułem środka karnego, 2.1.3. art. 109 ust. 1 pkt 2 lit. a ustawy Pzp, 2.1.4. art. 109 ust. 1 pkt 2 lit. b ustawy Pzp, dotyczącej ukarania za wykroczenie, za które wymierzono karę aresztu, 2.1.5. art. 109 ust. 1 pkt 3 ustawy Pzp, dotyczącej skazania za przestępstwo lub ukarania za wykroczenie, za które wymierzono karę aresztu – sporządzonej nie wcześniej niż 6 miesięcy przed jej złożeniem; 2.2. zaświadczenia właściwego naczelnika urzędu skarbowego potwierdzającego, że Wykonawca nie zalega z opłacaniem podatków i opłat, w zakresie art. 109 ust. 1 pkt 1 ustawy Pzp, wystawionego nie wcześniej niż 3 miesiące przed jego złożeniem, a w przypadku zalegania z opłacaniem podatków lub opłat wraz z zaświadczeniem Zamawiający żąda złożenia dokumentów potwierdzających, że przed upływem terminu składania ofert wykonawca dokonał płatności należnych podatków lub opłat wraz z odsetkami lub grzywnami lub zawarł wiążące porozumienie w sprawie spłat tych należności; 2.3. zaświadczenia albo innego dokumentu właściwej terenowej jednostki organizacyjnej Zakładu Ubezpieczeń Społecznych lub właściwego oddziału regionalnego lub właściwej placówki terenowej Kasy Rolniczego Ubezpieczenia Społecznego potwierdzającego, że Wykonawca nie zalega z opłacaniem składek na ubezpieczenia społeczne i zdrowotne, w zakresie art. 109 ust. 1 pkt 1 ustawy Pzp, wystawionego nie wcześniej niż 3 miesiące przed jego złożeniem, a w przypadku zalegania z opłacaniem składek na ubezpieczenia społeczne lub zdrowotne wraz z zaświadczeniem albo innym dokumentem zamawiający żąda złożenia dokumentów potwierdzających, że przed upływem terminu składania ofert wykonawca dokonał płatności należnych składek na ubezpieczenia społeczne lub zdrowotne wraz odsetkami lub grzywnami lub zawarł wiążące porozumienie w sprawie spłat tych należności; 2.4. odpisu lub informacji z Krajowego Rejestru Sądowego lub z Centralnej Ewidencji i Informacji o Działalności Gospodarczej, w zakresie art. 109 ust. 1 pkt 4 ustawy Pzp, sporządzonych nie wcześniej niż 3 miesiące przed jej złożeniem, jeżeli odrębne przepisy wymagają wpisu do rejestru lub ewidencji; 2.5. oświadczenia Wykonawcy, w zakresie art. 108 ust. 1 pkt 5 ustawy Pzp, o braku przynależności do tej samej grupy kapitałowej w rozumieniu ustawy z dnia 16 lutego 2007 r. o ochronie konkurencji i konsumentów, z innym wykonawcą, który złożył odrębną ofertę, albo oświadczenia o przynależności do tej samej grupy kapitałowej wraz z dokumentami lub informacjami potwierdzającymi przygotowanie oferty, oferty częściowej lub wniosku o dopuszczenie do udziału w postępowaniu niezależnie od innego wykonawcy należącego do tej samej grupy kapitałowej; 2.6. oświadczenia Wykonawcy o aktualności informacji zawartych w oświadczeniu, o których mowa w art. 5k rozporządzenia 833/2014 w brzmieniu nadanym rozporządzeniem 2022/576 oraz art. 7 ust. 1 ustawy o szczególnych rozwiązaniach w zakresie przeciwdziałania wspieraniu agresji na Ukrainę oraz służących ochronie bezpieczeństwa narodowego. 3. Wykonawca nie jest obowiązany do złożenia wraz z ofertą oświadczenia, o którym mowa w art. 125 ust. 1 (JEDZ). Zamawiający wymaga złożenia tego oświadczenia wyłącznie przez wykonawcę, którego oferta została najwyżej oceniona. 4. Wykonawcy wspólnie ubiegający się o udzielenie zamówienia składają oświadczenia i dokumenty określone w Rozdziale IX pkt 2 i 4 SWZ dla każdego z tych wykonawców. 5. Wykonawca, w przypadku polegania na zdolnościach lub sytuacji podmiotów udostępniających zasoby, przedstawi także oświadczenia i dokumenty określone w Rozdziale IX pkt 2 oraz pkt 4.1. – 4.4. i 4.6. SWZ dla każdego z tych podmiotów. 6. Informacja o uprzedniej ocenie ofert, zgodnie z art. 139 ustawy Pzp, którą zamawiający przewiduje jako odwróconą kolejność oceny: Zamawiający najpierw dokona badania i oceny ofert, a następnie dokona kwalifikacji podmiotowej wykonawcy, którego oferta została najwyżej oceniona, w zakresie braku podstaw wykluczenia oraz spełniania warunków udziału w postępowaniu.</cbc:Description>
+      <cbc:ProcedureCode listName="procurement-procedure-type">open</cbc:ProcedureCode>
+   </cac:TenderingProcess>
+   <cac:ProcurementProject>
+      <cbc:ID>ZIM-DZ.2620.63.2024</cbc:ID>
+      <cbc:Name languageID="POL">„Budowa nowego budynku szkoły wraz z salą gimnastyczną oraz rozbudowa i modernizacja istniejącego budynku Szkoły Podstawowej nr 130 w Łodzi przy ul. Gościniec 1” 
+- w systemie zaprojektuj i wybuduj</cbc:Name>
+      <cbc:Description languageID="POL">1.1. Przedmiotem niniejszego postępowania jest zaprojektowanie zespołu budynków o charakterze szkolno- przedszkolnym w podziale na 3 Etapy realizacji oraz wybudowanie budynków obejmujących Etap 1, w tym nowego budynku połączonego z istniejącym budynkiem Szkoły Podstawowej wraz z jego przebudową i modernizacją. Inwestycja obejmuje wykonanie nowego zagospodarowania terenu wraz z bieżnią prostą, miejscami parkingowymi i drogami. Planowane przedsięwzięcie należy wykonać z zastosowaniem technologii prefabrykowanej wykorzystując ekologiczne źródła ciepła. W ramach inwestycji przewiduje się budowę obiektu 3-kondygnacyjnyego, częściowo podpiwniczonego, z dachem płaskim dla ogółem 520 dzieci. 
+W ramach przedsięwzięcia przewiduje się realizację zespołu sportowego oraz bloku żywieniowego z wyposażeniem kuchni. Realizacja zamówienia obejmuje również dostawę mebli i innego wyposażenia. ETAP 2 i 3 obejmujący przebudowę istniejącego budynku oraz realizację zespołu przedszkolnego planowany jest w prawie opcji.
+1.2. Przedmiotem zamówienia podstawowego jest zaprojektowanie zespołu szkolno- przedszkolnego obejmującego Etap 1, Etap 2 i Etap 3 realizacji i wybudowanie obiektów w zakresie Etapu 1 polegającej na budowie nowego budynku szkoły dla 520 uczniów wraz z salą gimnastyczną oraz modernizacja istniejącego budynku Szkoły Podstawowej nr 130 w Łodzi przy ul. Gościniec 1, na działce Nr 190/29, obręb G-55 w zakresie ekologicznych źródeł ciepła dla budynku. 
+1.3. Przedmiotem zamówienia w prawie opcji jest wybudowanie obiektów tworzących zespół szkolno-przedszkolny w zakresie Etapu 2 i 3 polegających na przebudowie budynku istniejącej szkoły podstawowej, w tym budowie nowego bloku żywieniowego wraz ze stołówką oraz wybudowaniu odrębnej części  stanowiącej zespół przedszkolny dla tzw. „oddziałów zerowych”.
+2. Zamówienie należy realizować zgodnie ze szczegółowym opisem przedmiotu zamówienia zawartym w Załączniku nr 1 do SWZ – Opis przedmiotu zamówienia – Program Funkcjonalno-Użytkowy wraz z załącznikami i na zasadach określonych w Załączniku nr 2 – Projektowane postanowienia umowy.
+3. Zamawiający informuje, że Inwestycja będzie dofinansowana ze środków Rządowego Funduszu Polski Ład: nr Edycja8/2023/3209/PolskiŁad. Kwota dofinansowania ze środków ww. Programu wynosi 30 000 000,00 zł. Pozostała kwota z wynagrodzenia należnego Wykonawcy finansowana jest z wkładu własnego Zamawiającego.
+</cbc:Description>
+      <cbc:ProcurementTypeCode listName="contract-nature">works</cbc:ProcurementTypeCode>
+      <cac:MainCommodityClassification>
+         <cbc:ItemClassificationCode listName="cpv">45000000</cbc:ItemClassificationCode>
+      </cac:MainCommodityClassification>
+      <cac:RealizedLocation>
+         <cbc:Description languageID="POL">1. W związku z art. 5k Rozporządzenie Rady (UE) 2022/576 z dnia 8 kwietnia 2022 r. w sprawie zmiany rozporządzenia (UE) nr 833/2014 dotyczącego środków ograniczających w związku z działaniami Rosji destabilizującymi sytuację na Ukrainie i na podstawie art. 7 ust. 1 ustawy z dnia 13 kwietnia 2022 r. o szczególnych rozwiązaniach w zakresie przeciwdziałania wspieraniu agresji na Ukrainę oraz służących ochronie bezpieczeństwa narodowego, zwanej dalej „ustawą”, z postępowania o udzielenie zamówienia publicznego prowadzonego na podstawie ustawy z dnia 11 września 2019 r. – Prawo zamówień publicznych wyklucza się: 1) Zgodnie z art. 5k rozporządzenia Rady (UE) nr 833/2014 z dnia 31 lipca 2014 r. dotyczącego środków ograniczających w związku z działaniami Rosji destabilizującymi sytuację na Ukrainie, w brzmieniu nadanym rozporządzeniem Rady (UE) nr 2022/576, zakazuje się udzielania lub dalszego wykonywania wszelkich zamówień publicznych lub koncesji objętych zakresem dyrektyw w sprawie zamówień publicznych, na rzecz lub z udziałem: a) obywateli rosyjskich lub osób fizycznych lub prawnych, podmiotów lub organów z siedzibą w Rosji; b) osób prawnych, podmiotów lub organów, do których prawa własności bezpośrednio lub pośrednio w ponad 50 % należą do podmiotu, o którym mowa w pkt a) lub c) osób fizycznych lub prawnych, podmiotów lub organów działających w imieniu lub pod kierunkiem podmiotu, o którym mowa w pkt a) i pkt b), w tym podwykonawców, dostawców lub podmiotów, na których zdolności polega się w rozumieniu dyrektyw w sprawie zamówień publicznych, w przypadku gdy przypada na nich ponad 10 % wartości zamówienia. 2) Zgodnie z art. 7 ust. 1 ustawy z postępowania o udzielenie zamówienia publicznego prowadzonego na podstawie ustawy Prawo zamówień publicznych wyklucza się: a) Wykonawcę oraz uczestnika konkursu wymienionego w wykazach określonych w rozporządzeniu 765/2006 z dnia 18 maja 2006r. dotyczącego środków ograniczających w związku z sytuacją na Białorusi i udziałem Białorusi w agresji Rosji wobec Ukrainy (Dz.Urz. UE L 134 z 20.05.2006r. z późn. zm.), zwanego dalej „rozporządzeniem 765/2006”, i rozporządzeniu Rady (UE) 269/2014 z dnia 17 marca 2014 r. w sprawie środków ograniczających w odniesieniu do działań podważających integralność terytorialną, suwerenność i niezależność Ukrainy lub im zagrażających (Dz.Urz. UE L 78 z 17.03.2014 r. z późn. zm.), zwanego dalej „rozporządzeniem 269/2014” albo wpisanego na listę na podstawie decyzji w sprawie wpisu na listę rozstrzygającej o zastosowaniu środka, o którym mowa w art. 1 pkt 3 ustawy z dnia 13 kwietnia 2022 r. o szczególnych rozwiązaniach w zakresie przeciwdziałania wspieraniu agresji na Ukrainę oraz służących ochronie bezpieczeństwa narodowego; b) Wykonawcę oraz uczestnika konkursu, którego beneficjentem rzeczywistym w rozumieniu ustawy z dnia 1 marca 2018 r. o przeciwdziałaniu praniu pieniędzy oraz finansowaniu terroryzmu jest osoba wymieniona w wykazach określonych w rozporządzeniu 765/2006 i rozporządzeniu 269/2014 albo wpisana na listę lub będąca takim beneficjentem rzeczywistym od dnia 24 lutego 2022 r., o ile została wpisana na listę na podstawie decyzji w sprawie wpisu na listę rozstrzygającej o zastosowaniu środka, o którym mowa w art. 1 pkt 3 ustawy z dnia 13 kwietnia 2022 r. o szczególnych rozwiązaniach w zakresie przeciwdziałania wspieraniu agresji na Ukrainę oraz służących ochronie bezpieczeństwa narodowego; c) Wykonawcę oraz uczestnika konkursu, którego jednostką dominującą w rozumieniu art. 3 ust. 1 pkt 37 ustawy z dnia 29 września 1994 r. o rachunkowości, jest podmiot wymieniony w wykazach określonych w rozporządzeniu 765/2006 i rozporządzeniu 269/2014 albo wpisany na listę lub będący taką jednostką dominującą od dnia 24 lutego 2022 r., o ile został wpisany na listę na podstawie decyzji w sprawie wpisu na listę rozstrzygającej o zastosowaniu środka, o którym mowa w art. 1 pkt 3 ustawy. ustawy z dnia 13 kwietnia 2022 r. o szczególnych rozwiązaniach w zakresie przeciwdziałania wspieraniu agresji na Ukrainę oraz służących ochronie bezpieczeństwa narodowego. 2. W przypadku Wykonawcy lub uczestnika konkursu wykluczonego na podstawie okoliczności, o których mowa w pkt. 3 Zamawiający odrzuca ofertę Wykonawcy. Zaistnienie przesłanki wykluczenia będą weryfikowane na podstawie oświadczeń składanych wraz z ofertą oraz ogólnodostępnych baz danych zgodnie z informacją podaną przez Urząd Zamówień Publicznych (patrz: Stosowanie unijnego zakazu udziału wykonawców rosyjskich w zamówieniach Urząd Zamówień Publicznych (uzp.gov.pl).</cbc:Description>
+         <cac:Address>
+            <cbc:StreetName>ul. Gościniec 1</cbc:StreetName>
+            <cbc:CityName>Łódź</cbc:CityName>
+            <cbc:PostalZone>93-645</cbc:PostalZone>
+            <cbc:CountrySubentityCode listName="nuts">PL711</cbc:CountrySubentityCode>
+            <cac:Country>
+               <cbc:IdentificationCode listName="country">POL</cbc:IdentificationCode>
+            </cac:Country>
+         </cac:Address>
+      </cac:RealizedLocation>
+   </cac:ProcurementProject>
+   <cac:ProcurementProjectLot>
+      <cbc:ID schemeName="Lot">LOT-0001</cbc:ID>
+      <cac:TenderingTerms>
+         <ext:UBLExtensions>
+            <ext:UBLExtension>
+               <ext:ExtensionContent>
+                  <efext:EformsExtension>
+                     <efac:SelectionCriteria>
+                        <cbc:CriterionTypeCode listName="selection-criterion">tp-abil</cbc:CriterionTypeCode>
+                        <cbc:Description languageID="POL">Zamawiający uzna warunek za spełniony jeżeli wykonawca wykaże, że:
+1.	w okresie ostatnich 5 (pięciu) lat licząc wstecz od dnia, w którym upływa termin składania ofert, a jeżeli okres prowadzenia działalności jest krótszy – w tym okresie, wykonał należycie:
+1.1.	dwie (2) roboty budowlane, z których każda polegała na budowie lub przebudowie minimum dwukondygnacyjnego budynku użyteczności publicznej lub mieszkalnego wielorodzinnego, wyposażonego w szacht windowy, o powierzchni użytkowej nie mniejszej niż 1800 m2 i obejmowała swym zakresem co najmniej roboty ogólnobudowlane, konstrukcyjne oraz instalacyjne wraz z zagospodarowaniem terenu;
+1.2.	jedną (1) dokumentację projektową wielobranżową (obejmującą co najmniej projekt budowlany i projekt wykonawczy), w tym projekt zagospodarowania terenu, obejmującą swym zakresem budowę lub przebudowę minimum dwukondygnacyjnego budynku użyteczności publicznej, wyposażonego w szacht windowy, o powierzchni użytkowej nie mniejszej niż 1800 m2.
+2.	dysponuje lub będzie dysponował nw. osobami, które będą realizowały zamówienie:
+2.1.	jedną (1) osobą na stanowisko projektanta w specjalności architektonicznej, posiadającą uprawnienia budowlane do projektowania bez ograniczeń 
+w specjalności architektonicznej oraz doświadczenie zawodowe w zakresie sporządzenia 1 (jednej) dokumentacji projektowej branży architektonicznej (w tym projekt zagospodarowania terenu) – w ramach wielobranżowej dokumentacji projektowej, obejmującej swym zakresem budowę lub przebudowę minimum dwukondygnacyjnego budynku użyteczności publicznej, wyposażonego w szacht windowy, o powierzchni użytkowej nie mniejszej niż 1800 m2;
+2.2.	jedną (1) osobą na stanowisko projektanta w specjalności konstrukcyjno-budowlanej, posiadającą uprawnienia budowlane do projektowania bez ograniczeń w specjalności konstrukcyjno-budowlanej,
+2.3.	jedną (1) osobą na stanowisko kierownika budowy posiadającą uprawnienia budowlane do kierowania robotami budowlanymi bez ograniczeń w specjalności konstrukcyjno-budowlanej oraz doświadczenie zawodowe w pełnieniu funkcji kierownika budowy przy 2 (dwóch) robotach budowlanych, z których każda polegała na budowie lub przebudowie minimum dwukondygnacyjnego budynku użyteczności publicznej lub mieszkalnego wielorodzinnego, wyposażonego w szacht windowy, o powierzchni użytkowej nie mniejszej niż 1800 m2 i obejmowała swym zakresem co najmniej roboty ogólnobudowlane, konstrukcyjne oraz instalacyjne wraz z zagospodarowaniem terenu.
+3. W celu potwierdzenia spełniania przez Wykonawcę warunków udziału w postępowaniu Zamawiający żąda złożenia:
+3.1. Wykazu usług wykonanych w okresie ostatnich 5 (pięciu) lat licząc wstecz od dnia, w którym upływa termin składania ofert, a jeżeli okres prowadzenia działalności jest krótszy – w tym okresie, wraz z podaniem ich przedmiotu, dat wykonania i podmiotów, na rzecz których usługi zostały wykonane, oraz załączeniem dowodów określających, czy te usługi zostały wykonane należycie, przy czym dowodami, o których mowa, są referencje bądź inne dokumenty sporządzone przez podmiot, na rzecz którego usługi zostały wykonane, a jeżeli wykonawca z przyczyn niezależnych od niego nie jest w stanie uzyskać tych dokumentów – oświadczenie wykonawcy. Uwaga! Jeżeli Wykonawca powołuje się na doświadczenie w realizacji usług, wykonywanych wspólnie z innymi wykonawcami, zobowiązany jest wykazać
+usługi, w których wykonaniu Wykonawca ten bezpośrednio uczestniczył. 3.2. Wykazu robót budowlanych wykonanych w okresie ostatnich 5 (pięciu) lat licząc wstecz od dnia, w którym upływa termin składania ofert, a jeżeli okres prowadzenia działalności jest krótszy – w tym okresie, wraz z podaniem ich rodzaju, daty i miejsca wykonania oraz podmiotów, na rzecz których roboty te zostały wykonane, oraz załączeniem dowodów określających, czy te roboty budowlane zostały wykonane należycie, przy czym dowodami, o których mowa, są referencje bądź inne dokumenty sporządzone przez podmiot, na rzecz którego roboty budowlane zostały wykonane, a jeżeli wykonawca z przyczyn niezależnych od niego nie jest w stanie uzyskać tych dokumentów – inne odpowiednie dokumenty. Uwaga! Jeżeli Wykonawca powołuje się na doświadczenie w realizacji robót budowlanych, wykonywanych wspólnie z innymi wykonawcami, zobowiązany jest wykazać roboty budowlane, w których wykonaniu Wykonawca ten bezpośrednio uczestniczył. 3.3. Wykazu osób skierowanych przez wykonawcę do realizacji zamówienia publicznego, w szczególności odpowiedzialnych za świadczenie usług lub kierowanie robotami budowlanymi, wraz z informacjami na temat ich doświadczenia, kwalifikacji zawodowych, uprawnień niezbędnych do wykonania zamówienia
+publicznego, a także zakresu wykonywanych przez nie czynności oraz informacją o podstawie do dysponowania tymi osobami. 4. Z uwagi na ograniczoną ilość znaków w rubrykach ogłoszenia o zamówieniu, kryteria kwalifikacji oraz oświadczenia i dokumenty, jakie zobowiązani są dostarczyć wykonawcy, potwierdzające spełnianie warunków udziału w postępowaniu oraz wykazanie braku podstaw wykluczenia zostały określone w dokumentach zamówienia – SWZ, zamieszczonych na stronie internetowej prowadzonego postępowania. Szczegółowe informacje nt. warunków udziału, podstaw wykluczenia i wykaz oświadczeń lub dokumentów potwierdzających spełnienie warunków udziału w postępowaniu oraz brak podstaw wykluczenia znajdują się w Rozdziale VII, VIII, IX SWZ.</cbc:Description>
+                     </efac:SelectionCriteria>
+                  </efext:EformsExtension>
+               </ext:ExtensionContent>
+            </ext:UBLExtension>
+         </ext:UBLExtensions>
+         <cbc:VariantConstraintCode listName="permission">not-allowed</cbc:VariantConstraintCode>
+         <cbc:FundingProgramCode listName="eu-funded">no-eu-funds</cbc:FundingProgramCode>
+         <cac:RequiredFinancialGuarantee>
+            <cbc:GuaranteeTypeCode listName="tender-guarantee-required">true</cbc:GuaranteeTypeCode>
+            <cbc:Description languageID="POL">1.	Przystępując do postępowania wykonawca zobowiązany jest wnieść wadium w wysokości 450 000,00 PLN (słownie złotych: czterysta pięćdziesiąt tysięcy 00/100).
+2.	Wadium wnosi się przed upływem terminu składania ofert i utrzymuje nieprzerwanie do dnia upływu terminu związania ofertą, z wyjątkiem przypadków, o których mowa w art. 98 ust. 1 pkt 2 i 3 oraz ust. 2 ustawy Pzp.
+3.	Zgodnie z art. 97 ust. 7 ustawy Pzp wadium może być wnoszone według wyboru Wykonawcy w jednej lub kilku następujących formach:
+3.1.	pieniądzu;
+3.2.	gwarancjach bankowych;
+3.3.	gwarancjach ubezpieczeniowych;
+3.4.	poręczeniach udzielanych przez podmioty, o których mowa w art. 6b ust. 5 pkt 2 ustawy z dnia 9 listopada 2000 r. o utworzeniu Polskiej Agencji Rozwoju Przedsiębiorczości.
+4.	Wadium wnoszone w pieniądzu należy przelać na rachunek bankowy Zamawiającego w Banku PEKAO S.A., nr konta: 76 1240 1037 1111 0011 0925 1836, podając w tytule nr referencyjny postępowania: ZIM-DZ.2620.63.2024.
+5.	Zamawiający uzna, że wadium zostało wniesione, jeżeli kwota wadium znajdzie się na rachunku Zamawiającego przed upływem terminu składania ofert.
+6.	Wadium wnoszone w formie innej niż pieniężna musi być wniesione w oryginale w postaci elektronicznej i musi obejmować cały okres związania ofertą.
+6.1.	Gwarancja lub poręczenie musi zawierać w swojej treści nieodwołalne i bezwarunkowe zobowiązanie wystawcy dokumentu do zapłaty na rzecz Zamawiającego kwoty wadium płatne na pierwsze pisemne żądanie Zamawiającego.
+6.2.	Dokument musi być podpisany podpisem elektronicznym przez gwaranta / poręczyciela.
+6.3.	W treści poręczenia lub gwarancji winna znaleźć się nazwa postępowania tj. „Budowa nowego budynku szkoły wraz z salą gimnastyczną oraz rozbudowa i modernizacja istniejącego budynku Szkoły Podstawowej nr 130 w Łodzi przy ul. Gościniec 1” - w systemie zaprojektuj i wybuduj oraz numer referencyjny postępowania ZIM-DZ.2620.63.2024.
+7.	W przypadku Wykonawców wspólnie ubiegających się o udzielenie zamówienia (art. 58 ustawy Pzp), Zamawiający wymaga, aby poręczenie lub gwarancja obejmowała swą treścią (tj. zobowiązanych z tytułu poręczenia lub gwarancji) wszystkich Wykonawców wspólnie ubiegających się o udzielenie zamówienia lub aby z jej treści wynikało, że zabezpiecza ofertę Wykonawców wspólnie ubiegających się o udzielenie zamówienia (konsorcjum, spółka cywilna). 
+8.	Oferta Wykonawcy, który nie wniesie wadium lub wniesie w sposób nieprawidłowy lub nie utrzyma wadium nieprzerwanie do upływu terminu związania ofertą lub złoży wniosek o zwrot wadium w przypadku, o którym mowa w art. 98 ust. 2 pkt 3 ustawy Pzp zostanie odrzucona.
+9.	Zasady zwrotu oraz okoliczności zatrzymania wadium określa ustawa Pzp. Wykonawca jest zobowiązany wskazać w Formularzu ofertowym dane umożliwiające Zamawiającemu zwrot wadium: 
+- nr rachunku bankowego (w przypadku wnoszenia wadium w pieniądzu) lub 
+- adres email gwaranta/poręczyciela (w przypadku wnoszenia wadium w formie gwarancji lub poręczenia). 
+10.	W przypadku braku wskazania powyższych informacji zwrot wadium wniesionego w pieniądzu nastąpi na rachunek, z którego dokonano wpłaty wadium, a w przypadku gwarancji lub poręczenia na adres email uzyskany ze strony internetowej gwaranta lub poręczyciela.
+</cbc:Description>
+         </cac:RequiredFinancialGuarantee>
+         <cac:CallForTendersDocumentReference>
+            <ext:UBLExtensions>
+               <ext:UBLExtension>
+                  <ext:ExtensionContent>
+                     <efext:EformsExtension>
+                        <efac:OfficialLanguages>
+                           <cac:Language>
+                              <cbc:ID>POL</cbc:ID>
+                           </cac:Language>
+                        </efac:OfficialLanguages>
+                     </efext:EformsExtension>
+                  </ext:ExtensionContent>
+               </ext:UBLExtension>
+            </ext:UBLExtensions>
+            <cbc:ID>_DEFAULT_VALUE_CHANGE_ME_</cbc:ID>
+            <cbc:DocumentType>non-restricted-document</cbc:DocumentType>
+            <cac:Attachment>
+               <cac:ExternalReference>
+                  <cbc:URI>https://zim.lodz.bip-e.pl/zim/zamowienia-publiczne/15474,Budowa-nowego-budynku-szkoly-wraz-z-sala-gimnastyczna-oraz-rozbudowa-i-moderniza.html</cbc:URI>
+               </cac:ExternalReference>
+            </cac:Attachment>
+         </cac:CallForTendersDocumentReference>
+         <cac:TendererQualificationRequest>
+            <cac:SpecificTendererRequirement>
+               <cbc:TendererRequirementTypeCode listName="reserved-procurement">none</cbc:TendererRequirementTypeCode>
+            </cac:SpecificTendererRequirement>
+         </cac:TendererQualificationRequest>
+         <cac:ContractExecutionRequirement>
+            <cbc:ExecutionRequirementCode listName="reserved-execution">no</cbc:ExecutionRequirementCode>
+         </cac:ContractExecutionRequirement>
+         <cac:ContractExecutionRequirement>
+            <cbc:ExecutionRequirementCode listName="einvoicing">allowed</cbc:ExecutionRequirementCode>
+         </cac:ContractExecutionRequirement>
+         <cac:ContractExecutionRequirement>
+            <cbc:ExecutionRequirementCode listName="ecatalog-submission">not-allowed</cbc:ExecutionRequirementCode>
+         </cac:ContractExecutionRequirement>
+         <cac:ContractExecutionRequirement>
+            <cbc:ExecutionRequirementCode listName="esignature-submission">true</cbc:ExecutionRequirementCode>
+         </cac:ContractExecutionRequirement>
+         <cac:AwardingTerms>
+            <cac:AwardingCriterion>
+               <cac:SubordinateAwardingCriterion>
+                  <cbc:AwardingCriterionTypeCode listName="award-criterion-type">price</cbc:AwardingCriterionTypeCode>
+                  <cbc:Description languageID="POL">Kryterium "Cena" - waga 60%. Na kryterium „Cena” składają się dwa podkryteria: - podkryterium „Cena zamówienia podstawowego” (waga 40%) - podkryterium „Cena opcji” (waga 20%) Do obliczenia łącznej liczby punktów w kryterium „Cena” zostaną zastosowane wzory opisane w Rozdziale XVIII SWZ. Maksymalnie w kryterium „Cena” Wykonawca może uzyskać 60 punktów.
+</cbc:Description>
+               </cac:SubordinateAwardingCriterion>
+               <cac:SubordinateAwardingCriterion>
+                  <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality</cbc:AwardingCriterionTypeCode>
+                  <cbc:Description languageID="POL">Kryterium "Doświadczenie Projektanta w specjalności architektonicznej" - waga 20%. Zamawiający przyzna punkty, jeżeli osoba wykazana w Załączniku nr 10 do SWZ – Wykazie doświadczenia Projektanta w specjalności architektonicznej, który będzie realizował zamówienie, posiada doświadczenie: 1) sporządzenie 1 (jednej) dokumentacji projektowej branży architektonicznej (w tym projekt zagospodarowania terenu) – w ramach wielobranżowej dokumentacji projektowej, obejmującej swym zakresem budowę lub przebudowę minimum dwukondygnacyjnego budynku użyteczności publicznej, wyposażonego w szacht windowy, o powierzchni użytkowej nie mniejszej niż 1800 m2 - 0 pkt; 2) sporządzenie 2 (dwóch) dokumentacji projektowych branży architektonicznej (w tym projekt zagospodarowania terenu) – każda w ramach wielobranżowej dokumentacji projektowej, obejmującej swym zakresem budowę lub przebudowę minimum dwukondygnacyjnego budynku użyteczności publicznej, wyposażonego w szacht windowy, o powierzchni użytkowej nie mniejszej niż 1800 m2 - 10 pkt; 3) sporządzenie 3 (trzech) i więcej dokumentacji projektowych branży architektonicznej (w tym projekt zagospodarowania terenu) – każda w ramach wielobranżowej dokumentacji projektowej, obejmującej swym zakresem budowę lub przebudowę minimum dwukondygnacyjnego budynku użyteczności publicznej, wyposażonego w szacht windowy, o powierzchni użytkowej nie mniejszej niż 1800 m2 - 20 pkt.</cbc:Description>
+               </cac:SubordinateAwardingCriterion>
+               <cac:SubordinateAwardingCriterion>
+                  <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality</cbc:AwardingCriterionTypeCode>
+                  <cbc:Description languageID="POL">Kryterium "Doświadczenie Kierownika budowy" - waga 20%. Zamawiający przyzna punkty, jeżeli osoba wykazana w Załączniku nr 11 do SWZ – Wykazie doświadczenia Kierownika budowy, który będzie realizował zamówienie, posiada doświadczenie: 1) doświadczenie w pełnieniu funkcji kierownika budowy przy 2 (dwóch) robotach budowlanych, z których każda polegała na budowie lub przebudowie minimum dwukondygnacyjnego budynku użyteczności publicznej lub mieszkalnego wielorodzinnego, wyposażonego w szacht windowy, o powierzchni użytkowej nie mniejszej niż 1800 m2 i obejmowała swym zakresem co najmniej roboty ogólnobudowlane, konstrukcyjne oraz instalacyjne wraz z zagospodarowaniem terenu - 0 pkt; 2) doświadczenie w pełnieniu funkcji kierownika budowy przy 3 (trzech) robotach budowlanych, z których każda polegała na budowie lub przebudowie minimum dwukondygnacyjnego budynku użyteczności publicznej lub mieszkalnego wielorodzinnego, wyposażonego w szacht windowy, o powierzchni użytkowej nie mniejszej niż 1800 m2 i obejmowała swym zakresem co najmniej roboty ogólnobudowlane, konstrukcyjne oraz instalacyjne wraz z zagospodarowaniem terenu - 10 pkt; 3) doświadczenie w pełnieniu funkcji kierownika budowy przy 4 (czterech) i więcej robotach budowlanych, z których każda polegała na budowie lub przebudowie minimum dwukondygnacyjnego budynku użyteczności publicznej lub mieszkalnego wielorodzinnego, wyposażonego w szacht windowy, o powierzchni użytkowej nie mniejszej niż 1800 m2 i obejmowała swym zakresem co najmniej roboty ogólnobudowlane, konstrukcyjne oraz instalacyjne wraz z zagospodarowaniem terenu - 20 pkt.</cbc:Description>
+               </cac:SubordinateAwardingCriterion>
+            </cac:AwardingCriterion>
+         </cac:AwardingTerms>
+         <cac:TenderRecipientParty>
+            <cbc:EndpointID>https://ezamowienia.gov.pl/mp-client/search/list/ocds-148610-89dad596-2afa-45eb-87e1-8f679e94a3e0</cbc:EndpointID>
+            <cac:PartyIdentification>
+               <cbc:ID>ORG-0001</cbc:ID>
+            </cac:PartyIdentification>
+         </cac:TenderRecipientParty>
+         <cac:TenderValidityPeriod>
+            <cbc:DurationMeasure unitCode="DAY">90</cbc:DurationMeasure>
+         </cac:TenderValidityPeriod>
+         <cac:AppealTerms>
+            <cac:PresentationPeriod>
+               <cbc:Description languageID="POL">1. Zasady, terminy oraz sposób korzystania ze środków ochrony prawnej szczegółowo regulują przepisy działu IX ustawy Środki ochrony prawnej (art. 505 i nast. ustawy Pzp). 2. Środki ochrony prawnej przysługują Wykonawcy, a także innemu podmiotowi, jeżeli ma lub miał interes w uzyskaniu zamówienia oraz poniósł lub może ponieść szkodę w wyniku naruszenia przez Zamawiającego przepisów ustawy. 3. Środki ochrony prawnej wobec ogłoszenia wszczynającego postępowanie o udzielenie zamówienia oraz dokumentów zamówienia, przysługują również organizacjom wpisanym na listę organizacji uprawnionych do wnoszenia środków ochrony prawnej, prowadzoną przez Prezesa Urzędu Zamówień Publicznych oraz Rzecznikowi Małych i Średnich Przedsiębiorców. 4. Terminy wnoszenia odwołania: 4.1 odwołanie wnosi się w terminie 10 dni od dnia przekazania informacji o czynności Zamawiającego stanowiącej podstawę jego wniesienia, jeżeli informacja została przekazana przy użyciu środków komunikacji elektronicznej lub 15 dni od dnia przekazania informacji o czynności Zamawiającego stanowiącej podstawę jego wniesienia, jeżeli informacja została przekazana w inny sposób; 4.2 odwołanie wobec treści ogłoszenia wszczynającego postępowanie o udzielenie zamówienia lub wobec treści dokumentów zamówienia, wnosi się w terminie 10 dni od dnia publikacji ogłoszenia w Dzienniku Urzędowym Unii Europejskiej lub zamieszczenia dokumentów zamówienia na stronie internetowej; 4.3 odwołanie wobec czynności innych niż określone powyżej wnosi się w terminie 10 dni od dnia, w którym powzięto lub przy zachowaniu należytej staranności można było powziąć wiadomość o okolicznościach stanowiących podstawę jego wniesienia. 4.4 Jeżeli Zamawiający nie przesłał Wykonawcy zawiadomienia o wyborze oferty najkorzystniejszej, odwołanie wnosi się w terminie: 30 dni od dnia publikacji w Dzienniku Urzędowym Unii Europejskiej ogłoszenia o udzieleniu zamówienia, 6 miesięcy od dnia zawarcia umowy, jeżeli Zamawiający nie opublikował w Dzienniku Urzędowym Unii Europejskiej ogłoszenia o udzieleniu zamówienia, 5. Terminy oblicza się według przepisów prawa cywilnego. Jeżeli koniec terminu do wykonania czynności przypada na sobotę lub dzień ustawowo wolny od pracy, termin upływa dnia następnego po dniu lub dniach wolnych od pracy. 6. Odwołanie wnosi się do Prezesa Krajowej Izby Odwoławczej. 7. Odwołujący przekazuje Zamawiającemu odwołanie wniesione w formie elektronicznej albo postaci elektronicznej albo kopię tego odwołania, jeżeli zostało ono wniesione w formie pisemnej, przed upływem terminu do wniesienia odwołania w taki sposób, aby mógł on zapoznać się z jego treścią przed upływem tego terminu. 8. Pisma w postępowaniu odwoławczym wnosi się w formie pisemnej albo w formie elektronicznej albo w postaci elektronicznej, z tym, że odwołanie i przystąpienie do postępowania odwoławczego, wniesione w postaci elektronicznej, wymagają opatrzenia podpisem zaufanym. 9. Pisma w formie pisemnej wnosi się za pośrednictwem operatora pocztowego, w rozumieniu ustawy z dnia 23 listopada 2012 r. Prawo pocztowe, osobiście, za pośrednictwem posłańca, a pisma w postaci elektronicznej wnosi się przy użyciu środków komunikacji elektronicznej.</cbc:Description>
+            </cac:PresentationPeriod>
+            <cac:AppealReceiverParty>
+               <cac:PartyIdentification>
+                  <cbc:ID>ORG-0002</cbc:ID>
+               </cac:PartyIdentification>
+            </cac:AppealReceiverParty>
+         </cac:AppealTerms>
+         <cac:Language>
+            <cbc:ID>POL</cbc:ID>
+         </cac:Language>
+         <cac:PostAwardProcess>
+            <cbc:ElectronicOrderUsageIndicator>false</cbc:ElectronicOrderUsageIndicator>
+            <cbc:ElectronicPaymentUsageIndicator>true</cbc:ElectronicPaymentUsageIndicator>
+         </cac:PostAwardProcess>
+      </cac:TenderingTerms>
+      <cac:TenderingProcess>
+         <cbc:SubmissionMethodCode listName="esubmission">required</cbc:SubmissionMethodCode>
+         <cbc:GovernmentAgreementConstraintIndicator>true</cbc:GovernmentAgreementConstraintIndicator>
+         <cac:TenderSubmissionDeadlinePeriod>
+            <cbc:EndDate>2024-08-26+02:00</cbc:EndDate>
+            <cbc:EndTime>12:00:00+02:00</cbc:EndTime>
+         </cac:TenderSubmissionDeadlinePeriod>
+         <cac:OpenTenderEvent>
+            <cbc:OccurrenceDate>2024-08-26+02:00</cbc:OccurrenceDate>
+            <cbc:OccurrenceTime>13:00:00+02:00</cbc:OccurrenceTime>
+         </cac:OpenTenderEvent>
+         <cac:AuctionTerms>
+            <cbc:AuctionConstraintIndicator>false</cbc:AuctionConstraintIndicator>
+         </cac:AuctionTerms>
+         <cac:ContractingSystem>
+            <cbc:ContractingSystemTypeCode listName="framework-agreement">none</cbc:ContractingSystemTypeCode>
+         </cac:ContractingSystem>
+         <cac:ContractingSystem>
+            <cbc:ContractingSystemTypeCode listName="dps-usage">none</cbc:ContractingSystemTypeCode>
+         </cac:ContractingSystem>
+      </cac:TenderingProcess>
+      <cac:ProcurementProject>
+         <cbc:ID>ZIM-DZ.2620.63.2024</cbc:ID>
+         <cbc:Name languageID="POL">„Budowa nowego budynku szkoły wraz z salą gimnastyczną oraz rozbudowa i modernizacja istniejącego budynku Szkoły Podstawowej nr 130 w Łodzi przy ul. Gościniec 1” 
+- w systemie zaprojektuj i wybuduj
+</cbc:Name>
+         <cbc:Description languageID="POL">1.1. Przedmiotem niniejszego postępowania jest zaprojektowanie zespołu budynków o charakterze szkolno- przedszkolnym w podziale na 3 Etapy realizacji oraz wybudowanie budynków obejmujących Etap 1, w tym nowego budynku połączonego z istniejącym budynkiem Szkoły Podstawowej wraz z jego przebudową i modernizacją. Inwestycja obejmuje wykonanie nowego zagospodarowania terenu wraz z bieżnią prostą, miejscami parkingowymi i drogami. Planowane przedsięwzięcie należy wykonać z zastosowaniem technologii prefabrykowanej wykorzystując ekologiczne źródła ciepła. W ramach inwestycji przewiduje się budowę obiektu 3-kondygnacyjnyego, częściowo podpiwniczonego, z dachem płaskim dla ogółem 520 dzieci. 
+W ramach przedsięwzięcia przewiduje się realizację zespołu sportowego oraz bloku żywieniowego z wyposażeniem kuchni. Realizacja zamówienia obejmuje również dostawę mebli i innego wyposażenia. ETAP 2 i 3 obejmujący przebudowę istniejącego budynku oraz realizację zespołu przedszkolnego planowany jest w prawie opcji.
+1.2. Przedmiotem zamówienia podstawowego jest zaprojektowanie zespołu szkolno- przedszkolnego obejmującego Etap 1, Etap 2 i Etap 3 realizacji i wybudowanie obiektów w zakresie Etapu 1 polegającej na budowie nowego budynku szkoły dla 520 uczniów wraz z salą gimnastyczną oraz modernizacja istniejącego budynku Szkoły Podstawowej nr 130 w Łodzi przy ul. Gościniec 1, na działce Nr 190/29, obręb G-55 w zakresie ekologicznych źródeł ciepła dla budynku. 
+1.3. Przedmiotem zamówienia w prawie opcji jest wybudowanie obiektów tworzących zespół szkolno-przedszkolny w zakresie Etapu 2 i 3 polegających na przebudowie budynku istniejącej szkoły podstawowej, w tym budowie nowego bloku żywieniowego wraz ze stołówką oraz wybudowaniu odrębnej części  stanowiącej zespół przedszkolny dla tzw. „oddziałów zerowych”.
+2. Zamówienie należy realizować zgodnie ze szczegółowym opisem przedmiotu zamówienia zawartym w Załączniku nr 1 do SWZ – Opis przedmiotu zamówienia – Program Funkcjonalno-Użytkowy wraz z załącznikami i na zasadach określonych w Załączniku nr 2 – Projektowane postanowienia umowy.
+</cbc:Description>
+         <cbc:ProcurementTypeCode listName="contract-nature">works</cbc:ProcurementTypeCode>
+         <cbc:Note languageID="POL">1. Termin Zakończenia Realizacji Inwestycji – 22 miesięcy od dnia zawarcia umowy, z zastrzeżeniem, że:
+1.1. Wykonawca jest zobowiązany do przekazania Zamawiającemu projektu zagospodarowania terenu, projektu architektoniczno-budowlanego wraz z aktualizacją inwentaryzacji zieleni oraz do złożenia kompletnego wniosku o wydanie decyzji o pozwolenie na budowę  dla Etapu 1, Etapu 2 i Etapu 3 w terminie do 6 miesięcy od dnia zawarcia Umowy,
+1.2. Wykonawca jest zobowiązany do przekazania Zamawiającemu projektu technicznego, Projektu Wykonawczego oraz pozostałej Dokumentacji Projektowej oraz do uzyskania i przekazanie wszelkich pozostałych wymaganych decyzji, opinii, sprawdzeń, uzgodnień, zatwierdzeń wraz z ostateczną decyzją o pozwoleniu na budowę  dla Etapu 1, Etapu 2 i Etapu 3 w terminie do 8 miesięcy od dnia zawarcia Umowy.
+ 2. Klauzula informacyjna z art. 13 Rozporządzenia Ogólnego o Ochronie Danych Osobowych (RODO) związana z postępowaniem o udzielenie zamówienia publicznego została zawarta w Rozdziale XXV SWZ. 3. Zawartość oferty: 3.1. FORMULARZ OFERTY – sporządzony zgodnie ze wzorem stanowiącym Załącznik nr 3 do SWZ. 3.2. FORMULARZ CENOWY – TABELA ELEMENTÓW SCALONYCH - sporządzony zgodnie ze wzorem stanowiącym Załącznik nr 4 do SWZ. 3.3. ZOBOWIĄZANIE PODMIOTU UDOSTĘPNIAJĄCEGO ZASOBY – sporządzone zgodnie ze wzorem stanowiącym Załącznik nr 5 do SWZ (jeżeli wykonawca przy wykazywaniu warunków udziału polega na zdolnościach innego podmiotu) (...). 3.4. INFORMACJA O ZAKRESIE ZADAŃ REALIZOWANYCH PRZEZ WYKONAWCÓW WSPÓLNIE UBIEGAJĄCYCH SIĘ O UDZIELENIE ZAMÓWIENIA – sporządzona zgodnie ze wzorem stanowiącym Załącznik nr 6 do SWZ (dotyczy wykonawców wspólnie ubiegających się o udzielenie zamówienia w tym spółek cywilnych). 3.5. OŚWIADCZENIE WYKONAWCY O NIEPODLEGANIU WYKLUCZENIU na podstawie art. 5k rozporządzenia 833/2014 w brzmieniu nadanym rozporządzeniem 2022/576 oraz art. 7 ust. 1 ustawy o szczególnych rozwiązaniach w zakresie przeciwdziałania wspieraniu agresji na Ukrainę oraz służących ochronie bezpieczeństwa narodowego składane na podstawie art. 125 ust. 1 ustawy Pzp, zgodnie ze wzorem stanowiącym Załącznik nr 8 do SWZ (...). 3.6. OŚWIADCZENIE PODMIOTU UDOSTĘPNIAJĄCEGO ZASOBY O NIEPODLEGANIU WYKLUCZENIU na podstawie art. 5k rozporządzenia 833/2014 w brzmieniu nadanym rozporządzeniem 2022/576 oraz art. 7 ust. 1 ustawy o szczególnych rozwiązaniach w zakresie przeciwdziałania wspieraniu agresji na Ukrainę oraz służących ochronie bezpieczeństwa narodowego składane na podstawie art. 125 ust. 1 ustawy Pzp, zgodnie ze wzorem stanowiącym Załącznik nr 9 do SWZ (jeżeli Wykonawca przy wykazywaniu warunków udziału polega na zdolnościach innego podmiotu). 3.7. W celu potwierdzenia, że osoba działająca w imieniu wykonawcy jest umocowana do jego reprezentowania, zamawiający żąda od wykonawcy złożenia ODPISU LUB INFORMACJI Z: 1) KRAJOWEGO REJESTRU SĄDOWEGO lub 2) CENTRALNEJ EWIDENCJI I INFORMACJI O DZIAŁALNOŚCI GOSPODARCZEJ lub 3) INNEGO WŁAŚCIWEGO REJESTRU. 3.8. Wykonawca nie jest zobowiązany do złożenia dokumentów, o których mowa w pkt 3.7, jeżeli zamawiający może je uzyskać za pomocą bezpłatnych i ogólnodostępnych baz danych, o ile wykonawca wskazał dane umożliwiające dostęp do tych dokumentów (wystarczające jest wskazanie np. numeru NIP, KRS, Regon). 3.9. PEŁNOMOCNICTWO LUB INNY DOKUMENT POTWIERDZAJĄCY UMOCOWANIE DO REPREZENTOWANIA WYKONAWCY - jeżeli w imieniu wykonawcy działa osoba, której umocowanie do jego reprezentowania nie wynika z dokumentów, o których mowa w pkt 3.7. 3.10. DOWÓD WNIESIENIA WADIUM – zgodnie z zapisami Rozdziału XXII SWZ. 3.11. Postanowienia pkt 3.9. stosuje się odpowiednio do osoby działającej w imieniu wykonawców wspólnie ubiegających się o udzielenie zamówienia publicznego. Wzór pełnomocnictwa stanowi Załącznik nr 7 do SWZ (...). 3.12. WYKAZ DOŚWIADCZENIA PROJEKTANTA W SPECJALNOŚCI ARCHITEKTONICZNEJ, który będzie realizował zamówienie (na podstawie którego Zamawiający dokona oceny oferty w kryterium „Doświadczenie Projektanta w specjalności architektonicznej”) – sporządzony zgodnie ze wzorem stanowiącym Załącznik nr 10 do SWZ. 3.13. WYKAZ DOŚWIADCZENIA KIEROWNIKA BUDOWY, który będzie realizował zamówienie (na podstawie którego Zamawiający dokona oceny oferty w kryterium „Doświadczenie Kierownika budowy”) – sporządzony zgodnie ze wzorem stanowiącym Załącznik nr 11 do SWZ. 3.14. Przepisy pkt 3.7. – 3.9. stosuje się odpowiednio do osoby działającej w imieniu podmiotu udostępniającego zasoby na zasadach określonych w art. 118 ustawy lub podwykonawcy niebędącego podmiotem udostępniającym zasoby na takich zasadach. 4. Termin związania ofertą: Wykonawca jest związany złożoną ofertą do 23.11.2024 r. 5. Zamawiający ustala zabezpieczenie należytego wykonania umowy na 3% ceny całkowitej brutto (dla zamówienia podstawowego wraz z prawem opcji), zgodnie z zasadami określonymi w Załączniku nr 2 do SWZ – Projektowane postanowienia umowy.
+6. Informacje o przewidywanych zamówieniach polegających na powtórzeniu podobnych usług/robót budowlanych,  o których mowa w art. 214 ust. 1 pkt 7 ustawy Pzp:
+Zamawiający przewiduje możliwość udzielenia zamówień polegających na powtórzeniu podobnych usług/robót do 20% wartości zamówienia podstawowego w zakresie:
+- robót ogólnobudowlanych, przygotowania terenu pod budowę, robót ziemnych, kształtowania terenów zielonych, ogrodniczych robót budowlanych w zakresie wznoszenia kompletnych obiektów budowlanych lub ich części oraz robót w zakresie inżynierii lądowej i wodnej,
+- robót budowlanych w zakresie budowy linii energetycznych, instalacji elektrycznych, 
+- robót drogowych, instalowania urządzeń oświetlenia drogowego,
+- robót budowlanych i pomocniczych w zakresie linii telefonicznych i ciągów komunikacyjnych,
+- robót instalacyjnych wodno – kanalizacyjnych i sanitarnych i gazowych,
+- usług projektowych w zakresie robót ogólnobudowlanych i instalacyjnych,
+- usług geologicznych, sporządzania map,
+- usług badania podłoża,
+- usług inżynieryjnych w zakresie projektowania,
+- usług architektonicznych i podobnych, inżynieryjnych i kontrolnych,
+- usług ogrodniczych,
+- usług doradczych inżynieryjnych i budowlanych,
+- dostawy wyposażenia, 
+- nadzoru autorskiego.
+Zamówienie zostanie udzielone na podstawie negocjacji z dotychczasowym Wykonawcą, na warunkach określonych w umowie podstawowej.
+</cbc:Note>
+         <cac:MainCommodityClassification>
+            <cbc:ItemClassificationCode listName="cpv">45000000</cbc:ItemClassificationCode>
+         </cac:MainCommodityClassification>
+         <cac:AdditionalCommodityClassification>
+            <cbc:ItemClassificationCode listName="cpv">09331200</cbc:ItemClassificationCode>
+         </cac:AdditionalCommodityClassification>
+         <cac:AdditionalCommodityClassification>
+            <cbc:ItemClassificationCode listName="cpv">39150000</cbc:ItemClassificationCode>
+         </cac:AdditionalCommodityClassification>
+         <cac:AdditionalCommodityClassification>
+            <cbc:ItemClassificationCode listName="cpv">42511110</cbc:ItemClassificationCode>
+         </cac:AdditionalCommodityClassification>
+         <cac:AdditionalCommodityClassification>
+            <cbc:ItemClassificationCode listName="cpv">44211000</cbc:ItemClassificationCode>
+         </cac:AdditionalCommodityClassification>
+         <cac:AdditionalCommodityClassification>
+            <cbc:ItemClassificationCode listName="cpv">45100000</cbc:ItemClassificationCode>
+         </cac:AdditionalCommodityClassification>
+         <cac:AdditionalCommodityClassification>
+            <cbc:ItemClassificationCode listName="cpv">45200000</cbc:ItemClassificationCode>
+         </cac:AdditionalCommodityClassification>
+         <cac:AdditionalCommodityClassification>
+            <cbc:ItemClassificationCode listName="cpv">45330000</cbc:ItemClassificationCode>
+         </cac:AdditionalCommodityClassification>
+         <cac:AdditionalCommodityClassification>
+            <cbc:ItemClassificationCode listName="cpv">71000000</cbc:ItemClassificationCode>
+         </cac:AdditionalCommodityClassification>
+         <cac:AdditionalCommodityClassification>
+            <cbc:ItemClassificationCode listName="cpv">71200000</cbc:ItemClassificationCode>
+         </cac:AdditionalCommodityClassification>
+         <cac:AdditionalCommodityClassification>
+            <cbc:ItemClassificationCode listName="cpv">71300000</cbc:ItemClassificationCode>
+         </cac:AdditionalCommodityClassification>
+         <cac:AdditionalCommodityClassification>
+            <cbc:ItemClassificationCode listName="cpv">71351910</cbc:ItemClassificationCode>
+         </cac:AdditionalCommodityClassification>
+         <cac:AdditionalCommodityClassification>
+            <cbc:ItemClassificationCode listName="cpv">71352000</cbc:ItemClassificationCode>
+         </cac:AdditionalCommodityClassification>
+         <cac:AdditionalCommodityClassification>
+            <cbc:ItemClassificationCode listName="cpv">77300000</cbc:ItemClassificationCode>
+         </cac:AdditionalCommodityClassification>
+         <cac:RealizedLocation>
+            <cac:Address>
+               <cbc:StreetName>ul. Gościniec 1</cbc:StreetName>
+               <cbc:CityName>Łódź</cbc:CityName>
+               <cbc:PostalZone>93-645</cbc:PostalZone>
+               <cbc:CountrySubentityCode listName="nuts">PL711</cbc:CountrySubentityCode>
+               <cac:Country>
+                  <cbc:IdentificationCode listName="country">POL</cbc:IdentificationCode>
+               </cac:Country>
+            </cac:Address>
+         </cac:RealizedLocation>
+         <cac:PlannedPeriod>
+            <cbc:DurationMeasure unitCode="MONTH">22</cbc:DurationMeasure>
+         </cac:PlannedPeriod>
+         <cac:ContractExtension>
+            <cbc:OptionsDescription languageID="POL">1. Przedmiotem zamówienia w prawie opcji jest wybudowanie obiektów tworzących zespół szkolno-przedszkolny w zakresie Etapu 2 i 3 polegających na przebudowie budynku istniejącej szkoły podstawowej, w tym budowie nowego bloku żywieniowego wraz ze stołówką oraz wybudowaniu odrębnej części  stanowiącej zespół przedszkolny dla tzw. „oddziałów zerowych”.
+1.1. Zamawiający przewiduje możliwość skorzystania z prawa opcji, na następujących zasadach:
+1)	Prawo opcji obejmuje realizację robót budowlanych wraz niezbędną infrastrukturą techniczną i zagospodarowaniem terenu wraz z dostawą i montażem wyposażenia i sprzętu oraz pełnieniem nadzoru autorskiego w zakresie Etapu 2 i Etapu 3. Opis przedmiotu zamówienia dla prawa opcji zawiera Program Funkcjonalno – Użytkowy w  części oznaczonej jako PFU dla prawa opcji (rodzaj opcji);
+2)	Maksymalna wartości prawa opcji wynosi 50% całkowitego wynagrodzenia wskazanego w ofercie brutto z tytułu realizacji przedmiotu umowy w zakresie podstawowym bez uwzględnienia prawa opcji (maksymalna wartość prawa opcji);
+3)	W przypadku skorzystania przez Zamawiającego z uprawnienia do powierzenia wykonania prawa opcji przedmiot zamówienia w zakresie realizacji prawa opcji zostanie wykonany w Terminie Zakończenia Realizacji Inwestycji;
+4)	Zamawiający skorzysta z prawa opcji w przypadku ziszczenia się wskazanego poniżej warunku wykonania prawa opcji:
+-	wykonanie niezbędnych uzgodnień i decyzji umożliwiających realizację przedmiotu zamówienia w zakresie objętym prawem opcji. 
+5)	Z prawa opcji Zamawiający może skorzystać w terminie do 6 miesięcy od dnia zawarcia umowy o udzielenie zamówienia składając pisemne oświadczenie Wykonawcy w tym przedmiocie we wskazanym terminie. W przypadku nieskorzystania z prawa opcji przez Zamawiającego Wykonawcy nie przysługują żadne roszczenia z tego tytułu. 
+2. Szczegółowe warunki zamówienia w prawie opcji znajdują się w Załączniku nr 2 do SWZ – Projektowane postanowienia umowy.
+</cbc:OptionsDescription>
+         </cac:ContractExtension>
+      </cac:ProcurementProject>
+   </cac:ProcurementProjectLot>
+</ContractNotice>

@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><ContractNotice xmlns="urn:oasis:names:specification:ubl:schema:xsd:ContractNotice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:efac="http://data.europa.eu/p27/eforms-ubl-extension-aggregate-components/1" xmlns:efbc="http://data.europa.eu/p27/eforms-ubl-extension-basic-components/1" xmlns:efext="http://data.europa.eu/p27/eforms-ubl-extensions/1" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2">
+   <ext:UBLExtensions>
+      <ext:UBLExtension>
+         <ext:ExtensionContent>
+            <efext:EformsExtension>
+               <efac:Changes>
+                  <efbc:ChangedNoticeIdentifier>463637-2024</efbc:ChangedNoticeIdentifier>
+                  <efac:Change>
+                     <efbc:ChangeDescription languageID="POL">(BT-88-Procedure) Dopisano pkt 10 o treści Zamawiający przewiduje możliwość udzielenia zamówień, o których mowa w art. 214 ust. 1 pkt 7) Pzp w zakresie opisanym w SWZ</efbc:ChangeDescription>
+                     <efac:ChangedSection>
+                        <efbc:ChangedSectionIdentifier>PROCEDURE</efbc:ChangedSectionIdentifier>
+                     </efac:ChangedSection>
+                  </efac:Change>
+                  <efac:Change>
+                     <efbc:ChangeDescription languageID="POL">(BT-539-Lot i BT-540-Lot) W rozdz. 5.1.10 dopisuje się Kryterium udzielenia zamówienia: Jakość 40% </efbc:ChangeDescription>
+                     <efac:ChangedSection>
+                        <efbc:ChangedSectionIdentifier>LOT-0001</efbc:ChangedSectionIdentifier>
+                     </efac:ChangedSection>
+                  </efac:Change>
+                  <efac:ChangeReason>
+                     <cbc:ReasonCode listName="change-corrig-justification">update-add</cbc:ReasonCode>
+                  </efac:ChangeReason>
+               </efac:Changes>
+               <efac:NoticeSubType>
+                  <cbc:SubTypeCode listName="notice-subtype">16</cbc:SubTypeCode>
+               </efac:NoticeSubType>
+               <efac:Organizations>
+                  <efac:Organization>
+                     <efac:Company>
+                        <cbc:WebsiteURI>https://www.gov.pl/web/gddkia</cbc:WebsiteURI>
+                        <cbc:EndpointID>https://gddkia.eb2b.com.pl/</cbc:EndpointID>
+                        <cac:PartyIdentification>
+                           <cbc:ID>ORG-0001</cbc:ID>
+                        </cac:PartyIdentification>
+                        <cac:PartyName>
+                           <cbc:Name languageID="POL">Generalna Dyrekcja Dróg Krajowych i Autostrad  </cbc:Name>
+                        </cac:PartyName>
+                        <cac:PostalAddress>
+                           <cbc:StreetName>ul. Powstańców Śląskich 186</cbc:StreetName>
+                           <cbc:AdditionalStreetName>53-139</cbc:AdditionalStreetName>
+                           <cbc:Department>Generalna Dyrekcja Dróg Krajowych i Autostrad Oddział we Wrocławiu</cbc:Department>
+                           <cbc:CityName>Wrocław</cbc:CityName>
+                           <cbc:PostalZone>53-139</cbc:PostalZone>
+                           <cbc:CountrySubentityCode listName="nuts">PL514</cbc:CountrySubentityCode>
+                           <cac:Country>
+                              <cbc:IdentificationCode listName="country">POL</cbc:IdentificationCode>
+                           </cac:Country>
+                        </cac:PostalAddress>
+                        <cac:PartyLegalEntity>
+                           <cbc:CompanyID>8992441331</cbc:CompanyID>
+                        </cac:PartyLegalEntity>
+                        <cac:Contact>
+                           <cbc:Telephone>713347379</cbc:Telephone>
+                           <cbc:ElectronicMail>zamowienia.wroclaw@gddkia.gov.pl</cbc:ElectronicMail>
+                        </cac:Contact>
+                     </efac:Company>
+                  </efac:Organization>
+                  <efac:Organization>
+                     <efac:Company>
+                        <cac:PartyIdentification>
+                           <cbc:ID>ORG-0003</cbc:ID>
+                        </cac:PartyIdentification>
+                        <cac:PartyName>
+                           <cbc:Name languageID="POL">Krajowa Izba Odwoławcza</cbc:Name>
+                        </cac:PartyName>
+                        <cac:PostalAddress>
+                           <cbc:StreetName>ul. Postępu 17a</cbc:StreetName>
+                           <cbc:CityName>Warszawa</cbc:CityName>
+                           <cbc:PostalZone>02-676</cbc:PostalZone>
+                           <cbc:CountrySubentityCode listName="nuts">PL911</cbc:CountrySubentityCode>
+                           <cac:Country>
+                              <cbc:IdentificationCode listName="country">POL</cbc:IdentificationCode>
+                           </cac:Country>
+                        </cac:PostalAddress>
+                        <cac:PartyLegalEntity>
+                           <cbc:CompanyID>5262239325</cbc:CompanyID>
+                        </cac:PartyLegalEntity>
+                        <cac:Contact>
+                           <cbc:ElectronicMail>odwolania@uzp.gov.pl</cbc:ElectronicMail>
+                        </cac:Contact>
+                     </efac:Company>
+                  </efac:Organization>
+               </efac:Organizations>
+            <efac:Publication><efbc:NoticePublicationID schemeName="ojs-notice-id">00468415-2024</efbc:NoticePublicationID><efbc:GazetteID schemeName="ojs-id">151/2024</efbc:GazetteID><efbc:PublicationDate>2024-08-05+02:00</efbc:PublicationDate></efac:Publication></efext:EformsExtension>
+         </ext:ExtensionContent>
+      </ext:UBLExtension>
+   </ext:UBLExtensions>
+   <cbc:UBLVersionID>2.3</cbc:UBLVersionID>
+   <cbc:CustomizationID>eforms-sdk-1.11</cbc:CustomizationID>
+   <cbc:ID schemeName="notice-id">45602351-9e8c-493c-b9cf-bd71db4ffa08</cbc:ID>
+   <cbc:ContractFolderID>7b207072-db11-477e-b554-98ea05b29c25</cbc:ContractFolderID>
+   <cbc:IssueDate>2024-08-02Z</cbc:IssueDate>
+   <cbc:IssueTime>11:09:05Z</cbc:IssueTime>
+   <cbc:VersionID>01</cbc:VersionID>
+   <cbc:RequestedPublicationDate>2024-08-05Z</cbc:RequestedPublicationDate>
+   <cbc:RegulatoryDomain>32014L0024</cbc:RegulatoryDomain>
+   <cbc:NoticeTypeCode listName="competition">cn-standard</cbc:NoticeTypeCode>
+   <cbc:NoticeLanguageCode listName="language">POL</cbc:NoticeLanguageCode>
+   <cac:ContractingParty>
+      <cbc:BuyerProfileURI>http://www.gddkia.gov.pl</cbc:BuyerProfileURI>
+      <cac:ContractingPartyType>
+         <cbc:PartyTypeCode listName="buyer-legal-type">cga</cbc:PartyTypeCode>
+      </cac:ContractingPartyType>
+      <cac:ContractingActivity>
+         <cbc:ActivityTypeCode listName="authority-activity">gen-pub</cbc:ActivityTypeCode>
+      </cac:ContractingActivity>
+      <cac:Party>
+         <cac:PartyIdentification>
+            <cbc:ID>ORG-0001</cbc:ID>
+         </cac:PartyIdentification>
+      </cac:Party>
+   </cac:ContractingParty>
+   <cac:TenderingTerms>
+      <cac:TendererQualificationRequest>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">crime-org</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Dotyczy art. 108 ust. 1 pkt.1 lit. a) i pkt. 2 ustawy Prawo zamówień publicznych</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">corruption</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Dotyczy art. 108 ust. 1 pkt.1 lit. c) i pkt. 2 ustawy Prawo zamówień publicznych</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">fraud</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Dotyczy art. 108 ust. 1 pkt.1 lit. g) i pkt. 2 ustawy Prawo zamówień publicznych</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">terr-offence</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Dotyczy art. 108 ust. 1 pkt.1 lit. e) i pkt. 2 ustawy Prawo zamówień publicznych</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">finan-laund</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Dotyczy art. 108 ust. 1 pkt.1 lit. d) i pkt. 2 ustawy Prawo zamówień publicznych</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">human-traffic</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Dotyczy art. 108 ust. 1 pkt.1 lit. b) i f)i pkt. 2 ustawy Prawo zamówień publicznych</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">tax-pay</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Dotyczy art. 108 ust. 1 pkt.3 oraz 109 ust. 1 pkt. 1 ustawy Prawo zamówień publicznych</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">socsec-pay</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Dotyczy art. 108 ust. 1 pkt.3 oraz 109 ust. 1 pkt. 1 ustawy Prawo zamówień publicznych</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">labour-law</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Dotyczy art. 108 ust. 1 pkt 1 lit. h) i pkt 2 ustawy Prawo zamówień publicznych</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">bankruptcy</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Dotyczy art. 109 ust. 1 pkt 4 ustawy Prawo zamówień publicznych</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">insolvency</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Dotyczy art. 109 ust. 1 pkt 4 ustawy Prawo zamówień publicznych</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">cred-arran</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Dotyczy art. 109 ust. 1 pkt 4 ustawy Prawo zamówień publicznych</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">bankr-nat</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Dotyczy art. 109 ust. 1 pkt 4 ustawy Prawo zamówień publicznych</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">liq-admin</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Dotyczy art. 109 ust. 1 pkt 4 ustawy Prawo zamówień publicznych</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">susp-act</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">art. 109 ust. 1 pkt 4 ustawy Prawo zamówień publicznych</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">misrepresent</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Dotyczy art. 109 ust. 1 pkt 10 ustawy Prawo zamówień publicznych</cbc:Description>
+         </cac:SpecificTendererRequirement>
+         <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="exclusion-ground">nati-ground</cbc:TendererRequirementTypeCode>
+            <cbc:Description languageID="POL">Dotyczy art. 108 ust. 1 pkt 1 lit. c) i g) i pkt 2 ustawy Prawo zamówień publicznych Dotyczy art. 108 ust. 1 pkt 4 ustawy Prawo
+zamówień publicznych Dotyczy art. 7 ust. 1 ustawy z 13.04.2022 o szczególnych rozwiązaniach w zakresie przeciwdziałania wspieraniu agresji na Ukrainę oraz służących ochronie bezpieczeństwa narodowego</cbc:Description>
+         </cac:SpecificTendererRequirement>
+      </cac:TendererQualificationRequest>
+   </cac:TenderingTerms>
+   <cac:TenderingProcess>
+      <cbc:Description languageID="POL">1.Zamawiający będzie stosował procedurę, o której mowa w art. 139 ust. 1 Pzp (tj. tzw. procedurę odwróconą). 2. Wykonawca zobowiązany jest złożyć wraz z Ofertą oświadczenie o nie podleganiu wykluczeniu i spełnianiu warunków udziału w postępowaniu w formie jednolitego europejskiego dokumentu zamówienia (JEDZ). 3.W przypadku wspólnego ubiegania się o zamówienie przez Wykonawców, JEDZ składa każdy z Wykonawców. Oświadczenia te potwierdzają brak podstaw wykluczenia oraz spełnianie warunków udziału w postępowaniu w zakresie, w jakim każdy z Wykonawców wykazuje spełnianie warunków udziału w postępowaniu 4.W przypadku, gdy Wykonawca polega na zdolnościach lub sytuacji podmiotów udostępniających zasoby, w celu
+wykazania braku istnienia wobec nich podstaw wykluczenia oraz spełniania warunków udziału w postępowaniu, składa JEDZ dotyczące także tych podmiotów w zakresie, w jakim wykonawca powołuje się na ich zasoby. 5.W zakresie „części IV Kryteria kwalifikacji” JEDZ, Wykonawca może ograniczyć się do wypełnienia sekcji alfa, w takim przypadku wykonawca nie wypełnia żadnej z pozostałych sekcji (A-D) w części IV JEDZ. 6.Z postępowania o udzielenie zamówienia wyklucza się również Wykonawcę w stosunku do którego zachodzą okoliczności, o których mowa w art. 7 ust. 1 ustawy z 13.04.2022 o szczególnych rozwiązaniach w zakresie przeciwdziałania wspieraniu agresji na Ukrainę oraz służących ochronie bezpieczeństwa narodowego oraz w art. 5k rozp. Rady (UE)
+nr 833/2014 z dnia 31.07.2014 dotyczącego środków ograniczających w związku z działaniami Rosji destabilizującymi sytuację na Ukrainie 7.Na wezwanie Zamawiającego Wykonawca zobowiązany jest do złożenia podmiotowych środków dowodowych, o których mowa w §2 ust. 1 pkt 1)-2) i pkt 4)-7) rozp. MRPiT z dnia 23.12.2020 w sprawie podmiotowych środków dowodowych oraz innych dokumentów lub oświadczeń, jakich może żądać zamawiający od wykonawcy w zakresie podstaw wykluczenia z postępowania wskazanych przez Zamawiającego w niniejszym ogłoszeniu. 8.Jeżeli Wykonawca ma siedzibę lub miejsce zamieszkania poza granicami RP zobowiązany jest do złożenia podmiotowych środków dowodowych, o których mowa w §4 rozp., o którym mowa w pkt. 7 powyżej. 9. Jeżeli Wykonawca polega na zdolnościach lub sytuacji podmiotów udostępniających zasoby zobowiązany jest do
+złożenia podmiotowych środków dowodowych dotyczących tych podmiotów zgodnie z §5 rozp., o którym mowa w pkt. 7 powyżej. 10. Zamawiający przewiduje możliwość udzielenia zamówień, o których mowa w art. 214 ust. 1 pkt 7) Pzp w zakresie opisanym w SWZ.</cbc:Description>
+      <cbc:ProcedureCode listName="procurement-procedure-type">open</cbc:ProcedureCode>
+   </cac:TenderingProcess>
+   <cac:ProcurementProject>
+      <cbc:ID>O/WR.D-3.2421.28.2024</cbc:ID>
+      <cbc:Name languageID="POL">Konserwacja, utrzymanie, przeglądy drogowych stacji meteorologicznych zlokalizowanych przy drogach krajowych na terenie województwa dolnośląskiego</cbc:Name>
+      <cbc:Description languageID="POL">Przedmiotem zamówienia jest utrzymanie oraz konserwacja 15 stacji pomiarowych wraz z ich dodatkowym wyposażeniem (stacje pogodowe, kamery monitoringu, znaki zmiennej treści oraz inne urządzenia systemów sterowania i zarządzania ruchem).</cbc:Description>
+      <cbc:ProcurementTypeCode listName="contract-nature">services</cbc:ProcurementTypeCode>
+      <cac:MainCommodityClassification>
+         <cbc:ItemClassificationCode listName="cpv">51610000</cbc:ItemClassificationCode>
+      </cac:MainCommodityClassification>
+      <cac:RealizedLocation>
+         <cbc:Description languageID="POL">dolnośląskie</cbc:Description>
+         <cac:Address>
+            <cbc:CountrySubentityCode listName="nuts">PL518</cbc:CountrySubentityCode>
+            <cac:Country>
+               <cbc:IdentificationCode listName="country">POL</cbc:IdentificationCode>
+            </cac:Country>
+         </cac:Address>
+      </cac:RealizedLocation>
+   </cac:ProcurementProject>
+   <cac:ProcurementProjectLot>
+      <cbc:ID schemeName="Lot">LOT-0001</cbc:ID>
+      <cac:TenderingTerms>
+         <ext:UBLExtensions>
+            <ext:UBLExtension>
+               <ext:ExtensionContent>
+                  <efext:EformsExtension>
+                     <efac:SelectionCriteria>
+                        <cbc:CriterionTypeCode listName="selection-criterion">tp-abil</cbc:CriterionTypeCode>
+                        <cbc:Name languageID="POL">Dotyczy wykonawcy</cbc:Name>
+                        <cbc:Description languageID="POL">1. Wykonawca musi wykazać się wiedzą i doświadczeniem w wykonaniu w okresie ostatnich 3 lat przed upływem terminu składania ofert, a jeżeli okres prowadzenia działalności jest krótszy – w tym okresie:
+co najmniej jednego zdania o łącznej wartości co najmniej 1.000.000,00 PLN polegających na bieżącym utrzymaniu i naprawie lub wybudowaniu automatycznych drogowych stacji meteorologicznych, tablic zmiennej treści wraz z systemem do obsługi systemów 
+z możliwością odczytów parametrów meteorologicznych, obrazów z kamer i zarządzania treścią na tablicach. 
+2. Wykonawca musi wskazać osoby, które będą uczestniczyć w wykonywaniu zamówienia legitymujące się kwalifikacjami zawodowymi i doświadczeniem odpowiednim do funkcji, jakie zostaną im powierzone. Wykonawca, na każdą funkcję wymienioną poniżej, wskaże osobę, którą musi mieć dostępną na etapie realizacji zamówienia, spełniający następujące wymagania:
+a)	 Kierownik utrzymania – 1 osoba posiadająca:
+- wykształcenie min. średnie 
+- doświadczenie zawodowe w realizacji co najmniej dwóch zadań pełniąc funkcję kierowania, koordynowania zadań w zakresie bieżącego utrzymania (utrzymywania systemów zarządzania ruchem/ ITS- tj. Utrzymanie kamer monitoringu wizyjnego, tablic zmiennej treści, klasyfikatorów ruchu, stacji pogodowych oraz kolumn alarmowych a także systemów do ich zarządzania
+3. W celu potwierdzenia spełniania przez Wykonawcę warunków udziału  w postępowaniu Wykonawca składa:
+a)	wykaz usług wykonanych w okresie ostatnich 5 lat, a jeżeli okres prowadzenia działalności jest krótszy – w tym okresie, wraz z podaniem ich wartości, przedmiotu, dat wykonania i podmiotów, na rzecz których usługi zostały wykonane, oraz załączeniem dowodów określających czy te usługi zostały wykonane należycie, przy czym dowodami, o których mowa, są referencje bądź inne dokumenty sporządzone przez podmiot, na rzecz którego usługi zostały wykonane, a jeżeli Wykonawca z przyczyn niezależnych od niego nie jest w stanie uzyskać tych dokumentów – oświadczenie wykonawcy;
+b)	wykaz osób, skierowanych przez Wykonawcę do realizacji zamówienia publicznego, 
+w szczególności odpowiedzialnych za świadczenie usług, kontrolę jakości, wraz 
+z informacjami na temat ich kwalifikacji zawodowych,  i doświadczenia niezbędnych do wykonania zamówienia publicznego, a także zakresu wykonywanych przez nie czynności oraz informacją o podstawie do dysponowania tymi osobami. 
+</cbc:Description>
+                     </efac:SelectionCriteria>
+                  </efext:EformsExtension>
+               </ext:ExtensionContent>
+            </ext:UBLExtension>
+         </ext:UBLExtensions>
+         <cbc:VariantConstraintCode listName="permission">not-allowed</cbc:VariantConstraintCode>
+         <cbc:FundingProgramCode listName="eu-funded">no-eu-funds</cbc:FundingProgramCode>
+         <cbc:RecurringProcurementIndicator>false</cbc:RecurringProcurementIndicator>
+         <cac:RequiredFinancialGuarantee>
+            <cbc:GuaranteeTypeCode listName="tender-guarantee-required">false</cbc:GuaranteeTypeCode>
+         </cac:RequiredFinancialGuarantee>
+         <cac:CallForTendersDocumentReference>
+            <cbc:ID>_DEFAULT_VALUE_CHANGE_ME_</cbc:ID>
+            <cbc:DocumentType>non-restricted-document</cbc:DocumentType>
+            <cac:Attachment>
+               <cac:ExternalReference>
+                  <cbc:URI>https://gddkia.eb2b.com.pl</cbc:URI>
+               </cac:ExternalReference>
+            </cac:Attachment>
+         </cac:CallForTendersDocumentReference>
+         <cac:TendererQualificationRequest>
+            <cac:SpecificTendererRequirement>
+               <cbc:TendererRequirementTypeCode listName="reserved-procurement">none</cbc:TendererRequirementTypeCode>
+            </cac:SpecificTendererRequirement>
+         </cac:TendererQualificationRequest>
+         <cac:ContractExecutionRequirement>
+            <cbc:ExecutionRequirementCode listName="reserved-execution">no</cbc:ExecutionRequirementCode>
+         </cac:ContractExecutionRequirement>
+         <cac:ContractExecutionRequirement>
+            <cbc:ExecutionRequirementCode listName="conditions">performance</cbc:ExecutionRequirementCode>
+            <cbc:Description languageID="POL">1. Realizacja zamówienia podlega prawu polskiemu, w tym w szczególności ustawie z dnia 7.7.1994 roku Prawo budowlane, ustawie z dnia 23.4.1964 r. Kodeks cywilny i ustawie z dnia 11.09.2019 r. Prawo zamówień publicznych. 2. Warunki realizacji umowy, dopuszczalne zmiany umowy oraz określenie warunków zmian, zostało zawarte w SWZ. 3. Wymagania zatrudnienia przez Wykonawcę lub podwykonawcę na podstawie stosunku pracy osób wykonujących wskazane przez Zamawiającego czynności w zakresie realizacji zamówienia zostały określone w SWZ – w szczególności w Tomie II.
+</cbc:Description>
+         </cac:ContractExecutionRequirement>
+         <cac:ContractExecutionRequirement>
+            <cbc:ExecutionRequirementCode listName="einvoicing">allowed</cbc:ExecutionRequirementCode>
+         </cac:ContractExecutionRequirement>
+         <cac:ContractExecutionRequirement>
+            <cbc:ExecutionRequirementCode listName="ecatalog-submission">not-allowed</cbc:ExecutionRequirementCode>
+         </cac:ContractExecutionRequirement>
+         <cac:AwardingTerms>
+            <cac:AwardingCriterion>
+               <cac:SubordinateAwardingCriterion>
+                  <cbc:AwardingCriterionTypeCode listName="award-criterion-type">price</cbc:AwardingCriterionTypeCode>
+                  <cbc:Description languageID="POL">60%</cbc:Description>
+               </cac:SubordinateAwardingCriterion>
+               <cac:SubordinateAwardingCriterion>
+                  <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality</cbc:AwardingCriterionTypeCode>
+                  <cbc:Description languageID="POL">40%</cbc:Description>
+               </cac:SubordinateAwardingCriterion>
+            </cac:AwardingCriterion>
+         </cac:AwardingTerms>
+         <cac:TenderRecipientParty>
+            <cbc:EndpointID>https://gddkia.eb2b.com.pl</cbc:EndpointID>
+         </cac:TenderRecipientParty>
+         <cac:TenderValidityPeriod>
+            <cbc:DurationMeasure unitCode="DAY">90</cbc:DurationMeasure>
+         </cac:TenderValidityPeriod>
+         <cac:AppealTerms>
+            <cac:PresentationPeriod>
+               <cbc:Description languageID="POL">1. Wykonawcy, a także innemu podmiotowi, jeżeli ma lub miał interes w uzyskaniu zamówienia oraz poniósł lub może ponieść szkodę w wyniku naruszenia przez Zamawiającego przepisów ustawy Prawo zamówień publicznych, przysługują środki ochrony prawnej określone w Dziale IX ustawy Pzp. Środki ochrony prawnej wobec ogłoszenia o zamówieniu oraz dokumentów zamówienia przysługują również organizacjom wpisanym na listę, o której mowa w art. 469 pkt 15) ustawy Pzp oraz Rzecznikowi Małych i Średnich Przedsiębiorców. 2. Odwołanie przysługuje wyłącznie od niezgodnej z przepisami ustawy Pzp czynności Zamawiającego podjętej w niniejszym postępowaniu o udzielenie zamówienia w tym na projektowane postanowienia umowy oraz na zaniechanie czynności, do której Zamawiający był zobowiązany na podstawie ustawy Pzp. 3. Odwołanie powinno zawierać informacje, o których mowa w art. 516 ustawy Pzp. 4. Odwołanie wnosi się do Prezesa Izby w formie pisemnej albo w formie elektronicznej albo w postaci elektronicznej opatrzonej podpisem zaufanym. 5. Odwołujący przekazuje kopię odwołania Zamawiającemu przed upływem terminu do wniesienia odwołania w taki sposób, aby mógł on zapoznać się z jego treścią przed upływem tego terminu.  Domniemywa się, iż Zamawiający mógł zapoznać się z treścią odwołania przed upływem terminu do jego wniesienia, jeżeli przesłanie jego kopii nastąpiło przed upływem terminu do jego wniesienia przy użyciu środków komunikacji elektronicznej. Kopię odwołania zamawiającemu należy przesłać za pośrednictwem Platformy. Po zgłoszeniu do postępowania należy w zakładce „Postępowania”, wybrać „Moje postępowania” a następnie wybrać niniejsze postępowanie oraz korzystając z zakładki Pytania/informacje”, polecenie „Nowe/wysłane” i następnie „Dodaj pytanie/komentarz” przekazać treść odwołania lub załączyć pliki. 6. Terminy wniesienia odwołania: 1) Odwołanie wnosi się w terminie 10 dni od dnia przesłania informacji o czynności
+Zamawiającego stanowiącej podstawę jego wniesienia jeżeli informacja została przekazana przy użycie środków komunikacji elektronicznej albo w terminie 15 dni jeżeli została przekazana w inny sposób; 2) Odwołanie wobec treści ogłoszenia o zamówieniu lub wobec treści dokumentów zamówienia, wnosi się w terminie 10 dni od dnia publikacji ogłoszenia w Dzienniku Urzędowym Unii Europejskiej lub zamieszczenia dokumentów zamówienia na Platformie; 3) Odwołanie wobec czynności innych niż określone w pkt. 1) i 2) powyżej wnosi się w terminie 10 dni od dnia, w którym powzięto lub przy zachowaniu należytej staranności
+można było powziąć wiadomość o okolicznościach stanowiących podstawę jego wniesienia. 4) Jeżeli Zamawiający nie przesłał Wykonawcy zawiadomienia o wyborze najkorzystniejszej oferty odwołanie wnosi się nie później niż w terminie: a) 30 dni od dnia publikacji w Dzienniku Urzędowym Unii Europejskiej ogłoszenia o udzieleniu zamówienia; b) 6 miesięcy od dnia zawarcia umowy, jeżeli Zamawiający nie opublikował w Dzienniku Urzędowym Unii Europejskiej ogłoszenia o udzieleniu zamówienia; 7. Szczegółowe zasady postępowania po wniesieniu odwołania, określają stosowne przepisy Działu IX ustawy Pzp. 8. Na orzeczenie Krajowej Izby Odwoławczej, stronom oraz uczestnikom postępowania odwoławczego przysługuje skarga do Sądu Okręgowego w Warszawie – sądu zamówień publicznych. 9. Skargę wnosi za pośrednictwem Prezesa Krajowej Izby Odwoławczej w terminie 14 dni od
+dnia doręczenia orzeczenia Krajowej Izby Odwoławczej lub postanowienia Prezesa izby, o którym mowa w art. 519 ust. 1 ustawy Pzp, przesyłając jednocześnie jej odpis przeciwnikowi skargi. Złożenie skargi w placówce pocztowej operatora wyznaczonego w rozumieniu ustawy z dnia 23.11.2012 r. – Prawo pocztowe albo wysłanie na adres do doręczeń elektronicznych, o którym mowa w art. 2 pkt 1 ustawy z dnia 18 listopada 2020 r. o doręczeniach elektronicznych, jest równoznaczne z jej wniesieniem. 10. Od wyroku sądu lub postanowienia kończącego postępowanie w sprawie przysługuje skarga kasacyjna do Sądu Najwyższego.</cbc:Description>
+            </cac:PresentationPeriod>
+            <cac:AppealInformationParty>
+               <cac:PartyIdentification>
+                  <cbc:ID>ORG-0003</cbc:ID>
+               </cac:PartyIdentification>
+            </cac:AppealInformationParty>
+            <cac:AppealReceiverParty>
+               <cac:PartyIdentification>
+                  <cbc:ID>ORG-0003</cbc:ID>
+               </cac:PartyIdentification>
+            </cac:AppealReceiverParty>
+         </cac:AppealTerms>
+         <cac:Language>
+            <cbc:ID>POL</cbc:ID>
+         </cac:Language>
+         <cac:PostAwardProcess>
+            <cbc:ElectronicOrderUsageIndicator>false</cbc:ElectronicOrderUsageIndicator>
+            <cbc:ElectronicPaymentUsageIndicator>true</cbc:ElectronicPaymentUsageIndicator>
+         </cac:PostAwardProcess>
+      </cac:TenderingTerms>
+      <cac:TenderingProcess>
+         <cbc:SubmissionMethodCode listName="esubmission">required</cbc:SubmissionMethodCode>
+         <cbc:GovernmentAgreementConstraintIndicator>true</cbc:GovernmentAgreementConstraintIndicator>
+         <cac:TenderSubmissionDeadlinePeriod>
+            <cbc:EndDate>2024-09-10+02:00</cbc:EndDate>
+            <cbc:EndTime>09:30:00+02:00</cbc:EndTime>
+         </cac:TenderSubmissionDeadlinePeriod>
+         <cac:OpenTenderEvent>
+            <cbc:OccurrenceDate>2024-09-10+02:00</cbc:OccurrenceDate>
+            <cbc:OccurrenceTime>10:00:00+02:00</cbc:OccurrenceTime>
+         </cac:OpenTenderEvent>
+         <cac:AuctionTerms>
+            <cbc:AuctionConstraintIndicator>false</cbc:AuctionConstraintIndicator>
+         </cac:AuctionTerms>
+         <cac:ContractingSystem>
+            <cbc:ContractingSystemTypeCode listName="framework-agreement">none</cbc:ContractingSystemTypeCode>
+         </cac:ContractingSystem>
+         <cac:ContractingSystem>
+            <cbc:ContractingSystemTypeCode listName="dps-usage">none</cbc:ContractingSystemTypeCode>
+         </cac:ContractingSystem>
+      </cac:TenderingProcess>
+      <cac:ProcurementProject>
+         <cbc:ID>O/WR.D-3.2421.28.2024</cbc:ID>
+         <cbc:Name languageID="POL">Konserwacja, utrzymanie, przeglądy drogowych stacji meteorologicznych zlokalizowanych przy drogach krajowych na terenie województwa dolnośląskiego</cbc:Name>
+         <cbc:Description languageID="POL">Przedmiotem zamówienia jest utrzymanie oraz konserwacja 15 stacji pomiarowych wraz z ich dodatkowym wyposażeniem (stacje pogodowe, kamery monitoringu, znaki zmiennej treści oraz inne urządzenia systemów sterowania i zarządzania ruchem).</cbc:Description>
+         <cbc:ProcurementTypeCode listName="contract-nature">services</cbc:ProcurementTypeCode>
+         <cbc:Note languageID="POL">1. Komunikacja w postępowaniu odbywa się przy użyciu Platformy. Wykonawca musi posiadać bezpłatne konto na Platformie. Wymagania techniczne: stały dostęp do sieci Internet o gwarantowanej przepustowości nie mniejszej niż 4/1 mb/s; komputer klasy PC lub MAC o konfiguracji: pamięć RAM min 8GB, procesor dwurdzeniowy o taktowaniu min. 2,4 GHz, jeden z systemów operacyjnych MS Windows, Mac OS, Linux z aktualnym wsparciem technicznym producenta (sugerowane nie starsze niż 3 lata od daty wszczęcia postępowania); dowolna przeglądarka internetowa sugerowane najnowsze wersje: Chrome, Safari, Edge, Firefox, Opera; włączona obsługa JavaScript; zainstalowany program obsługujący stosowane przez Wykonawcę formaty plików (np. Acrobat Reader dla plików w formacie „pdf”). Dokumentacja postępowania dostępna jest na Platformie. Dodatkowe informacje znajdują się w pkt 14 Tomu I SWZ. 2. Wykonawca zobowiązany jest do wniesienia zabezpieczenia należytego wykonania umowy na kwotę
+stanowiącą 3 % ceny brutto podanej w ofercie.
+</cbc:Note>
+         <cbc:SMESuitableIndicator>true</cbc:SMESuitableIndicator>
+         <cac:ProcurementAdditionalType>
+            <cbc:ProcurementTypeCode listName="gpp-criteria">none</cbc:ProcurementTypeCode>
+         </cac:ProcurementAdditionalType>
+         <cac:MainCommodityClassification>
+            <cbc:ItemClassificationCode listName="cpv">51610000</cbc:ItemClassificationCode>
+         </cac:MainCommodityClassification>
+         <cac:RealizedLocation>
+            <cbc:Description languageID="POL">dolnośląskie</cbc:Description>
+            <cac:Address>
+               <cbc:CountrySubentityCode listName="nuts">PL518</cbc:CountrySubentityCode>
+               <cac:Country>
+                  <cbc:IdentificationCode listName="country">POL</cbc:IdentificationCode>
+               </cac:Country>
+            </cac:Address>
+         </cac:RealizedLocation>
+         <cac:PlannedPeriod>
+            <cbc:DurationMeasure unitCode="MONTH">12</cbc:DurationMeasure>
+         </cac:PlannedPeriod>
+      </cac:ProcurementProject>
+   </cac:ProcurementProjectLot>
+</ContractNotice>
