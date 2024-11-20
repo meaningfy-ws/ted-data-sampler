@@ -9,7 +9,7 @@ def detect_and_save_eforms_notices_path(all_notices_path: Path, output_notices_f
     assert output_notices_files_path.is_file()
 
 
-    notices_paths = [Path(notice) for notice in output_notices_files_path.rglob("*.xml")]
+    notices_paths = [Path(notice) for notice in all_notices_path.rglob("*.xml")]
     eform_notice_paths: List[str] = []
     for notice_path in tqdm(notices_paths):
 
