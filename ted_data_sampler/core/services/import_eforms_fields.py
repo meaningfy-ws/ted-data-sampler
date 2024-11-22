@@ -1,10 +1,9 @@
 import hashlib
 import json
-import sys
 import tempfile
 from logging import Logger
 from pathlib import Path
-from typing import Optional, List
+from typing import Optional, List, Set
 
 from pydantic import BaseModel, Field
 
@@ -69,6 +68,12 @@ def extract_xpaths_from_eforms_fields(eforms_sdk_fields: EFormsSDKFields) -> Lis
     return [field.xpath_absolute for field in eforms_sdk_fields.fields]
 
 
+def extract_distinct_xpaths_for_fields_and_nodes_from_eforms_sdk_elements(eforms_sdk_fields: EFormsSDKFields) -> Set[str]:
+    field_xpaths = [field.xpath_absolute for field in eforms_sdk_fields.fields]
+    nodes_xpaths = [node.xpath_absolute for node in eforms_sdk_fields.xml_structure]
+    return set(field_xpaths + nodes_xpaths)
+
+
 def import_eforms_fields_from_folder(eforms_fields_folder_path: Path) -> EFormsSDKFields:
     notice_types_dir_path: Path = eforms_fields_folder_path / NOTICE_TYPES_PATH_NAME
     fields_dir_path: Path = eforms_fields_folder_path / FIELDS_PATH_NAME
@@ -107,7 +112,7 @@ def extract_xpaths_by_sdk_version(sdk_version: str) -> List[str]:
         branch_or_tag_name=sdk_version
     )
 
-    xpaths: List[str] = extract_xpaths_from_eforms_fields(eforms_sdk_fields=eforms_sdk_fields)
+    xpaths: List[str] = list(extract_distinct_xpaths_for_fields_and_nodes_from_eforms_sdk_elements(eforms_sdk_fields=eforms_sdk_fields))
     import_logger.info(f"Nr of extracted xpaths from SDK version {sdk_version}: {len(xpaths)}")
     return xpaths
 
