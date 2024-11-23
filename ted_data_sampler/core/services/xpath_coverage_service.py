@@ -26,9 +26,7 @@ def detect_uncovered_xpaths_of_sdk_from_stored_notices(sdk_version: str, xpaths:
         for xpath in uncovered_xpaths:
             try:
                 validator_result = xpath_validator.validate(xpath)
-            except Exception as e:
-                logger.error(f"Error on xpath validation. Notice: {notice_path.name}. xpath: {xpath} Error:{e}")
-                logger.error(f"Skipping notice: {notice_path.name}")
+            except Exception: #TODO: Temporary solution
                 break
             if len(validator_result) > 0:
                 uncovered_xpaths.remove(xpath)
