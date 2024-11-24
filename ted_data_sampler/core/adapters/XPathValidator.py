@@ -62,7 +62,7 @@ class XPATHValidator(TestDataValidator):
             result: PyXdmValue = self.xqp.run_query_to_value()
             return str(result) == 'true'
         except PySaxonApiError as e:
-            self.logger.error(f"check_xpath_condition exception error: {e}")
+            #self.logger.error(f"check_xpath_condition exception error: {e}")
             return False
 
     def get_ns_tag(self, node: PyXdmNode) -> Union[str, None]:
@@ -130,7 +130,7 @@ class XPATHValidator(TestDataValidator):
         try:
             return self.xpp.evaluate(xpath_expression)
         except Exception as e:
-            self.logger.error(f"Error on check_xpath_expression: {e}")
+            #self.logger.error(f"Error on check_xpath_expression: {e}")
             return None
 
     def get_unique_xpaths(self, xpath_expression) -> List[XPathAssertionEntry]:
