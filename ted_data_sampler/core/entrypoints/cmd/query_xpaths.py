@@ -36,9 +36,10 @@ def main():
     logger: Logger = setup_logger([sys.stdout])
 
     try:
-        query_notices_with_given_xpaths(xpaths=xpaths_file.read_text().splitlines(),
-                                        notice_paths=[Path(notice_path_str) for notice_path_str in notices_file_path.read_text().splitlines()],
-                                        logger=logger)
+        result = query_notices_with_given_xpaths(xpaths=xpaths_file.read_text().splitlines(),
+                                                 notice_paths=[Path(notice_path_str) for notice_path_str in notices_file_path.read_text().splitlines()],
+                                                 logger=logger)
+        output_file_path.write_text(str(result))
     except Exception as e:
         logger.error(e)
         raise QueryXPathsException(e)
