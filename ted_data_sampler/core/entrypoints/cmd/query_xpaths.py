@@ -21,7 +21,7 @@ def main():
 
     args = parser.parse_args()
     output_file_path = Path(args.output_file)
-    notices_file_path = Path(args.notices_folder)
+    notices_file_path = Path(args.notices_file_list)
     xpaths_file = Path(args.xpaths_file)
 
     if not output_file_path.is_file():
