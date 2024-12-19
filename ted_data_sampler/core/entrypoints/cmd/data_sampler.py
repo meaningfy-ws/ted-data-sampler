@@ -30,7 +30,7 @@ def main():
     notice_source = args.notice_source
 
     if not output_file_path.is_dir():
-        raise DataSamplerException(f"Folder {output_file_path} does not exist")
+        raise DataSamplerException(f"File {output_file_path} does not exist")
 
     if not dot_env_file_path.is_file():
         raise DataSamplerException(f"File {dot_env_file_path} does not exist")

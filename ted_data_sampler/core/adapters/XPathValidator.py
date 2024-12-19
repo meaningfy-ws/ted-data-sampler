@@ -11,10 +11,8 @@ from saxonche import PySaxonProcessor, PySaxonApiError, PyXPathProcessor, PyXdmN
 
 
 
-class TestDataValidator(abc.ABC, BaseModel):
+class ValidatorABC(abc.ABC, BaseModel):
     """Base class for validators."""
-
-    #model_config = DEFAULT_MODEL_CONFIG
 
     @abc.abstractmethod
     def validate(self, value: Any) -> Any:
@@ -29,7 +27,7 @@ class XPathAssertionEntry(BaseModel):
     xpath: Optional[str] = None
     value: Optional[str] = None
 
-class XPATHValidator(TestDataValidator):
+class XPATHValidator(ValidatorABC):
     """
     """
 
@@ -40,7 +38,6 @@ class XPATHValidator(TestDataValidator):
     prefixes: Any = None
     DEFAULT_XML_NS_PREFIX: str = ''
     logger: Optional[Any] = None
-
 
     def __init__(self, xml_content, logger: Logger, **data: Any):
         super().__init__(**data)

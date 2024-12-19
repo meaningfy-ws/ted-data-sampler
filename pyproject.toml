@@ -15,6 +15,7 @@ numpy = "<2.0.0"
 ted-sws = { git = "https://github.com/OP-TED/ted-rdf-conversion-pipeline.git", rev = "2.0.0-rc.4" }
 tqdm = "^4.67.0"
 pydantic = "^1.9.0"
+pytest = "^8.3.4"
 
 [tool.poetry.scripts]
 data-sampler-cli = "ted_data_sampler.core.entrypoints.cmd.data_sampler:main"

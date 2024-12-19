@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><ContractAwardNotice xmlns="urn:oasis:names:specification:ubl:schema:xsd:ContractAwardNotice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:efac="http://data.europa.eu/p27/eforms-ubl-extension-aggregate-components/1" xmlns:efbc="http://data.europa.eu/p27/eforms-ubl-extension-basic-components/1" xmlns:efext="http://data.europa.eu/p27/eforms-ubl-extensions/1" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ContractAwardNotice xmlns="urn:oasis:names:specification:ubl:schema:xsd:ContractAwardNotice-2"
+                     xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                     xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                     xmlns:efac="http://data.europa.eu/p27/eforms-ubl-extension-aggregate-components/1"
+                     xmlns:efbc="http://data.europa.eu/p27/eforms-ubl-extension-basic-components/1"
+                     xmlns:efext="http://data.europa.eu/p27/eforms-ubl-extensions/1"
+                     xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2">
     <ext:UBLExtensions>
         <ext:UBLExtension>
             <ext:ExtensionContent>
@@ -11,28 +18,28 @@
                             <cbc:LowerTenderAmount currencyID="EUR">426405.71</cbc:LowerTenderAmount>
                             <cbc:TenderResultCode listName="winner-selection-status">selec-w</cbc:TenderResultCode>
                             <efac:AppealRequestsStatistics>
-<efbc:StatisticsNumeric>0</efbc:StatisticsNumeric>
+                                <efbc:StatisticsNumeric>0</efbc:StatisticsNumeric>
                             </efac:AppealRequestsStatistics>
                             <efac:LotTender>
-<cbc:ID schemeName="tender">TEN-0001</cbc:ID>
+                                <cbc:ID schemeName="tender">TEN-0001</cbc:ID>
                             </efac:LotTender>
                             <efac:ReceivedSubmissionsStatistics>
-<efbc:StatisticsCode listName="received-submission-type">t-esubm</efbc:StatisticsCode>
-<efbc:StatisticsNumeric>1</efbc:StatisticsNumeric>
+                                <efbc:StatisticsCode listName="received-submission-type">t-esubm</efbc:StatisticsCode>
+                                <efbc:StatisticsNumeric>1</efbc:StatisticsNumeric>
                             </efac:ReceivedSubmissionsStatistics>
                             <efac:ReceivedSubmissionsStatistics>
-<efbc:StatisticsCode listName="received-submission-type">t-sme</efbc:StatisticsCode>
-<efbc:StatisticsNumeric>0</efbc:StatisticsNumeric>
+                                <efbc:StatisticsCode listName="received-submission-type">t-sme</efbc:StatisticsCode>
+                                <efbc:StatisticsNumeric>0</efbc:StatisticsNumeric>
                             </efac:ReceivedSubmissionsStatistics>
                             <efac:ReceivedSubmissionsStatistics>
-<efbc:StatisticsCode listName="received-submission-type">tenders</efbc:StatisticsCode>
-<efbc:StatisticsNumeric>1</efbc:StatisticsNumeric>
+                                <efbc:StatisticsCode listName="received-submission-type">tenders</efbc:StatisticsCode>
+                                <efbc:StatisticsNumeric>1</efbc:StatisticsNumeric>
                             </efac:ReceivedSubmissionsStatistics>
                             <efac:SettledContract>
-<cbc:ID schemeName="contract">CON-0001</cbc:ID>
+                                <cbc:ID schemeName="contract">CON-0001</cbc:ID>
                             </efac:SettledContract>
                             <efac:TenderLot>
-<cbc:ID schemeName="Lot">LOT-0001</cbc:ID>
+                                <cbc:ID schemeName="Lot">LOT-0001</cbc:ID>
                             </efac:TenderLot>
                         </efac:LotResult>
                         <efac:LotResult>
@@ -41,66 +48,66 @@
                             <cbc:LowerTenderAmount currencyID="EUR">80887.75</cbc:LowerTenderAmount>
                             <cbc:TenderResultCode listName="winner-selection-status">selec-w</cbc:TenderResultCode>
                             <efac:AppealRequestsStatistics>
-<efbc:StatisticsNumeric>0</efbc:StatisticsNumeric>
+                                <efbc:StatisticsNumeric>0</efbc:StatisticsNumeric>
                             </efac:AppealRequestsStatistics>
                             <efac:LotTender>
-<cbc:ID schemeName="tender">TEN-0002</cbc:ID>
+                                <cbc:ID schemeName="tender">TEN-0002</cbc:ID>
                             </efac:LotTender>
                             <efac:ReceivedSubmissionsStatistics>
-<efbc:StatisticsCode listName="received-submission-type">t-esubm</efbc:StatisticsCode>
-<efbc:StatisticsNumeric>1</efbc:StatisticsNumeric>
+                                <efbc:StatisticsCode listName="received-submission-type">t-esubm</efbc:StatisticsCode>
+                                <efbc:StatisticsNumeric>1</efbc:StatisticsNumeric>
                             </efac:ReceivedSubmissionsStatistics>
                             <efac:ReceivedSubmissionsStatistics>
-<efbc:StatisticsCode listName="received-submission-type">t-sme</efbc:StatisticsCode>
-<efbc:StatisticsNumeric>0</efbc:StatisticsNumeric>
+                                <efbc:StatisticsCode listName="received-submission-type">t-sme</efbc:StatisticsCode>
+                                <efbc:StatisticsNumeric>0</efbc:StatisticsNumeric>
                             </efac:ReceivedSubmissionsStatistics>
                             <efac:ReceivedSubmissionsStatistics>
-<efbc:StatisticsCode listName="received-submission-type">tenders</efbc:StatisticsCode>
-<efbc:StatisticsNumeric>1</efbc:StatisticsNumeric>
+                                <efbc:StatisticsCode listName="received-submission-type">tenders</efbc:StatisticsCode>
+                                <efbc:StatisticsNumeric>1</efbc:StatisticsNumeric>
                             </efac:ReceivedSubmissionsStatistics>
                             <efac:SettledContract>
-<cbc:ID schemeName="contract">CON-0002</cbc:ID>
+                                <cbc:ID schemeName="contract">CON-0002</cbc:ID>
                             </efac:SettledContract>
                             <efac:TenderLot>
-<cbc:ID schemeName="Lot">LOT-0002</cbc:ID>
+                                <cbc:ID schemeName="Lot">LOT-0002</cbc:ID>
                             </efac:TenderLot>
                         </efac:LotResult>
                         <efac:LotTender>
                             <cbc:ID schemeName="tender">TEN-0001</cbc:ID>
                             <efbc:TenderRankedIndicator>false</efbc:TenderRankedIndicator>
                             <cac:LegalMonetaryTotal>
-<cbc:PayableAmount currencyID="EUR">515950.91</cbc:PayableAmount>
+                                <cbc:PayableAmount currencyID="EUR">515950.91</cbc:PayableAmount>
                             </cac:LegalMonetaryTotal>
                             <efac:SubcontractingTerm>
-<efbc:TermCode listName="applicability">no</efbc:TermCode>
+                                <efbc:TermCode listName="applicability">no</efbc:TermCode>
                             </efac:SubcontractingTerm>
                             <efac:TenderingParty>
-<cbc:ID schemeName="tendering-party">TPA-0001</cbc:ID>
+                                <cbc:ID schemeName="tendering-party">TPA-0001</cbc:ID>
                             </efac:TenderingParty>
                             <efac:TenderLot>
-<cbc:ID>LOT-0001</cbc:ID>
+                                <cbc:ID>LOT-0001</cbc:ID>
                             </efac:TenderLot>
                             <efac:TenderReference>
-<cbc:ID>REF TEN-0001/LOT-0001</cbc:ID>
+                                <cbc:ID>REF TEN-0001/LOT-0001</cbc:ID>
                             </efac:TenderReference>
                         </efac:LotTender>
                         <efac:LotTender>
                             <cbc:ID schemeName="tender">TEN-0002</cbc:ID>
                             <efbc:TenderRankedIndicator>false</efbc:TenderRankedIndicator>
                             <cac:LegalMonetaryTotal>
-<cbc:PayableAmount currencyID="EUR">97874.18</cbc:PayableAmount>
+                                <cbc:PayableAmount currencyID="EUR">97874.18</cbc:PayableAmount>
                             </cac:LegalMonetaryTotal>
                             <efac:SubcontractingTerm>
-<efbc:TermCode listName="applicability">no</efbc:TermCode>
+                                <efbc:TermCode listName="applicability">no</efbc:TermCode>
                             </efac:SubcontractingTerm>
                             <efac:TenderingParty>
-<cbc:ID schemeName="tendering-party">TPA-0002</cbc:ID>
+                                <cbc:ID schemeName="tendering-party">TPA-0002</cbc:ID>
                             </efac:TenderingParty>
                             <efac:TenderLot>
-<cbc:ID>LOT-0002</cbc:ID>
+                                <cbc:ID>LOT-0002</cbc:ID>
                             </efac:TenderLot>
                             <efac:TenderReference>
-<cbc:ID>REF TEN-0002/LOT-0002</cbc:ID>
+                                <cbc:ID>REF TEN-0002/LOT-0002</cbc:ID>
                             </efac:TenderReference>
                         </efac:LotTender>
                         <efac:SettledContract>
@@ -109,10 +116,10 @@
                             <cbc:IssueDate>2024-07-19+02:00</cbc:IssueDate>
                             <efbc:ContractFrameworkIndicator>false</efbc:ContractFrameworkIndicator>
                             <efac:ContractReference>
-<cbc:ID>CONTPASARA1322024L1DSXO</cbc:ID>
+                                <cbc:ID>CONTPASARA1322024L1DSXO</cbc:ID>
                             </efac:ContractReference>
                             <efac:LotTender>
-<cbc:ID schemeName="tender">TEN-0001</cbc:ID>
+                                <cbc:ID schemeName="tender">TEN-0001</cbc:ID>
                             </efac:LotTender>
                         </efac:SettledContract>
                         <efac:SettledContract>
@@ -121,22 +128,22 @@
                             <cbc:IssueDate>2024-07-19+02:00</cbc:IssueDate>
                             <efbc:ContractFrameworkIndicator>false</efbc:ContractFrameworkIndicator>
                             <efac:ContractReference>
-<cbc:ID>CONTPASARA1322024L2DSXO</cbc:ID>
+                                <cbc:ID>CONTPASARA1322024L2DSXO</cbc:ID>
                             </efac:ContractReference>
                             <efac:LotTender>
-<cbc:ID schemeName="tender">TEN-0002</cbc:ID>
+                                <cbc:ID schemeName="tender">TEN-0002</cbc:ID>
                             </efac:LotTender>
                         </efac:SettledContract>
                         <efac:TenderingParty>
                             <cbc:ID schemeName="tendering-party">TPA-0001</cbc:ID>
                             <efac:Tenderer>
-<cbc:ID schemeName="organization">ORG-0002</cbc:ID>
+                                <cbc:ID schemeName="organization">ORG-0002</cbc:ID>
                             </efac:Tenderer>
                         </efac:TenderingParty>
                         <efac:TenderingParty>
                             <cbc:ID schemeName="tendering-party">TPA-0002</cbc:ID>
                             <efac:Tenderer>
-<cbc:ID schemeName="organization">ORG-0003</cbc:ID>
+                                <cbc:ID schemeName="organization">ORG-0003</cbc:ID>
                             </efac:Tenderer>
                         </efac:TenderingParty>
                     </efac:NoticeResult>
@@ -146,146 +153,156 @@
                     <efac:Organizations>
                         <efac:Organization>
                             <efac:Company>
-<cac:PartyIdentification>
-    <cbc:ID schemeName="organization">ORG-0001</cbc:ID>
-</cac:PartyIdentification>
-<cac:PartyName>
-    <cbc:Name languageID="SPA">Departamento de Salud de Xàtiva-Ontinyent. Dirección Económica-Gerencia</cbc:Name>
-</cac:PartyName>
-<cac:PostalAddress>
-    <cbc:AddressFormatCode>1</cbc:AddressFormatCode>
-    <cbc:CityName>Xátiva</cbc:CityName>
-    <cbc:PostalZone>46800</cbc:PostalZone>
-    <cbc:CountrySubentity>Valencia/València</cbc:CountrySubentity>
-    <cbc:CountrySubentityCode listName="nuts">ES523</cbc:CountrySubentityCode>
-    <cac:AddressLine>
-        <cbc:Line>Ctra. Xátiva-Silla, Km. 2</cbc:Line>
-    </cac:AddressLine>
-    <cac:Country>
-        <cbc:IdentificationCode name="country">ESP</cbc:IdentificationCode>
-        <cbc:Name>España</cbc:Name>
-    </cac:Country>
-</cac:PostalAddress>
-<cac:PartyLegalEntity>
-    <cbc:CompanyID schemeName="ID_PLATAFORMA">20922220135982</cbc:CompanyID>
-</cac:PartyLegalEntity>
-<cac:PartyLegalEntity>
-    <cbc:CompanyID schemeName="NIF">S4611001A</cbc:CompanyID>
-</cac:PartyLegalEntity>
-<cac:Contact>
-    <cbc:Name>Departamento de Salud de Xàtiva-Ontinyent. Dirección Económica-Gerencia</cbc:Name>
-    <cbc:Telephone>+34 962289369</cbc:Telephone>
-    <cbc:ElectronicMail>dsxo_contratacion@gva.es</cbc:ElectronicMail>
-</cac:Contact>
+                                <cac:PartyIdentification>
+                                    <cbc:ID schemeName="organization">ORG-0001</cbc:ID>
+                                </cac:PartyIdentification>
+                                <cac:PartyName>
+                                    <cbc:Name languageID="SPA">Departamento de Salud de Xàtiva-Ontinyent. Dirección
+                                        Económica-Gerencia
+                                    </cbc:Name>
+                                </cac:PartyName>
+                                <cac:PostalAddress>
+                                    <cbc:AddressFormatCode>1</cbc:AddressFormatCode>
+                                    <cbc:CityName>Xátiva</cbc:CityName>
+                                    <cbc:PostalZone>46800</cbc:PostalZone>
+                                    <cbc:CountrySubentity>Valencia/València</cbc:CountrySubentity>
+                                    <cbc:CountrySubentityCode listName="nuts">ES523</cbc:CountrySubentityCode>
+                                    <cac:AddressLine>
+                                        <cbc:Line>Ctra. Xátiva-Silla, Km. 2</cbc:Line>
+                                    </cac:AddressLine>
+                                    <cac:Country>
+                                        <cbc:IdentificationCode name="country">ESP</cbc:IdentificationCode>
+                                        <cbc:Name>España</cbc:Name>
+                                    </cac:Country>
+                                </cac:PostalAddress>
+                                <cac:PartyLegalEntity>
+                                    <cbc:CompanyID schemeName="ID_PLATAFORMA">20922220135982</cbc:CompanyID>
+                                </cac:PartyLegalEntity>
+                                <cac:PartyLegalEntity>
+                                    <cbc:CompanyID schemeName="NIF">S4611001A</cbc:CompanyID>
+                                </cac:PartyLegalEntity>
+                                <cac:Contact>
+                                    <cbc:Name>Departamento de Salud de Xàtiva-Ontinyent. Dirección Económica-Gerencia
+                                    </cbc:Name>
+                                    <cbc:Telephone>+34 962289369</cbc:Telephone>
+                                    <cbc:ElectronicMail>dsxo_contratacion@gva.es</cbc:ElectronicMail>
+                                </cac:Contact>
                             </efac:Company>
                             <efac:TouchPoint>
-<cac:PartyIdentification>
-    <cbc:ID>TPO-0001</cbc:ID>
-</cac:PartyIdentification>
-<cac:PartyName>
-    <cbc:Name languageID="SPA">En los lugares establecidos en el artículo 16.4 de la LEY 39/2015 de Procedimiento Administrativo Común de las Administraciones públicas y en el registro del órgano de contratación.</cbc:Name>
-</cac:PartyName>
-<cac:PostalAddress>
-    <cbc:AddressFormatCode>1</cbc:AddressFormatCode>
-    <cbc:CityName>Xàtiva</cbc:CityName>
-    <cbc:PostalZone>46800</cbc:PostalZone>
-    <cac:AddressLine>
-        <cbc:Line>Carretera Xàtiva Silla km 2</cbc:Line>
-    </cac:AddressLine>
-    <cac:Country>
-        <cbc:IdentificationCode name="country">ESP</cbc:IdentificationCode>
-        <cbc:Name>España</cbc:Name>
-    </cac:Country>
-</cac:PostalAddress>
-<cac:Contact>
-    <cbc:ElectronicMail>registregeneraldsxo@gva.es</cbc:ElectronicMail>
-</cac:Contact>
+                                <cac:PartyIdentification>
+                                    <cbc:ID>TPO-0001</cbc:ID>
+                                </cac:PartyIdentification>
+                                <cac:PartyName>
+                                    <cbc:Name languageID="SPA">En los lugares establecidos en el artículo 16.4 de la LEY
+                                        39/2015 de Procedimiento Administrativo Común de las Administraciones públicas y
+                                        en el registro del órgano de contratación.
+                                    </cbc:Name>
+                                </cac:PartyName>
+                                <cac:PostalAddress>
+                                    <cbc:AddressFormatCode>1</cbc:AddressFormatCode>
+                                    <cbc:CityName>Xàtiva</cbc:CityName>
+                                    <cbc:PostalZone>46800</cbc:PostalZone>
+                                    <cac:AddressLine>
+                                        <cbc:Line>Carretera Xàtiva Silla km 2</cbc:Line>
+                                    </cac:AddressLine>
+                                    <cac:Country>
+                                        <cbc:IdentificationCode name="country">ESP</cbc:IdentificationCode>
+                                        <cbc:Name>España</cbc:Name>
+                                    </cac:Country>
+                                </cac:PostalAddress>
+                                <cac:Contact>
+                                    <cbc:ElectronicMail>registregeneraldsxo@gva.es</cbc:ElectronicMail>
+                                </cac:Contact>
                             </efac:TouchPoint>
                         </efac:Organization>
                         <efac:Organization>
                             <efac:UltimateBeneficialOwner>
-<cbc:ID schemeName="ubo">UBO-0001</cbc:ID>
+                                <cbc:ID schemeName="ubo">UBO-0001</cbc:ID>
                             </efac:UltimateBeneficialOwner>
                             <efac:Company>
-<efbc:CompanySizeCode listName="economic-operator-size">large</efbc:CompanySizeCode>
-<cac:PartyIdentification>
-    <cbc:ID schemeName="organization">ORG-0002</cbc:ID>
-</cac:PartyIdentification>
-<cac:PartyName>
-    <cbc:Name languageID="SPA">OLYMPUS IBERIA S.A.U.</cbc:Name>
-</cac:PartyName>
-<cac:PostalAddress>
-    <cbc:CityName>HOSPITALET DE LLOBREGAT</cbc:CityName>
-    <cbc:PostalZone>08902</cbc:PostalZone>
-    <cac:AddressLine>
-        <cbc:Line>PLAZA EUROPA 10 2º</cbc:Line>
-    </cac:AddressLine>
-    <cac:Country>
-        <cbc:IdentificationCode name="country">ESP</cbc:IdentificationCode>
-        <cbc:Name>España</cbc:Name>
-    </cac:Country>
-</cac:PostalAddress>
-<cac:PartyLegalEntity>
-    <cbc:CompanyID schemeName="NIF">A08214157</cbc:CompanyID>
-</cac:PartyLegalEntity>
-<cac:Contact>
-    <cbc:Telephone>+034 933941327</cbc:Telephone>
-    <cbc:ElectronicMail>oib.concursos@olympus.es</cbc:ElectronicMail>
-</cac:Contact>
+                                <efbc:CompanySizeCode listName="economic-operator-size">large</efbc:CompanySizeCode>
+                                <cac:PartyIdentification>
+                                    <cbc:ID schemeName="organization">ORG-0002</cbc:ID>
+                                </cac:PartyIdentification>
+                                <cac:PartyName>
+                                    <cbc:Name languageID="SPA">OLYMPUS IBERIA S.A.U.</cbc:Name>
+                                </cac:PartyName>
+                                <cac:PostalAddress>
+                                    <cbc:CityName>HOSPITALET DE LLOBREGAT</cbc:CityName>
+                                    <cbc:PostalZone>08902</cbc:PostalZone>
+                                    <cac:AddressLine>
+                                        <cbc:Line>PLAZA EUROPA 10 2º</cbc:Line>
+                                    </cac:AddressLine>
+                                    <cac:Country>
+                                        <cbc:IdentificationCode name="country">ESP</cbc:IdentificationCode>
+                                        <cbc:Name>España</cbc:Name>
+                                    </cac:Country>
+                                </cac:PostalAddress>
+                                <cac:PartyLegalEntity>
+                                    <cbc:CompanyID schemeName="NIF">A08214157</cbc:CompanyID>
+                                </cac:PartyLegalEntity>
+                                <cac:Contact>
+                                    <cbc:Telephone>+034 933941327</cbc:Telephone>
+                                    <cbc:ElectronicMail>oib.concursos@olympus.es</cbc:ElectronicMail>
+                                </cac:Contact>
                             </efac:Company>
                         </efac:Organization>
                         <efac:Organization>
                             <efac:UltimateBeneficialOwner>
-<cbc:ID schemeName="ubo">UBO-0002</cbc:ID>
+                                <cbc:ID schemeName="ubo">UBO-0002</cbc:ID>
                             </efac:UltimateBeneficialOwner>
                             <efac:Company>
-<efbc:CompanySizeCode listName="economic-operator-size">large</efbc:CompanySizeCode>
-<cac:PartyIdentification>
-    <cbc:ID schemeName="organization">ORG-0003</cbc:ID>
-</cac:PartyIdentification>
-<cac:PartyName>
-    <cbc:Name languageID="SPA">OLYMPUS IBERIA S.A.U.</cbc:Name>
-</cac:PartyName>
-<cac:PostalAddress>
-    <cbc:CityName>HOSPITALET DE LLOBREGAT</cbc:CityName>
-    <cbc:PostalZone>08902</cbc:PostalZone>
-    <cac:AddressLine>
-        <cbc:Line>PLAZA EUROPA 10 2º</cbc:Line>
-    </cac:AddressLine>
-    <cac:Country>
-        <cbc:IdentificationCode name="country">ESP</cbc:IdentificationCode>
-        <cbc:Name>España</cbc:Name>
-    </cac:Country>
-</cac:PostalAddress>
-<cac:PartyLegalEntity>
-    <cbc:CompanyID schemeName="NIF">A08214157</cbc:CompanyID>
-</cac:PartyLegalEntity>
-<cac:Contact>
-    <cbc:Telephone>+034 933941327</cbc:Telephone>
-    <cbc:ElectronicMail>oib.concursos@olympus.es</cbc:ElectronicMail>
-</cac:Contact>
+                                <efbc:CompanySizeCode listName="economic-operator-size">large</efbc:CompanySizeCode>
+                                <cac:PartyIdentification>
+                                    <cbc:ID schemeName="organization">ORG-0003</cbc:ID>
+                                </cac:PartyIdentification>
+                                <cac:PartyName>
+                                    <cbc:Name languageID="SPA">OLYMPUS IBERIA S.A.U.</cbc:Name>
+                                </cac:PartyName>
+                                <cac:PostalAddress>
+                                    <cbc:CityName>HOSPITALET DE LLOBREGAT</cbc:CityName>
+                                    <cbc:PostalZone>08902</cbc:PostalZone>
+                                    <cac:AddressLine>
+                                        <cbc:Line>PLAZA EUROPA 10 2º</cbc:Line>
+                                    </cac:AddressLine>
+                                    <cac:Country>
+                                        <cbc:IdentificationCode name="country">ESP</cbc:IdentificationCode>
+                                        <cbc:Name>España</cbc:Name>
+                                    </cac:Country>
+                                </cac:PostalAddress>
+                                <cac:PartyLegalEntity>
+                                    <cbc:CompanyID schemeName="NIF">A08214157</cbc:CompanyID>
+                                </cac:PartyLegalEntity>
+                                <cac:Contact>
+                                    <cbc:Telephone>+034 933941327</cbc:Telephone>
+                                    <cbc:ElectronicMail>oib.concursos@olympus.es</cbc:ElectronicMail>
+                                </cac:Contact>
                             </efac:Company>
                         </efac:Organization>
                         <efac:UltimateBeneficialOwner>
                             <cbc:ID schemeName="ubo">UBO-0001</cbc:ID>
                             <efac:Nationality>
-<cbc:NationalityID>ESP</cbc:NationalityID>
+                                <cbc:NationalityID>ESP</cbc:NationalityID>
                             </efac:Nationality>
                         </efac:UltimateBeneficialOwner>
                         <efac:UltimateBeneficialOwner>
                             <cbc:ID schemeName="ubo">UBO-0002</cbc:ID>
                             <efac:Nationality>
-<cbc:NationalityID>ESP</cbc:NationalityID>
+                                <cbc:NationalityID>ESP</cbc:NationalityID>
                             </efac:Nationality>
                         </efac:UltimateBeneficialOwner>
                     </efac:Organizations>
-                <efac:Publication><efbc:NoticePublicationID schemeName="ojs-notice-id">00468603-2024</efbc:NoticePublicationID><efbc:GazetteID schemeName="ojs-id">151/2024</efbc:GazetteID><efbc:PublicationDate>2024-08-05+02:00</efbc:PublicationDate></efac:Publication></efext:EformsExtension>
+                    <efac:Publication>
+                        <efbc:NoticePublicationID schemeName="ojs-notice-id">00468603-2024</efbc:NoticePublicationID>
+                        <efbc:GazetteID schemeName="ojs-id">151/2024</efbc:GazetteID>
+                        <efbc:PublicationDate>2024-08-05+02:00</efbc:PublicationDate>
+                    </efac:Publication>
+                </efext:EformsExtension>
             </ext:ExtensionContent>
         </ext:UBLExtension>
     </ext:UBLExtensions>
     <cbc:UBLVersionID>2.3</cbc:UBLVersionID>
     <cbc:CustomizationID>eforms-sdk-1.7</cbc:CustomizationID>
-    <cbc:ID schemeName="notice-id">44c7b2fd-1304-4aba-b3d0-33509a139387</cbc:ID>
     <cbc:ContractFolderID>59288cbf-e59a-4eb8-bb07-e493eec70330</cbc:ContractFolderID>
     <cbc:IssueDate>2024-08-02+02:00</cbc:IssueDate>
     <cbc:IssueTime>14:13:42+02:00</cbc:IssueTime>
@@ -318,18 +335,26 @@
     </cac:TenderingProcess>
     <cac:ProcurementProject>
         <cbc:ID>PA SARA 132 2024</cbc:ID>
-        <cbc:Name languageID="SPA">Suministro e instalación de equipamiento sanitario, de diagnóstico y tratamiento de las áreas de Endoscopias y Neumología medioambientalmente sostenible del Hospital Lluís Alcanyís de Xàtiva del departamento de Salud Xàtiva-Ontinyent.</cbc:Name>
-        <cbc:Description languageID="SPA">Suministro e instalación de equipamiento sanitario, de diagnóstico y tratamiento de las áreas de Endoscopias y Neumología medioambientalmente sostenible del Hospital Lluís Alcanyís de Xàtiva del departamento de Salud Xàtiva-Ontinyent.&#13;
-&#13;
-Distribuido en 2 lotes, que serán desglosados y definidas sus características en el Pliego de Prescripciones Técnicas:&#13;
-LOTE 1 Suministro e instalación de equipamiento de gabinete de endoscopias. 1 torre de endoscopia completa con periféricos:&#13;
-1. Videogastroscopio HDTV. 3 UDS&#13;
-2. Videocolonoscopio HDTV. 3 UDS&#13;
-3. Videoduodenoscopio. 1 UD&#13;
-4. Videoecoendoscopio lineal. 1 UD&#13;
-LOTE 2 Suministro e instalación de gabinete de neumología&#13;
-1. Boncoscopio diagnóstico. 2 UDS&#13;
-2. Broncoscopio terapéutico. 1 UD</cbc:Description>
+        <cbc:Name languageID="SPA">Suministro e instalación de equipamiento sanitario, de diagnóstico y tratamiento de
+            las áreas de Endoscopias y Neumología medioambientalmente sostenible del Hospital Lluís Alcanyís de Xàtiva
+            del departamento de Salud Xàtiva-Ontinyent.
+        </cbc:Name>
+        <cbc:Description languageID="SPA">Suministro e instalación de equipamiento sanitario, de diagnóstico y
+            tratamiento de las áreas de Endoscopias y Neumología medioambientalmente sostenible del Hospital Lluís
+            Alcanyís de Xàtiva del departamento de Salud Xàtiva-Ontinyent.&#13;
+            &#13;
+            Distribuido en 2 lotes, que serán desglosados y definidas sus características en el Pliego de Prescripciones
+            Técnicas:&#13;
+            LOTE 1 Suministro e instalación de equipamiento de gabinete de endoscopias. 1 torre de endoscopia completa
+            con periféricos:&#13;
+            1. Videogastroscopio HDTV. 3 UDS&#13;
+            2. Videocolonoscopio HDTV. 3 UDS&#13;
+            3. Videoduodenoscopio. 1 UD&#13;
+            4. Videoecoendoscopio lineal. 1 UD&#13;
+            LOTE 2 Suministro e instalación de gabinete de neumología&#13;
+            1. Boncoscopio diagnóstico. 2 UDS&#13;
+            2. Broncoscopio terapéutico. 1 UD
+        </cbc:Description>
         <cbc:ProcurementTypeCode listName="contract-nature">supplies</cbc:ProcurementTypeCode>
         <cac:MainCommodityClassification>
             <cbc:ItemClassificationCode listName="cpv">33100000</cbc:ItemClassificationCode>
@@ -379,7 +404,7 @@ LOTE 2 Suministro e instalación de gabinete de neumología&#13;
                     <ext:ExtensionContent>
                         <efext:EformsExtension>
                             <efac:StrategicProcurement>
-<efbc:ApplicableLegalBasis listName="cvd-scope">false</efbc:ApplicableLegalBasis>
+                                <efbc:ApplicableLegalBasis listName="cvd-scope">false</efbc:ApplicableLegalBasis>
                             </efac:StrategicProcurement>
                         </efext:EformsExtension>
                     </ext:ExtensionContent>
@@ -391,114 +416,124 @@ LOTE 2 Suministro e instalación de gabinete de neumología&#13;
                     <cac:SubordinateAwardingCriterion>
                         <ext:UBLExtensions>
                             <ext:UBLExtension>
-<ext:ExtensionContent>
-    <efext:EformsExtension>
-        <efac:AwardCriterionParameter>
-            <efbc:ParameterCode listName="number-weight">poi-exa</efbc:ParameterCode>
-            <efbc:ParameterNumeric>29</efbc:ParameterNumeric>
-        </efac:AwardCriterionParameter>
-    </efext:EformsExtension>
-</ext:ExtensionContent>
+                                <ext:ExtensionContent>
+                                    <efext:EformsExtension>
+                                        <efac:AwardCriterionParameter>
+                                            <efbc:ParameterCode listName="number-weight">poi-exa</efbc:ParameterCode>
+                                            <efbc:ParameterNumeric>29</efbc:ParameterNumeric>
+                                        </efac:AwardCriterionParameter>
+                                    </efext:EformsExtension>
+                                </ext:ExtensionContent>
                             </ext:UBLExtension>
                         </ext:UBLExtensions>
-                        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">price</cbc:AwardingCriterionTypeCode>
-                        <cbc:Description languageID="SPA">orden 1. Oferta económica. </cbc:Description>
+                        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">price
+                        </cbc:AwardingCriterionTypeCode>
+                        <cbc:Description languageID="SPA">orden 1. Oferta económica.</cbc:Description>
                     </cac:SubordinateAwardingCriterion>
                     <cac:SubordinateAwardingCriterion>
                         <ext:UBLExtensions>
                             <ext:UBLExtension>
-<ext:ExtensionContent>
-    <efext:EformsExtension>
-        <efac:AwardCriterionParameter>
-            <efbc:ParameterCode listName="number-weight">poi-exa</efbc:ParameterCode>
-            <efbc:ParameterNumeric>10</efbc:ParameterNumeric>
-        </efac:AwardCriterionParameter>
-    </efext:EformsExtension>
-</ext:ExtensionContent>
+                                <ext:ExtensionContent>
+                                    <efext:EformsExtension>
+                                        <efac:AwardCriterionParameter>
+                                            <efbc:ParameterCode listName="number-weight">poi-exa</efbc:ParameterCode>
+                                            <efbc:ParameterNumeric>10</efbc:ParameterNumeric>
+                                        </efac:AwardCriterionParameter>
+                                    </efext:EformsExtension>
+                                </ext:ExtensionContent>
                             </ext:UBLExtension>
                         </ext:UBLExtensions>
-                        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality</cbc:AwardingCriterionTypeCode>
-                        <cbc:Description languageID="SPA">ORDEN 2. AMPLIACION GARANTIA CON MANTENIMIENTO FULL RISK. </cbc:Description>
+                        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality
+                        </cbc:AwardingCriterionTypeCode>
+                        <cbc:Description languageID="SPA">ORDEN 2. AMPLIACION GARANTIA CON MANTENIMIENTO FULL RISK.
+                        </cbc:Description>
                     </cac:SubordinateAwardingCriterion>
                     <cac:SubordinateAwardingCriterion>
                         <ext:UBLExtensions>
                             <ext:UBLExtension>
-<ext:ExtensionContent>
-    <efext:EformsExtension>
-        <efac:AwardCriterionParameter>
-            <efbc:ParameterCode listName="number-weight">poi-exa</efbc:ParameterCode>
-            <efbc:ParameterNumeric>21</efbc:ParameterNumeric>
-        </efac:AwardCriterionParameter>
-    </efext:EformsExtension>
-</ext:ExtensionContent>
+                                <ext:ExtensionContent>
+                                    <efext:EformsExtension>
+                                        <efac:AwardCriterionParameter>
+                                            <efbc:ParameterCode listName="number-weight">poi-exa</efbc:ParameterCode>
+                                            <efbc:ParameterNumeric>21</efbc:ParameterNumeric>
+                                        </efac:AwardCriterionParameter>
+                                    </efext:EformsExtension>
+                                </ext:ExtensionContent>
                             </ext:UBLExtension>
                         </ext:UBLExtensions>
-                        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality</cbc:AwardingCriterionTypeCode>
-                        <cbc:Description languageID="SPA">ORDEN 3. VALORACIÓN TÉCNICA. </cbc:Description>
+                        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality
+                        </cbc:AwardingCriterionTypeCode>
+                        <cbc:Description languageID="SPA">ORDEN 3. VALORACIÓN TÉCNICA.</cbc:Description>
                     </cac:SubordinateAwardingCriterion>
                     <cac:SubordinateAwardingCriterion>
                         <ext:UBLExtensions>
                             <ext:UBLExtension>
-<ext:ExtensionContent>
-    <efext:EformsExtension>
-        <efac:AwardCriterionParameter>
-            <efbc:ParameterCode listName="number-weight">poi-exa</efbc:ParameterCode>
-            <efbc:ParameterNumeric>30</efbc:ParameterNumeric>
-        </efac:AwardCriterionParameter>
-    </efext:EformsExtension>
-</ext:ExtensionContent>
+                                <ext:ExtensionContent>
+                                    <efext:EformsExtension>
+                                        <efac:AwardCriterionParameter>
+                                            <efbc:ParameterCode listName="number-weight">poi-exa</efbc:ParameterCode>
+                                            <efbc:ParameterNumeric>30</efbc:ParameterNumeric>
+                                        </efac:AwardCriterionParameter>
+                                    </efext:EformsExtension>
+                                </ext:ExtensionContent>
                             </ext:UBLExtension>
                         </ext:UBLExtensions>
-                        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality</cbc:AwardingCriterionTypeCode>
-                        <cbc:Description languageID="SPA">ORDEN 4. Presentación y compromiso de implantación de un plan o programa de calidad ambiental relativo a los trabajos objeto del contrato.. </cbc:Description>
+                        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality
+                        </cbc:AwardingCriterionTypeCode>
+                        <cbc:Description languageID="SPA">ORDEN 4. Presentación y compromiso de implantación de un plan
+                            o programa de calidad ambiental relativo a los trabajos objeto del contrato..
+                        </cbc:Description>
                     </cac:SubordinateAwardingCriterion>
                     <cac:SubordinateAwardingCriterion>
                         <ext:UBLExtensions>
                             <ext:UBLExtension>
-<ext:ExtensionContent>
-    <efext:EformsExtension>
-        <efac:AwardCriterionParameter>
-            <efbc:ParameterCode listName="number-weight">poi-exa</efbc:ParameterCode>
-            <efbc:ParameterNumeric>3.33</efbc:ParameterNumeric>
-        </efac:AwardCriterionParameter>
-    </efext:EformsExtension>
-</ext:ExtensionContent>
+                                <ext:ExtensionContent>
+                                    <efext:EformsExtension>
+                                        <efac:AwardCriterionParameter>
+                                            <efbc:ParameterCode listName="number-weight">poi-exa</efbc:ParameterCode>
+                                            <efbc:ParameterNumeric>3.33</efbc:ParameterNumeric>
+                                        </efac:AwardCriterionParameter>
+                                    </efext:EformsExtension>
+                                </ext:ExtensionContent>
                             </ext:UBLExtension>
                         </ext:UBLExtensions>
-                        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality</cbc:AwardingCriterionTypeCode>
-                        <cbc:Description languageID="SPA">ORDEN 5. Facilidad de uso. </cbc:Description>
+                        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality
+                        </cbc:AwardingCriterionTypeCode>
+                        <cbc:Description languageID="SPA">ORDEN 5. Facilidad de uso.</cbc:Description>
                     </cac:SubordinateAwardingCriterion>
                     <cac:SubordinateAwardingCriterion>
                         <ext:UBLExtensions>
                             <ext:UBLExtension>
-<ext:ExtensionContent>
-    <efext:EformsExtension>
-        <efac:AwardCriterionParameter>
-            <efbc:ParameterCode listName="number-weight">poi-exa</efbc:ParameterCode>
-            <efbc:ParameterNumeric>3.33</efbc:ParameterNumeric>
-        </efac:AwardCriterionParameter>
-    </efext:EformsExtension>
-</ext:ExtensionContent>
+                                <ext:ExtensionContent>
+                                    <efext:EformsExtension>
+                                        <efac:AwardCriterionParameter>
+                                            <efbc:ParameterCode listName="number-weight">poi-exa</efbc:ParameterCode>
+                                            <efbc:ParameterNumeric>3.33</efbc:ParameterNumeric>
+                                        </efac:AwardCriterionParameter>
+                                    </efext:EformsExtension>
+                                </ext:ExtensionContent>
                             </ext:UBLExtension>
                         </ext:UBLExtensions>
-                        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality</cbc:AwardingCriterionTypeCode>
-                        <cbc:Description languageID="SPA">ORDEN 6. Ergonomía de los mandos. </cbc:Description>
+                        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality
+                        </cbc:AwardingCriterionTypeCode>
+                        <cbc:Description languageID="SPA">ORDEN 6. Ergonomía de los mandos.</cbc:Description>
                     </cac:SubordinateAwardingCriterion>
                     <cac:SubordinateAwardingCriterion>
                         <ext:UBLExtensions>
                             <ext:UBLExtension>
-<ext:ExtensionContent>
-    <efext:EformsExtension>
-        <efac:AwardCriterionParameter>
-            <efbc:ParameterCode listName="number-weight">poi-exa</efbc:ParameterCode>
-            <efbc:ParameterNumeric>3.34</efbc:ParameterNumeric>
-        </efac:AwardCriterionParameter>
-    </efext:EformsExtension>
-</ext:ExtensionContent>
+                                <ext:ExtensionContent>
+                                    <efext:EformsExtension>
+                                        <efac:AwardCriterionParameter>
+                                            <efbc:ParameterCode listName="number-weight">poi-exa</efbc:ParameterCode>
+                                            <efbc:ParameterNumeric>3.34</efbc:ParameterNumeric>
+                                        </efac:AwardCriterionParameter>
+                                    </efext:EformsExtension>
+                                </ext:ExtensionContent>
                             </ext:UBLExtension>
                         </ext:UBLExtensions>
-                        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality</cbc:AwardingCriterionTypeCode>
-                        <cbc:Description languageID="SPA">ORDEN 7. Calidad de imagen percibida. </cbc:Description>
+                        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality
+                        </cbc:AwardingCriterionTypeCode>
+                        <cbc:Description languageID="SPA">ORDEN 7. Calidad de imagen percibida.</cbc:Description>
                     </cac:SubordinateAwardingCriterion>
                 </cac:AwardingCriterion>
             </cac:AwardingTerms>
@@ -524,13 +559,15 @@ LOTE 2 Suministro e instalación de gabinete de neumología&#13;
         </cac:TenderingProcess>
         <cac:ProcurementProject>
             <cbc:ID schemeName="ID_LOTE">1</cbc:ID>
-            <cbc:Name languageID="SPA">LOTE 1 Suministro e instalación de equipamiento gabinete de endoscopias</cbc:Name>
+            <cbc:Name languageID="SPA">LOTE 1 Suministro e instalación de equipamiento gabinete de endoscopias
+            </cbc:Name>
             <cbc:Description languageID="SPA">1. Videogastroscopio HDTV 3 UDS&#13;
-2. Videocolonoscopio HDTV 3 UDS&#13;
-3. Videoduodenoscopio 1 UD&#13;
-4. Videoecoendoscopio lineal 1 UD&#13;
-&#13;
-Ver anexo al PPT</cbc:Description>
+                2. Videocolonoscopio HDTV 3 UDS&#13;
+                3. Videoduodenoscopio 1 UD&#13;
+                4. Videoecoendoscopio lineal 1 UD&#13;
+                &#13;
+                Ver anexo al PPT
+            </cbc:Description>
             <cbc:ProcurementTypeCode listName="contract-nature">supplies</cbc:ProcurementTypeCode>
             <cac:ProcurementAdditionalType>
                 <cbc:ProcurementTypeCode listName="environmental-impact">other</cbc:ProcurementTypeCode>
@@ -602,7 +639,7 @@ Ver anexo al PPT</cbc:Description>
                     <ext:ExtensionContent>
                         <efext:EformsExtension>
                             <efac:StrategicProcurement>
-<efbc:ApplicableLegalBasis listName="cvd-scope">false</efbc:ApplicableLegalBasis>
+                                <efbc:ApplicableLegalBasis listName="cvd-scope">false</efbc:ApplicableLegalBasis>
                             </efac:StrategicProcurement>
                         </efext:EformsExtension>
                     </ext:ExtensionContent>
@@ -614,114 +651,124 @@ Ver anexo al PPT</cbc:Description>
                     <cac:SubordinateAwardingCriterion>
                         <ext:UBLExtensions>
                             <ext:UBLExtension>
-<ext:ExtensionContent>
-    <efext:EformsExtension>
-        <efac:AwardCriterionParameter>
-            <efbc:ParameterCode listName="number-weight">poi-exa</efbc:ParameterCode>
-            <efbc:ParameterNumeric>29</efbc:ParameterNumeric>
-        </efac:AwardCriterionParameter>
-    </efext:EformsExtension>
-</ext:ExtensionContent>
+                                <ext:ExtensionContent>
+                                    <efext:EformsExtension>
+                                        <efac:AwardCriterionParameter>
+                                            <efbc:ParameterCode listName="number-weight">poi-exa</efbc:ParameterCode>
+                                            <efbc:ParameterNumeric>29</efbc:ParameterNumeric>
+                                        </efac:AwardCriterionParameter>
+                                    </efext:EformsExtension>
+                                </ext:ExtensionContent>
                             </ext:UBLExtension>
                         </ext:UBLExtensions>
-                        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">price</cbc:AwardingCriterionTypeCode>
-                        <cbc:Description languageID="SPA">orden 1. Oferta económica. </cbc:Description>
+                        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">price
+                        </cbc:AwardingCriterionTypeCode>
+                        <cbc:Description languageID="SPA">orden 1. Oferta económica.</cbc:Description>
                     </cac:SubordinateAwardingCriterion>
                     <cac:SubordinateAwardingCriterion>
                         <ext:UBLExtensions>
                             <ext:UBLExtension>
-<ext:ExtensionContent>
-    <efext:EformsExtension>
-        <efac:AwardCriterionParameter>
-            <efbc:ParameterCode listName="number-weight">poi-exa</efbc:ParameterCode>
-            <efbc:ParameterNumeric>10</efbc:ParameterNumeric>
-        </efac:AwardCriterionParameter>
-    </efext:EformsExtension>
-</ext:ExtensionContent>
+                                <ext:ExtensionContent>
+                                    <efext:EformsExtension>
+                                        <efac:AwardCriterionParameter>
+                                            <efbc:ParameterCode listName="number-weight">poi-exa</efbc:ParameterCode>
+                                            <efbc:ParameterNumeric>10</efbc:ParameterNumeric>
+                                        </efac:AwardCriterionParameter>
+                                    </efext:EformsExtension>
+                                </ext:ExtensionContent>
                             </ext:UBLExtension>
                         </ext:UBLExtensions>
-                        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality</cbc:AwardingCriterionTypeCode>
-                        <cbc:Description languageID="SPA">ORDEN 2. AMPLIACION GARANTIA CON MANTENIMIENTO FULL RISK. </cbc:Description>
+                        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality
+                        </cbc:AwardingCriterionTypeCode>
+                        <cbc:Description languageID="SPA">ORDEN 2. AMPLIACION GARANTIA CON MANTENIMIENTO FULL RISK.
+                        </cbc:Description>
                     </cac:SubordinateAwardingCriterion>
                     <cac:SubordinateAwardingCriterion>
                         <ext:UBLExtensions>
                             <ext:UBLExtension>
-<ext:ExtensionContent>
-    <efext:EformsExtension>
-        <efac:AwardCriterionParameter>
-            <efbc:ParameterCode listName="number-weight">poi-exa</efbc:ParameterCode>
-            <efbc:ParameterNumeric>21</efbc:ParameterNumeric>
-        </efac:AwardCriterionParameter>
-    </efext:EformsExtension>
-</ext:ExtensionContent>
+                                <ext:ExtensionContent>
+                                    <efext:EformsExtension>
+                                        <efac:AwardCriterionParameter>
+                                            <efbc:ParameterCode listName="number-weight">poi-exa</efbc:ParameterCode>
+                                            <efbc:ParameterNumeric>21</efbc:ParameterNumeric>
+                                        </efac:AwardCriterionParameter>
+                                    </efext:EformsExtension>
+                                </ext:ExtensionContent>
                             </ext:UBLExtension>
                         </ext:UBLExtensions>
-                        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality</cbc:AwardingCriterionTypeCode>
-                        <cbc:Description languageID="SPA">ORDEN 3. VALORACIÓN TÉCNICA. </cbc:Description>
+                        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality
+                        </cbc:AwardingCriterionTypeCode>
+                        <cbc:Description languageID="SPA">ORDEN 3. VALORACIÓN TÉCNICA.</cbc:Description>
                     </cac:SubordinateAwardingCriterion>
                     <cac:SubordinateAwardingCriterion>
                         <ext:UBLExtensions>
                             <ext:UBLExtension>
-<ext:ExtensionContent>
-    <efext:EformsExtension>
-        <efac:AwardCriterionParameter>
-            <efbc:ParameterCode listName="number-weight">poi-exa</efbc:ParameterCode>
-            <efbc:ParameterNumeric>30</efbc:ParameterNumeric>
-        </efac:AwardCriterionParameter>
-    </efext:EformsExtension>
-</ext:ExtensionContent>
+                                <ext:ExtensionContent>
+                                    <efext:EformsExtension>
+                                        <efac:AwardCriterionParameter>
+                                            <efbc:ParameterCode listName="number-weight">poi-exa</efbc:ParameterCode>
+                                            <efbc:ParameterNumeric>30</efbc:ParameterNumeric>
+                                        </efac:AwardCriterionParameter>
+                                    </efext:EformsExtension>
+                                </ext:ExtensionContent>
                             </ext:UBLExtension>
                         </ext:UBLExtensions>
-                        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality</cbc:AwardingCriterionTypeCode>
-                        <cbc:Description languageID="SPA">ORDEN 4. Presentación y compromiso de implantación de un plan o programa de calidad ambiental relativo a los trabajos objeto del contrato.. </cbc:Description>
+                        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality
+                        </cbc:AwardingCriterionTypeCode>
+                        <cbc:Description languageID="SPA">ORDEN 4. Presentación y compromiso de implantación de un plan
+                            o programa de calidad ambiental relativo a los trabajos objeto del contrato..
+                        </cbc:Description>
                     </cac:SubordinateAwardingCriterion>
                     <cac:SubordinateAwardingCriterion>
                         <ext:UBLExtensions>
                             <ext:UBLExtension>
-<ext:ExtensionContent>
-    <efext:EformsExtension>
-        <efac:AwardCriterionParameter>
-            <efbc:ParameterCode listName="number-weight">poi-exa</efbc:ParameterCode>
-            <efbc:ParameterNumeric>3.33</efbc:ParameterNumeric>
-        </efac:AwardCriterionParameter>
-    </efext:EformsExtension>
-</ext:ExtensionContent>
+                                <ext:ExtensionContent>
+                                    <efext:EformsExtension>
+                                        <efac:AwardCriterionParameter>
+                                            <efbc:ParameterCode listName="number-weight">poi-exa</efbc:ParameterCode>
+                                            <efbc:ParameterNumeric>3.33</efbc:ParameterNumeric>
+                                        </efac:AwardCriterionParameter>
+                                    </efext:EformsExtension>
+                                </ext:ExtensionContent>
                             </ext:UBLExtension>
                         </ext:UBLExtensions>
-                        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality</cbc:AwardingCriterionTypeCode>
-                        <cbc:Description languageID="SPA">ORDEN 5. Facilidad de uso. </cbc:Description>
+                        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality
+                        </cbc:AwardingCriterionTypeCode>
+                        <cbc:Description languageID="SPA">ORDEN 5. Facilidad de uso.</cbc:Description>
                     </cac:SubordinateAwardingCriterion>
                     <cac:SubordinateAwardingCriterion>
                         <ext:UBLExtensions>
                             <ext:UBLExtension>
-<ext:ExtensionContent>
-    <efext:EformsExtension>
-        <efac:AwardCriterionParameter>
-            <efbc:ParameterCode listName="number-weight">poi-exa</efbc:ParameterCode>
-            <efbc:ParameterNumeric>3.33</efbc:ParameterNumeric>
-        </efac:AwardCriterionParameter>
-    </efext:EformsExtension>
-</ext:ExtensionContent>
+                                <ext:ExtensionContent>
+                                    <efext:EformsExtension>
+                                        <efac:AwardCriterionParameter>
+                                            <efbc:ParameterCode listName="number-weight">poi-exa</efbc:ParameterCode>
+                                            <efbc:ParameterNumeric>3.33</efbc:ParameterNumeric>
+                                        </efac:AwardCriterionParameter>
+                                    </efext:EformsExtension>
+                                </ext:ExtensionContent>
                             </ext:UBLExtension>
                         </ext:UBLExtensions>
-                        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality</cbc:AwardingCriterionTypeCode>
-                        <cbc:Description languageID="SPA">ORDEN 6. Ergonomía de los mandos. </cbc:Description>
+                        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality
+                        </cbc:AwardingCriterionTypeCode>
+                        <cbc:Description languageID="SPA">ORDEN 6. Ergonomía de los mandos.</cbc:Description>
                     </cac:SubordinateAwardingCriterion>
                     <cac:SubordinateAwardingCriterion>
                         <ext:UBLExtensions>
                             <ext:UBLExtension>
-<ext:ExtensionContent>
-    <efext:EformsExtension>
-        <efac:AwardCriterionParameter>
-            <efbc:ParameterCode listName="number-weight">poi-exa</efbc:ParameterCode>
-            <efbc:ParameterNumeric>3.34</efbc:ParameterNumeric>
-        </efac:AwardCriterionParameter>
-    </efext:EformsExtension>
-</ext:ExtensionContent>
+                                <ext:ExtensionContent>
+                                    <efext:EformsExtension>
+                                        <efac:AwardCriterionParameter>
+                                            <efbc:ParameterCode listName="number-weight">poi-exa</efbc:ParameterCode>
+                                            <efbc:ParameterNumeric>3.34</efbc:ParameterNumeric>
+                                        </efac:AwardCriterionParameter>
+                                    </efext:EformsExtension>
+                                </ext:ExtensionContent>
                             </ext:UBLExtension>
                         </ext:UBLExtensions>
-                        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality</cbc:AwardingCriterionTypeCode>
-                        <cbc:Description languageID="SPA">ORDEN 7. Calidad de imagen percibida. </cbc:Description>
+                        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality
+                        </cbc:AwardingCriterionTypeCode>
+                        <cbc:Description languageID="SPA">ORDEN 7. Calidad de imagen percibida.</cbc:Description>
                     </cac:SubordinateAwardingCriterion>
                 </cac:AwardingCriterion>
             </cac:AwardingTerms>
@@ -749,9 +796,10 @@ Ver anexo al PPT</cbc:Description>
             <cbc:ID schemeName="ID_LOTE">2</cbc:ID>
             <cbc:Name languageID="SPA">LOTE 2. Suministro e instalación de gabinete de neumología</cbc:Name>
             <cbc:Description languageID="SPA">1. Boncoscopio diagnóstico 2 UDS&#13;
-2. Broncoscopio terapéutico 1 UD&#13;
-&#13;
-Ver Anexo al PPT</cbc:Description>
+                2. Broncoscopio terapéutico 1 UD&#13;
+                &#13;
+                Ver Anexo al PPT
+            </cbc:Description>
             <cbc:ProcurementTypeCode listName="contract-nature">supplies</cbc:ProcurementTypeCode>
             <cac:ProcurementAdditionalType>
                 <cbc:ProcurementTypeCode listName="environmental-impact">other</cbc:ProcurementTypeCode>
