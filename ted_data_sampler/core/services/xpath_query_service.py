@@ -3,6 +3,7 @@ from pathlib import Path
 from typing import List
 
 from pydantic import BaseModel
+from tqdm import tqdm
 
 from ted_data_sampler.core.adapters.XPathValidator import XPATHValidator
 
@@ -38,7 +39,7 @@ class NoticeQuerySummary(BaseModel):
 def query_notices_with_given_xpaths(xpaths: List[str], notice_paths: List[Path], logger: Logger) -> NoticeQuerySummary:
     result = NoticeQuerySummary(xpaths=xpaths, notices_query_result=[])
 
-    for notice_path in notice_paths:
+    for notice_path in tqdm(notice_paths):
         xml_content = notice_path.read_text()
         xpath_validator = XPATHValidator(logger=logger, xml_content=xml_content)
         notice_result: NoticeQueryResult = NoticeQueryResult(file_path=notice_path, xpath_query_results=[],
