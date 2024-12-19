@@ -51,7 +51,7 @@ def query_notices_with_given_xpaths(xpaths: List[str], notice_paths: List[Path],
                 logger.error(e)
                 query_result = []
             else:
-                query_result: List[str] = [xpath_result.value for xpath_result in validate_result]
+                query_result: List[str] = [xpath_result.value or "[]" for xpath_result in validate_result]
             notice_result.xpath_query_results.append(XPathQueryResult(xpath=xpath, query_result=query_result))
 
         result.notices_query_result.append(notice_result)

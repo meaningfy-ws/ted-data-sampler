@@ -33,7 +33,7 @@ def main():
     if not xpaths_file.is_file():
         raise QueryXPathsException(f"File {xpaths_file} does not exist")
 
-    logger: Logger = setup_logger([sys.stdout])
+    logger: Logger = setup_logger([])
 
     try:
         result = query_notices_with_given_xpaths(xpaths=xpaths_file.read_text().splitlines(),
