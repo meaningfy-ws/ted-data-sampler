@@ -33,7 +33,7 @@ class NoticeQuerySummary(BaseModel):
     notices_query_result: List[NoticeQueryResult]
 
     def __str__(self):
-        return "{}\t{}\n{}".format("Notice", "\t".join(self.xpaths), "\n".join(str(self.notices_query_result)))
+        return "{}\t{}\n{}".format("Notice", "\t".join(self.xpaths), "\n".join(str(notice_query_result) for notice_query_result in self.notices_query_result))
 
 
 def query_notices_with_given_xpaths(xpaths: List[str], notice_paths: List[Path], logger: Logger) -> NoticeQuerySummary:
@@ -48,7 +48,6 @@ def query_notices_with_given_xpaths(xpaths: List[str], notice_paths: List[Path],
             try:
                 validate_result = xpath_validator.validate(xpath)
             except Exception as e:
-                logger.error(e)
                 query_result = []
             else:
                 query_result: List[str] = [xpath_result.value or "[]" for xpath_result in validate_result]
