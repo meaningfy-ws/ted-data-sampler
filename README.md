@@ -38,6 +38,28 @@ poetry run detect-eforms-cli
 poetry run query-xpaths-cli
 ```
 
+### Jupyter Notebooks
+
+The project includes Jupyter notebooks for interactive analysis:
+
+- `coverage.ipynb`: Analyze data coverage
+- `xpath_query.ipynb`: Query and analyze XPaths
+
+To run the notebooks:
+
+1. Start Jupyter Lab or Jupyter Notebook (either with Poetry or directly):
+```bash
+poetry run jupyter lab  # using Poetry
+# or
+poetry run jupyter notebook  # using Poetry
+# or
+jupyter lab  # direct
+# or 
+jupyter notebook  # direct
+```
+
+2. Navigate to the notebooks in the `ted_data_sampler/core/entrypoints/notebooks/` directory
+
 ## Development
 
 To activate the virtual environment:
