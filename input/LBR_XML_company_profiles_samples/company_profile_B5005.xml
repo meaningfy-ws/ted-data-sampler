@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns4:extract
+	xmlns="http://ver1.business.services.rcs.mj.etat.lu/basic/components"
+	xmlns:ns2="http://ver1.business.services.rcs.mj.etat.lu/aggregate/components"
+	xmlns:ns3="http://ver1.business.services.rcs.mj.etat.lu/extract/components"
+	xmlns:ns4="http://ver1.business.services.rcs.mj.etat.lu/extract"
+	xmlns:ns5="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+	xmlns:ns6="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+	<ns4:Branches>
+		<ns4:Branch>
+			<ns3:TradeNames>
+				<ns2:TradeName>
+					<TradeName>Constantin PSF</TradeName>
+				</ns2:TradeName>
+			</ns3:TradeNames>
+			<ns3:BusinessNames>
+				<ns2:BusinessName>
+					<TradeName>Constantin proident,</TradeName>
+				</ns2:BusinessName>
+			</ns3:BusinessNames>
+			<ns2:BranchAddress>
+				<BuildingNumber>1</BuildingNumber>
+				<StreetName>Houschterhaff</StreetName>
+				<PostalCode>9461</PostalCode>
+				<Locality>Nachtmanderscheid</Locality>
+				<ns2:Country>
+					<CountryCode>LUX</CountryCode>
+					<CountryName>Luxembourg</CountryName>
+				</ns2:Country>
+			</ns2:BranchAddress>
+			<ns3:Activities>
+				<IncompletePurpose>Incomplete</IncompletePurpose>
+				<Purpose>La société a pour objet le commerce et la fabrication de produits et de matériaux de construction de toute nature. Le tout directement ou indirectement, par voie de création de sociétés et groupements nouveaux, d'apport, de commandite, de souscription, d'achat de titres ou droits sociaux, de fusion, d'alliance, d'association en participation ou de prise ou de dation en location ou location-gérance de tous biens et autres droits. Et généralement toutes opérations industrielles, commerciales, financières, civiles, mobilières ou immobilières, pouvant se rattacher directement ou indirectement à l'un des objets visés ci-dessus ou à tous objets similaires ou connexes.</Purpose>
+			</ns3:Activities>
+			<CreationDate>1996-05-29</CreationDate>
+			<ns2:NaceCode>
+				<NaceNumber>TEST</NaceNumber>
+				<NaceLabel>TEST-NACE-UDEV_FR</NaceLabel>
+			</ns2:NaceCode>
+			<ns3:PermanentRepresentatives>
+				<ns2:Person>
+					<ns2:PersonDetail personType="DomesticMoralPerson">
+						<ns2:MoralPersonIdentity>
+							<MoralPersonIdentityIsRESA>true</MoralPersonIdentityIsRESA>
+							<RegistrationNumber>I52</RegistrationNumber>
+						</ns2:MoralPersonIdentity>
+					</ns2:PersonDetail>
+					<ns2:Mandate>
+						<ns2:MandateType>
+							<ns2:PersonType>
+								<PersonTypeCode>R</PersonTypeCode>
+								<PersonTypeLabel>Représentant permanent</PersonTypeLabel>
+							</ns2:PersonType>
+						</ns2:MandateType>
+					</ns2:Mandate>
+				</ns2:Person>
+			</ns3:PermanentRepresentatives>
+		</ns4:Branch>
+	</ns4:Branches>
+	<ns4:Header>
+		<Name>Denomination_Czech_Republic</Name>
+		<RegistrationNumber>B5005</RegistrationNumber>
+		<RegistrationDate>1996-05-29</RegistrationDate>
+		<ns2:NaceCode>
+			<NaceNumber>28.410</NaceNumber>
+			<NaceLabel>Fabrication de machines de formage des métaux</NaceLabel>
+		</ns2:NaceCode>
+	</ns4:Header>
+	<ns4:ForeignHeadOffice>
+		<ns2:ForeignMoralPerson>
+			<TradeName>Denomination_Czech_Republic</TradeName>
+			<RegistrationNumber>12375698</RegistrationNumber>
+			<ns2:LegalForm>
+				<LegalFormTitle>Succursale d'une personne morale de droit étranger</LegalFormTitle>
+			</ns2:LegalForm>
+			<ns2:ForeignLegalForm>
+				<LegalFormCode>Společnost s ručením omezeným</LegalFormCode>
+				<LegalFormTitle></LegalFormTitle>
+			</ns2:ForeignLegalForm>
+			<ns2:BusinessRegister>
+				<ns2:BusinessRegisterCountry>
+					<CountryCode>CZE</CountryCode>
+					<CountryName>Tchèque, République</CountryName>
+				</ns2:BusinessRegisterCountry>
+			</ns2:BusinessRegister>
+		</ns2:ForeignMoralPerson>
+		<ns3:AuthorizedCompanyRepresentatives>
+			<ns2:Person>
+				<ns2:PersonDetail personType="PhysicalPerson">
+					<ns2:PhysicalPersonIdentity>
+						<LastName>Test</LastName>
+						<FirstName>Charles</FirstName>
+					</ns2:PhysicalPersonIdentity>
+					<ns2:Address>
+						<BuildingNumber>1</BuildingNumber>
+						<StreetName>Ale Biergwee</StreetName>
+						<PostalCode>6586</PostalCode>
+						<Locality>Steinheim</Locality>
+						<ns2:Country>
+							<CountryCode>LUX</CountryCode>
+							<CountryName>Luxembourg</CountryName>
+						</ns2:Country>
+					</ns2:Address>
+				</ns2:PersonDetail>
+				<ns2:Mandate>
+					<ns2:MandateType>
+						<ns2:PersonType>
+							<PersonTypeCode>P</PersonTypeCode>
+							<PersonTypeLabel>Personne ayant le pouvoir d'engager la société</PersonTypeLabel>
+						</ns2:PersonType>
+					</ns2:MandateType>
+				</ns2:Mandate>
+			</ns2:Person>
+		</ns3:AuthorizedCompanyRepresentatives>
+		<ns2:NaceCode>
+			<NaceNumber>28.410</NaceNumber>
+			<NaceLabel>Fabrication de machines de formage des métaux</NaceLabel>
+		</ns2:NaceCode>
+	</ns4:ForeignHeadOffice>
+</ns4:extract>

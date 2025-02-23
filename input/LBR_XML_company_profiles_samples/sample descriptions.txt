@@ -1,0 +1,6 @@
+- B1201 : domestic SARL with a name, a translation of the name, a trade name and abbreviations of these, 3 partners (physical and legal persons), and which is in voluntary liquidation
+- B1212 : domestic SARL with two Luxembourgish branches, 3 partners and 8 administrators (physical and legal persons)
+- B1306 : domestic SA with a denunciation of the registered office, an authorization, 4 administrators and a merger/demerger
+- B516 : domestic SARL-S with 4 administrators (domestic, foreign and unregistered legal persons) and 2 daily management representatives
+- A5 : domestic merchant with two authorizations and a court ruling
+- B5005 : Luxembourgish branch of a foreign parent company

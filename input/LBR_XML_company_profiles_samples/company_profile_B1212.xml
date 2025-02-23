@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns4:extract
+	xmlns="http://ver1.business.services.rcs.mj.etat.lu/basic/components"
+	xmlns:ns2="http://ver1.business.services.rcs.mj.etat.lu/aggregate/components"
+	xmlns:ns3="http://ver1.business.services.rcs.mj.etat.lu/extract/components"
+	xmlns:ns4="http://ver1.business.services.rcs.mj.etat.lu/extract"
+	xmlns:ns5="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+	xmlns:ns6="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+	<ns4:Branches>
+		<ns4:Branch>
+			<ns3:TradeNames>
+				<ns2:TradeName>
+					<TradeName>Sébastien Coiffure SARL</TradeName>
+				</ns2:TradeName>
+			</ns3:TradeNames>
+			<ns2:BranchAddress>
+				<BuildingNumber>24A</BuildingNumber>
+				<StreetName>Grand-Rue</StreetName>
+				<PostalCode>9530</PostalCode>
+				<Locality>Wiltz</Locality>
+				<ns2:Country>
+					<CountryCode>LUX</CountryCode>
+					<CountryName>Luxembourg</CountryName>
+				</ns2:Country>
+			</ns2:BranchAddress>
+			<ns3:Activities>
+				<Purpose>La société a pour objet l'exploitation de vignobles, l'élaboration de vins, de vins mousseux  et crémants, la fabrication d'alcools, de liqueurs et de jus de fruits, l'import, 1'export et le commerce de boissons, d'articles d'épicerie, de produits de viande de longue conservation et de produits de la mer - fumés ou de longue conservation, de confiseries, de glaces préfabriquées, de souvenirs et d'articles de bimbeloterie, 1'exploitation d'un établissement d'hébergement et de restauration, l'exploitation d'une galerie d'art, l'organisation de manifestations gastronomiques et culturelles ainsi que toutes opérations industrielles, commerciales et financières qui s'y rattachent directement ou indirectement.  Elle peut s'intéresser par voie de création, de participation ou de fusion dans les entreprises de même nature ou se rapportant à son objet, soit dans le Grand-Duché soit à l'étranger.</Purpose>
+			</ns3:Activities>
+			<CreationDate>2004-11-23</CreationDate>
+			<ns3:PermanentRepresentatives>
+				<ns2:Person>
+					<ns2:PersonDetail personType="PhysicalPerson">
+						<ns2:PhysicalPersonIdentity>
+							<LastName>Spécimen</LastName>
+							<FirstName>Nick Robert</FirstName>
+						</ns2:PhysicalPersonIdentity>
+						<ns2:Address>
+							<BuildingNumber>28</BuildingNumber>
+							<StreetName>Maison</StreetName>
+							<PostalCode>6666</PostalCode>
+							<Locality>Givenich</Locality>
+							<ns2:Country>
+								<CountryCode>LUX</CountryCode>
+								<CountryName>Luxembourg</CountryName>
+							</ns2:Country>
+						</ns2:Address>
+					</ns2:PersonDetail>
+					<ns2:Mandate>
+						<ns2:MandateType>
+							<ns2:PersonType>
+								<PersonTypeCode>R</PersonTypeCode>
+								<PersonTypeLabel>Représentant permanent</PersonTypeLabel>
+							</ns2:PersonType>
+						</ns2:MandateType>
+					</ns2:Mandate>
+				</ns2:Person>
+			</ns3:PermanentRepresentatives>
+		</ns4:Branch>
+		<ns4:Branch>
+			<ns3:TradeNames>
+				<ns2:TradeName>
+					<TradeName>Agnès Inc. Sàrl</TradeName>
+				</ns2:TradeName>
+			</ns3:TradeNames>
+			<ns2:BranchAddress>
+				<BuildingNumber>13</BuildingNumber>
+				<StreetName>Am Eck</StreetName>
+				<PostalCode>7416</PostalCode>
+				<Locality>Brouch</Locality>
+				<ns2:Country>
+					<CountryCode>LUX</CountryCode>
+					<CountryName>Luxembourg</CountryName>
+				</ns2:Country>
+			</ns2:BranchAddress>
+			<ns3:Activities>
+				<Purpose>La société a pour objet le commerce et la représentation d'installations frigorifiques et électriques de climatisation, de ventilation et de régulation, d'installations sanitaires et de chauffage, la réalisation de travaux artisanaux et industriels ainsi que la maintenance et la gestion technique centralisée relatifs à ces installations. Elle peut prendre toutes participations et tous intérêts dans toutes sociétés et affaires luxembourgeoises ou étrangères, quel qu'en soit l'objet. Elle peut agir en tous pays, directement ou indirectement, pour son compte ou celui de tiers, soit seule, soit en association, participation, groupement ou société, avec toutes autres personnes ou sociétés et réaliser sous quelque forme que ce soit les opérations entrant dans son objet.</Purpose>
+			</ns3:Activities>
+			<CreationDate>2004-11-23</CreationDate>
+			<ns3:PermanentRepresentatives>
+				<ns2:Person>
+					<ns2:PersonDetail personType="PhysicalPerson">
+						<ns2:PhysicalPersonIdentity>
+							<LastName>Mustermann-Test</LastName>
+							<FirstName>Isabelle</FirstName>
+						</ns2:PhysicalPersonIdentity>
+						<ns2:Address>
+							<BuildingNumber>22</BuildingNumber>
+							<StreetName>Rue Millebaach</StreetName>
+							<PostalCode>8466</PostalCode>
+							<Locality>Eischen</Locality>
+							<ns2:Country>
+								<CountryCode>LUX</CountryCode>
+								<CountryName>Luxembourg</CountryName>
+							</ns2:Country>
+						</ns2:Address>
+					</ns2:PersonDetail>
+					<ns2:Mandate>
+						<ns2:MandateType>
+							<ns2:PersonType>
+								<PersonTypeCode>R</PersonTypeCode>
+								<PersonTypeLabel>Représentant permanent</PersonTypeLabel>
+							</ns2:PersonType>
+						</ns2:MandateType>
+					</ns2:Mandate>
+				</ns2:Person>
+			</ns3:PermanentRepresentatives>
+		</ns4:Branch>
+	</ns4:Branches>
+	<ns4:Header>
+		<Name>Marius Garage SARL</Name>
+		<RegistrationNumber>B1212</RegistrationNumber>
+		<ns2:LegalForm>
+			<LegalFormTitle>Société à responsabilité limitée</LegalFormTitle>
+		</ns2:LegalForm>
+		<RegistrationDate>2004-12-21</RegistrationDate>
+	</ns4:Header>
+	<ns4:HeadOffice>
+		<ns3:TradeNames>
+			<ns2:TradeName>
+				<TradeName>Marius Garage SARL</TradeName>
+			</ns2:TradeName>
+		</ns3:TradeNames>
+		<ns2:LegalForm>
+			<LegalFormTitle>Société à responsabilité limitée</LegalFormTitle>
+		</ns2:LegalForm>
+		<ns2:RegisteredOffice>
+			<ns2:Address>
+				<BuildingNumber>11</BuildingNumber>
+				<StreetName>Rue des Passeurs</StreetName>
+				<PostalCode>8811</PostalCode>
+				<Locality>Bilsdorf</Locality>
+				<ns2:Country>
+					<CountryCode>LUX</CountryCode>
+					<CountryName>Luxembourg</CountryName>
+				</ns2:Country>
+			</ns2:Address>
+		</ns2:RegisteredOffice>
+		<ns3:Purpose>
+			<Purpose>Gegenstand der Gesellschaft ist der Erwerb, die Entwicklung, die Verwaltung und Veräußerung von Immobilien. Die Gesellschaft kann Kredite aufnehmen und alle mit ihrem Gesellschaftszweck in direktem oder indirektem Zusammenhang stehenden Geschäfte durchführen.</Purpose>
+		</ns3:Purpose>
+		<ns3:ShareCapital>
+			<CapitalType>Fixe</CapitalType>
+			<Amount currencyID="USD">210000.00</Amount>
+			<ReleaseState>Total</ReleaseState>
+		</ns3:ShareCapital>
+		<CreationDate>2004-11-23</CreationDate>
+		<ns3:Duration>
+			<DurationType>Illimitée</DurationType>
+		</ns3:Duration>
+		<ns3:FinancialYear>
+			<ns2:FirstFinancialYear>
+				<FirstFinancialYearStartDate>2004-11-23</FirstFinancialYearStartDate>
+				<FirstFinancialYearEndDate>2004-12-31</FirstFinancialYearEndDate>
+			</ns2:FirstFinancialYear>
+			<ns2:FinancialYear>
+				<FinancialYearStartDate>01-01</FinancialYearStartDate>
+				<FinancialYearEndDate>12-31</FinancialYearEndDate>
+			</ns2:FinancialYear>
+		</ns3:FinancialYear>
+		<ns3:Partners>
+			<ns2:Person>
+				<ns2:PersonDetail personType="DomesticMoralPerson">
+					<ns2:MoralPersonIdentity>
+						<MoralPersonIdentityIsRESA>true</MoralPersonIdentityIsRESA>
+						<RegistrationNumber>B1350</RegistrationNumber>
+					</ns2:MoralPersonIdentity>
+				</ns2:PersonDetail>
+				<ns2:Mandate>
+					<ns2:MandateType>
+						<ns2:PersonType>
+							<PersonTypeCode>A</PersonTypeCode>
+							<PersonTypeLabel>Associé</PersonTypeLabel>
+						</ns2:PersonType>
+					</ns2:MandateType>
+				</ns2:Mandate>
+			</ns2:Person>
+			<ns2:Person>
+				<ns2:PersonDetail personType="DomesticMoralPerson">
+					<ns2:MoralPersonIdentity>
+						<MoralPersonIdentityIsRESA>true</MoralPersonIdentityIsRESA>
+						<RegistrationNumber>B1250</RegistrationNumber>
+					</ns2:MoralPersonIdentity>
+				</ns2:PersonDetail>
+				<ns2:Mandate>
+					<ns2:MandateType>
+						<ns2:PersonType>
+							<PersonTypeCode>A</PersonTypeCode>
+							<PersonTypeLabel>Associé</PersonTypeLabel>
+						</ns2:PersonType>
+					</ns2:MandateType>
+				</ns2:Mandate>
+			</ns2:Person>
+			<ns2:Person>
+				<ns2:PersonDetail personType="DomesticMoralPerson">
+					<ns2:MoralPersonIdentity>
+						<MoralPersonIdentityIsRESA>true</MoralPersonIdentityIsRESA>
+						<RegistrationNumber>B350</RegistrationNumber>
+					</ns2:MoralPersonIdentity>
+				</ns2:PersonDetail>
+				<ns2:Mandate>
+					<ns2:MandateType>
+						<ns2:PersonType>
+							<PersonTypeCode>A</PersonTypeCode>
+							<PersonTypeLabel>Associé</PersonTypeLabel>
+						</ns2:PersonType>
+					</ns2:MandateType>
+				</ns2:Mandate>
+			</ns2:Person>
+		</ns3:Partners>
+		<ns3:Administrators>
+			<StatutorySignatureRegime>La société se trouve engagée par la signature individuelle du délégué du conseil, et en cas de non-délégation par la signature de deux administrateurs.</StatutorySignatureRegime>
+			<ns2:Person>
+				<ns2:PersonDetail personType="ForeignMoralPerson">
+					<ns2:MoralPersonIdentity>
+						<TradeName>Denomination_Indonésie</TradeName>
+						<RegistrationNumber>A2545/2555/2522</RegistrationNumber>
+						<ns2:BusinessRegister/>
+					</ns2:MoralPersonIdentity>
+					<ns2:RegisteredOffice>
+						<ns2:Address>
+							<BuildingNumber>49</BuildingNumber>
+							<StreetName>chemin Hollow Ridge</StreetName>
+							<BuildingName>chemin</BuildingName>
+							<Floor>2</Floor>
+							<PostalCode>5509</PostalCode>
+							<Locality>Venustiano Carranza</Locality>
+							<ns2:Country>
+								<CountryCode>MX</CountryCode>
+								<CountryName/>
+							</ns2:Country>
+						</ns2:Address>
+					</ns2:RegisteredOffice>
+					<ns2:Representative>
+						<ns2:PhysicalPersonIdentity>
+							<LastName>Mustermann</LastName>
+							<FirstName>Fränk Joël Françis</FirstName>
+						</ns2:PhysicalPersonIdentity>
+						<ns2:Address>
+							<BuildingNumber>83035</BuildingNumber>
+							<StreetName>86 Walton Court</StreetName>
+							<BuildingName>Circle</BuildingName>
+							<Floor>5</Floor>
+							<PostalCode>341-0053</PostalCode>
+							<Locality>Yashio-shi</Locality>
+							<ns2:Country>
+								<CountryCode>JP</CountryCode>
+								<CountryName/>
+							</ns2:Country>
+						</ns2:Address>
+					</ns2:Representative>
+				</ns2:PersonDetail>
+				<ns2:Mandate>
+					<ns2:MandateDuration>
+						<MandateNominationDate>2015-10-18</MandateNominationDate>
+						<MandateDurationType>Déterminée</MandateDurationType>
+						<MandateEndDate>2050-10-18</MandateEndDate>
+					</ns2:MandateDuration>
+					<ns2:MandateType>
+						<ns2:PersonType>
+							<PersonTypeCode>G</PersonTypeCode>
+							<PersonTypeLabel>Administrateur - Gérant</PersonTypeLabel>
+						</ns2:PersonType>
+						<Function>Administrateur + président du conseil d'administration</Function>
+					</ns2:MandateType>
+				</ns2:Mandate>
+			</ns2:Person>
+			<ns2:Person>
+				<ns2:PersonDetail personType="ForeignMoralPerson">
+					<ns2:MoralPersonIdentity>
+						<TradeName>Denomination_Spain</TradeName>
+						<RegistrationNumber>635897465</RegistrationNumber>
+						<ns2:BusinessRegister/>
+					</ns2:MoralPersonIdentity>
+					<ns2:RegisteredOffice>
+						<ns2:Address>
+							<BuildingNumber>2</BuildingNumber>
+							<StreetName>rue Guy Fabre</StreetName>
+							<BuildingName>C</BuildingName>
+							<Floor>12</Floor>
+							<PostalCode>89885</PostalCode>
+							<Locality>Marseille</Locality>
+							<ns2:Country>
+								<CountryCode>FRA</CountryCode>
+								<CountryName>France</CountryName>
+							</ns2:Country>
+						</ns2:Address>
+					</ns2:RegisteredOffice>
+				</ns2:PersonDetail>
+				<ns2:Mandate>
+					<ns2:MandateDuration>
+						<MandateNominationDate>2020-01-01</MandateNominationDate>
+						<MandateDurationType>Déterminée</MandateDurationType>
+					</ns2:MandateDuration>
+					<ns2:MandateType>
+						<ns2:PersonType>
+							<PersonTypeCode>G</PersonTypeCode>
+							<PersonTypeLabel>Administrateur - Gérant</PersonTypeLabel>
+						</ns2:PersonType>
+						<Function>Directeur Général</Function>
+					</ns2:MandateType>
+				</ns2:Mandate>
+			</ns2:Person>
+			<ns2:Person>
+				<ns2:PersonDetail personType="UnregisteredMoralPerson">
+					<ns2:MoralPersonIdentity>
+						<TradeName>Dénomination Personne Morale Luxembourgeoise non inscrite 100</TradeName>
+					</ns2:MoralPersonIdentity>
+					<ns2:RegisteredOffice>
+						<ns2:Address>
+							<BuildingNumber>6</BuildingNumber>
+							<StreetName>A Pietert</StreetName>
+							<PostalCode>5480</PostalCode>
+							<Locality>Wormeldange</Locality>
+							<ns2:Country>
+								<CountryCode>LUX</CountryCode>
+								<CountryName>Luxembourg</CountryName>
+							</ns2:Country>
+						</ns2:Address>
+					</ns2:RegisteredOffice>
+				</ns2:PersonDetail>
+				<ns2:Mandate>
+					<ns2:MandateDuration>
+						<MandateNominationDate>2021-01-01</MandateNominationDate>
+						<MandateDurationType>Déterminée</MandateDurationType>
+						<MandateEndYear>2025</MandateEndYear>
+					</ns2:MandateDuration>
+					<ns2:MandateType>
+						<ns2:PersonType>
+							<PersonTypeCode>G</PersonTypeCode>
+							<PersonTypeLabel>Administrateur - Gérant</PersonTypeLabel>
+						</ns2:PersonType>
+						<Function>Gérant</Function>
+					</ns2:MandateType>
+				</ns2:Mandate>
+			</ns2:Person>
+			<ns2:Person>
+				<ns2:PersonDetail personType="PhysicalPerson">
+					<ns2:PhysicalPersonIdentity>
+						<LastName>Specimen</LastName>
+						<FirstName>Kevin</FirstName>
+					</ns2:PhysicalPersonIdentity>
+					<ns2:Address>
+						<BuildingNumber>8</BuildingNumber>
+						<StreetName>Maison</StreetName>
+						<PostalCode>6880</PostalCode>
+						<Locality>Weydig</Locality>
+						<ns2:Country>
+							<CountryCode>LUX</CountryCode>
+							<CountryName>Luxembourg</CountryName>
+						</ns2:Country>
+					</ns2:Address>
+				</ns2:PersonDetail>
+				<ns2:Mandate>
+					<ns2:MandateDuration>
+						<MandateNominationDate>2017-01-01</MandateNominationDate>
+						<MandateDurationType>Déterminée</MandateDurationType>
+					</ns2:MandateDuration>
+					<ns2:MandateType>
+						<ns2:PersonType>
+							<PersonTypeCode>G</PersonTypeCode>
+							<PersonTypeLabel>Administrateur - Gérant</PersonTypeLabel>
+						</ns2:PersonType>
+						<Function>Gérant</Function>
+					</ns2:MandateType>
+				</ns2:Mandate>
+			</ns2:Person>
+			<ns2:Person>
+				<ns2:PersonDetail personType="ForeignMoralPerson">
+					<ns2:MoralPersonIdentity>
+						<TradeName>Denomination_Czech_Republic</TradeName>
+						<RegistrationNumber>12375698</RegistrationNumber>
+						<ns2:BusinessRegister>
+							<ns2:BusinessRegisterCountry>
+								<CountryCode>CZE</CountryCode>
+								<CountryName>Tchèque, République</CountryName>
+							</ns2:BusinessRegisterCountry>
+						</ns2:BusinessRegister>
+					</ns2:MoralPersonIdentity>
+					<ns2:RegisteredOffice>
+						<ns2:Address>
+							<BuildingNumber>40</BuildingNumber>
+							<StreetName>chemin Bay</StreetName>
+							<BuildingName>chemin</BuildingName>
+							<Floor>15</Floor>
+							<PostalCode>95479 CEDEX</PostalCode>
+							<Locality>Airdrie</Locality>
+							<ns2:Country>
+								<CountryCode>CA</CountryCode>
+								<CountryName/>
+							</ns2:Country>
+						</ns2:Address>
+					</ns2:RegisteredOffice>
+					<ns2:Representative>
+						<ns2:PhysicalPersonIdentity>
+							<LastName>Mustermann</LastName>
+							<FirstName>Fränk Joël Françis</FirstName>
+						</ns2:PhysicalPersonIdentity>
+						<ns2:Address>
+							<BuildingNumber>83035</BuildingNumber>
+							<StreetName>86 Walton Court</StreetName>
+							<BuildingName>Circle</BuildingName>
+							<Floor>5</Floor>
+							<PostalCode>341-0053</PostalCode>
+							<Locality>Yashio-shi</Locality>
+							<ns2:Country>
+								<CountryCode>JP</CountryCode>
+								<CountryName/>
+							</ns2:Country>
+						</ns2:Address>
+					</ns2:Representative>
+				</ns2:PersonDetail>
+				<ns2:Mandate>
+					<ns2:MandateDuration>
+						<MandateNominationDate>2022-01-01</MandateNominationDate>
+						<MandateDurationType>Déterminée</MandateDurationType>
+						<MandateEndYear>2030</MandateEndYear>
+					</ns2:MandateDuration>
+					<ns2:MandateType>
+						<ns2:PersonType>
+							<PersonTypeCode>G</PersonTypeCode>
+							<PersonTypeLabel>Administrateur - Gérant</PersonTypeLabel>
+						</ns2:PersonType>
+						<CorporateBody>Conseil 1</CorporateBody>
+						<Function>Administrateur et Président du Conseil d'administration</Function>
+					</ns2:MandateType>
+				</ns2:Mandate>
+			</ns2:Person>
+			<ns2:Person>
+				<ns2:PersonDetail personType="UnregisteredMoralPerson">
+					<ns2:MoralPersonIdentity>
+						<TradeName>Dénomination Personne Morale Luxembourgeoise non inscrite 27</TradeName>
+					</ns2:MoralPersonIdentity>
+					<ns2:RegisteredOffice>
+						<ns2:Address>
+							<BuildingNumber>1</BuildingNumber>
+							<StreetName>Wolkegruewen</StreetName>
+							<PostalCode>5485</PostalCode>
+							<Locality>Wormeldange-Haut</Locality>
+							<ns2:Country>
+								<CountryCode>LUX</CountryCode>
+								<CountryName>Luxembourg</CountryName>
+							</ns2:Country>
+						</ns2:Address>
+					</ns2:RegisteredOffice>
+					<ns2:Representative>
+						<ns2:PhysicalPersonIdentity>
+							<LastName>Specimen</LastName>
+							<FirstName>Elmer</FirstName>
+						</ns2:PhysicalPersonIdentity>
+						<ns2:Address>
+							<BuildingNumber>2</BuildingNumber>
+							<StreetName>Op Eecherbruch</StreetName>
+							<PostalCode>6868</PostalCode>
+							<Locality>Wecker-Gare</Locality>
+							<ns2:Country>
+								<CountryCode>LUX</CountryCode>
+								<CountryName>Luxembourg</CountryName>
+							</ns2:Country>
+						</ns2:Address>
+					</ns2:Representative>
+				</ns2:PersonDetail>
+				<ns2:Mandate>
+					<ns2:MandateDuration>
+						<MandateNominationDate>2021-06-01</MandateNominationDate>
+						<MandateDurationType>Déterminée</MandateDurationType>
+						<MandateEndDate>2036-06-01</MandateEndDate>
+					</ns2:MandateDuration>
+					<ns2:MandateType>
+						<ns2:PersonType>
+							<PersonTypeCode>G</PersonTypeCode>
+							<PersonTypeLabel>Administrateur - Gérant</PersonTypeLabel>
+						</ns2:PersonType>
+						<CorporateBody>Conseil 1</CorporateBody>
+						<Function>Adminstrateur</Function>
+					</ns2:MandateType>
+				</ns2:Mandate>
+			</ns2:Person>
+			<ns2:Person>
+				<ns2:PersonDetail personType="PhysicalPerson">
+					<ns2:PhysicalPersonIdentity>
+						<LastName>Mustermann</LastName>
+						<FirstName>Max</FirstName>
+					</ns2:PhysicalPersonIdentity>
+					<ns2:Address>
+						<BuildingNumber>3</BuildingNumber>
+						<StreetName>Maison</StreetName>
+						<PostalCode>6155</PostalCode>
+						<Locality>Weyer</Locality>
+						<ns2:Country>
+							<CountryCode>LUX</CountryCode>
+							<CountryName>Luxembourg</CountryName>
+						</ns2:Country>
+					</ns2:Address>
+				</ns2:PersonDetail>
+				<ns2:Mandate>
+					<ns2:MandateDuration>
+						<MandateNominationDate>2018-01-01</MandateNominationDate>
+						<MandateDurationType>Déterminée</MandateDurationType>
+						<MandateEndYear>2022</MandateEndYear>
+					</ns2:MandateDuration>
+					<ns2:MandateType>
+						<ns2:PersonType>
+							<PersonTypeCode>G</PersonTypeCode>
+							<PersonTypeLabel>Administrateur - Gérant</PersonTypeLabel>
+						</ns2:PersonType>
+						<CorporateBody>Conseil 1</CorporateBody>
+						<Function>Adminstrateur</Function>
+					</ns2:MandateType>
+				</ns2:Mandate>
+			</ns2:Person>
+			<ns2:Person>
+				<ns2:PersonDetail personType="PhysicalPerson">
+					<ns2:PhysicalPersonIdentity>
+						<LastName>Spécimen</LastName>
+						<FirstName>Annamaria</FirstName>
+					</ns2:PhysicalPersonIdentity>
+					<ns2:Address>
+						<BuildingNumber>13</BuildingNumber>
+						<StreetName>Rue des Trois Cantons</StreetName>
+						<PostalCode>3980</PostalCode>
+						<Locality>Wickrange</Locality>
+						<ns2:Country>
+							<CountryCode>LUX</CountryCode>
+							<CountryName>Luxembourg</CountryName>
+						</ns2:Country>
+					</ns2:Address>
+				</ns2:PersonDetail>
+				<ns2:Mandate>
+					<ns2:MandateDuration>
+						<MandateNominationDate>2020-01-01</MandateNominationDate>
+						<MandateDurationType>Déterminée</MandateDurationType>
+					</ns2:MandateDuration>
+					<ns2:MandateType>
+						<ns2:PersonType>
+							<PersonTypeCode>G</PersonTypeCode>
+							<PersonTypeLabel>Administrateur - Gérant</PersonTypeLabel>
+						</ns2:PersonType>
+						<CorporateBody>Conseil 1</CorporateBody>
+						<Function>Administrateur et Président du Conseil d'administration</Function>
+					</ns2:MandateType>
+				</ns2:Mandate>
+			</ns2:Person>
+		</ns3:Administrators>
+		<ns2:NaceCode>
+			<NaceNumber>TEST</NaceNumber>
+			<NaceLabel>TEST-NACE-UDEV_FR</NaceLabel>
+		</ns2:NaceCode>
+	</ns4:HeadOffice>
+</ns4:extract>

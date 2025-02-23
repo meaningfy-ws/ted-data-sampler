@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns4:extract
+	xmlns="http://ver1.business.services.rcs.mj.etat.lu/basic/components"
+	xmlns:ns2="http://ver1.business.services.rcs.mj.etat.lu/aggregate/components"
+	xmlns:ns3="http://ver1.business.services.rcs.mj.etat.lu/extract/components"
+	xmlns:ns4="http://ver1.business.services.rcs.mj.etat.lu/extract"
+	xmlns:ns5="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+	xmlns:ns6="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+	<ns4:Header>
+		<Name>Édouard trade SARL-S</Name>
+		<RegistrationNumber>B516</RegistrationNumber>
+		<ns2:LegalForm>
+			<LegalFormTitle>Société à responsabilité limitée simplifiée</LegalFormTitle>
+		</ns2:LegalForm>
+		<RegistrationDate>2017-04-28</RegistrationDate>
+	</ns4:Header>
+	<ns4:HeadOffice>
+		<ns3:TradeNames>
+			<ns2:TradeName>
+				<TradeName>Édouard trade SARL-S</TradeName>
+			</ns2:TradeName>
+		</ns3:TradeNames>
+		<ns2:LegalForm>
+			<LegalFormTitle>Société à responsabilité limitée simplifiée</LegalFormTitle>
+		</ns2:LegalForm>
+		<ns2:RegisteredOffice>
+			<ns2:Address>
+				<BuildingNumber>20</BuildingNumber>
+				<StreetName>Crescent Oaks</StreetName>
+				<PostalCode>9184</PostalCode>
+				<Locality>Schrondweiler</Locality>
+				<ns2:Country>
+					<CountryCode>LUX</CountryCode>
+					<CountryName>Luxembourg</CountryName>
+				</ns2:Country>
+			</ns2:Address>
+		</ns2:RegisteredOffice>
+		<ns3:Purpose>
+			<Purpose>La société a pour objet l'exploitation d'un atelier de peinture et de décoration, ainsi que la vente des articles de la branche.</Purpose>
+		</ns3:Purpose>
+		<ns3:ShareCapital>
+			<CapitalType>Fixe</CapitalType>
+			<Amount currencyID="USD">1000000.00</Amount>
+			<ReleaseState>Total</ReleaseState>
+		</ns3:ShareCapital>
+		<CreationDate>2017-04-27</CreationDate>
+		<ns3:Duration>
+			<DurationType>Illimitée</DurationType>
+			<DurationEndDate>2030-01-01</DurationEndDate>
+		</ns3:Duration>
+		<ns3:FinancialYear>
+			<ns2:FirstFinancialYear>
+				<FirstFinancialYearStartDate>2017-04-27</FirstFinancialYearStartDate>
+				<FirstFinancialYearEndDate>2017-12-31</FirstFinancialYearEndDate>
+			</ns2:FirstFinancialYear>
+			<ns2:FinancialYear>
+				<FinancialYearStartDate>04-27</FinancialYearStartDate>
+				<FinancialYearEndDate>12-31</FinancialYearEndDate>
+			</ns2:FinancialYear>
+		</ns3:FinancialYear>
+		<ns3:Administrators>
+			<ns2:Person>
+				<ns2:PersonDetail personType="UnregisteredMoralPerson">
+					<ns2:MoralPersonIdentity>
+						<TradeName>Dénomination Personne Morale Luxembourgeoise non inscrite 100</TradeName>
+					</ns2:MoralPersonIdentity>
+					<ns2:RegisteredOffice>
+						<ns2:Address>
+							<BuildingNumber>6</BuildingNumber>
+							<StreetName>A Pietert</StreetName>
+							<PostalCode>5480</PostalCode>
+							<Locality>Wormeldange</Locality>
+							<ns2:Country>
+								<CountryCode>LUX</CountryCode>
+								<CountryName>Luxembourg</CountryName>
+							</ns2:Country>
+						</ns2:Address>
+					</ns2:RegisteredOffice>
+				</ns2:PersonDetail>
+				<ns2:Mandate>
+					<ns2:MandateDuration>
+						<MandateNominationDate>2021-01-01</MandateNominationDate>
+						<MandateDurationType>Déterminée</MandateDurationType>
+						<MandateEndYear>2025</MandateEndYear>
+					</ns2:MandateDuration>
+					<ns2:MandateType>
+						<ns2:PersonType>
+							<PersonTypeCode>G</PersonTypeCode>
+							<PersonTypeLabel>Administrateur - Gérant</PersonTypeLabel>
+						</ns2:PersonType>
+						<Function>Gérant</Function>
+					</ns2:MandateType>
+				</ns2:Mandate>
+			</ns2:Person>
+			<ns2:Person>
+				<ns2:PersonDetail personType="ForeignMoralPerson">
+					<ns2:MoralPersonIdentity>
+						<TradeName>Denomination_France2</TradeName>
+						<ns2:BusinessRegister>
+							<ns2:BusinessRegisterCountry>
+								<CountryCode>FRA</CountryCode>
+								<CountryName>France</CountryName>
+							</ns2:BusinessRegisterCountry>
+						</ns2:BusinessRegister>
+					</ns2:MoralPersonIdentity>
+					<ns2:RegisteredOffice>
+						<ns2:Address>
+							<BuildingNumber>5</BuildingNumber>
+							<StreetName>allée Autumn Leaf</StreetName>
+							<BuildingName>allée</BuildingName>
+							<PostalCode>10702</PostalCode>
+							<Locality>Panambi</Locality>
+							<ns2:Country>
+								<CountryCode>BRA</CountryCode>
+								<CountryName>Brésil</CountryName>
+							</ns2:Country>
+						</ns2:Address>
+					</ns2:RegisteredOffice>
+				</ns2:PersonDetail>
+				<ns2:Mandate>
+					<ns2:MandateDuration>
+						<MandateNominationDate>2017-01-01</MandateNominationDate>
+						<MandateDurationType>Déterminée</MandateDurationType>
+					</ns2:MandateDuration>
+					<ns2:MandateType>
+						<ns2:PersonType>
+							<PersonTypeCode>G</PersonTypeCode>
+							<PersonTypeLabel>Administrateur - Gérant</PersonTypeLabel>
+						</ns2:PersonType>
+						<CorporateBody>Conseil 1</CorporateBody>
+						<Function>Administrateur et Président du Conseil d'administration</Function>
+					</ns2:MandateType>
+				</ns2:Mandate>
+			</ns2:Person>
+			<ns2:Person>
+				<ns2:PersonDetail personType="UnregisteredMoralPerson">
+					<ns2:MoralPersonIdentity>
+						<TradeName>Dénomination Personne Morale Luxembourgeoise non inscrite 27</TradeName>
+					</ns2:MoralPersonIdentity>
+					<ns2:RegisteredOffice>
+						<ns2:Address>
+							<BuildingNumber>1</BuildingNumber>
+							<StreetName>Wolkegruewen</StreetName>
+							<PostalCode>5485</PostalCode>
+							<Locality>Wormeldange-Haut</Locality>
+							<ns2:Country>
+								<CountryCode>LUX</CountryCode>
+								<CountryName>Luxembourg</CountryName>
+							</ns2:Country>
+						</ns2:Address>
+					</ns2:RegisteredOffice>
+					<ns2:Representative>
+						<ns2:PhysicalPersonIdentity>
+							<LastName>Specimen</LastName>
+							<FirstName>Elmer</FirstName>
+						</ns2:PhysicalPersonIdentity>
+						<ns2:Address>
+							<BuildingNumber>2</BuildingNumber>
+							<StreetName>Op Eecherbruch</StreetName>
+							<PostalCode>6868</PostalCode>
+							<Locality>Wecker-Gare</Locality>
+							<ns2:Country>
+								<CountryCode>LUX</CountryCode>
+								<CountryName>Luxembourg</CountryName>
+							</ns2:Country>
+						</ns2:Address>
+					</ns2:Representative>
+				</ns2:PersonDetail>
+				<ns2:Mandate>
+					<ns2:MandateDuration>
+						<MandateNominationDate>2021-06-01</MandateNominationDate>
+						<MandateDurationType>Déterminée</MandateDurationType>
+						<MandateEndDate>2036-06-01</MandateEndDate>
+					</ns2:MandateDuration>
+					<ns2:MandateType>
+						<ns2:PersonType>
+							<PersonTypeCode>G</PersonTypeCode>
+							<PersonTypeLabel>Administrateur - Gérant</PersonTypeLabel>
+						</ns2:PersonType>
+						<CorporateBody>Conseil 1</CorporateBody>
+						<Function>Adminstrateur</Function>
+					</ns2:MandateType>
+				</ns2:Mandate>
+			</ns2:Person>
+			<ns2:Person>
+				<ns2:PersonDetail personType="DomesticMoralPerson">
+					<ns2:MoralPersonIdentity>
+						<MoralPersonIdentityURI></MoralPersonIdentityURI>
+						<RegistrationNumber>D52</RegistrationNumber>
+					</ns2:MoralPersonIdentity>
+					<ns2:Representative>
+						<ns2:PhysicalPersonIdentity>
+							<LastName>Test</LastName>
+							<FirstName>Immatriculation-Qualificatif</FirstName>
+						</ns2:PhysicalPersonIdentity>
+						<ns2:Address>
+							<BuildingNumber>6</BuildingNumber>
+							<StreetName>Am Bongert</StreetName>
+							<PostalCode>9392</PostalCode>
+							<Locality>Wallendorf-Pont</Locality>
+							<ns2:Country>
+								<CountryCode>LUX</CountryCode>
+								<CountryName>Luxembourg</CountryName>
+							</ns2:Country>
+						</ns2:Address>
+					</ns2:Representative>
+				</ns2:PersonDetail>
+				<ns2:Mandate>
+					<ns2:MandateDuration>
+						<MandateNominationDate>2020-01-01</MandateNominationDate>
+						<MandateDurationType>Déterminée</MandateDurationType>
+					</ns2:MandateDuration>
+					<ns2:MandateType>
+						<ns2:PersonType>
+							<PersonTypeCode>G</PersonTypeCode>
+							<PersonTypeLabel>Administrateur - Gérant</PersonTypeLabel>
+						</ns2:PersonType>
+						<CorporateBody>Conseil 1</CorporateBody>
+						<Function>Adminstrateur</Function>
+					</ns2:MandateType>
+				</ns2:Mandate>
+			</ns2:Person>
+		</ns3:Administrators>
+		<ns3:DailyManagementRepresentatives>
+			<ns2:Person>
+				<ns2:PersonDetail personType="PhysicalPerson">
+					<ns2:PhysicalPersonIdentity>
+						<LastName>Cas de Test</LastName>
+						<FirstName>Deuxième</FirstName>
+					</ns2:PhysicalPersonIdentity>
+					<ns2:Address>
+						<BuildingNumber>1</BuildingNumber>
+						<StreetName>Rue de Broderbour</StreetName>
+						<PostalCode>9368</PostalCode>
+						<Locality>Folkendange</Locality>
+						<ns2:Country>
+							<CountryCode>LUX</CountryCode>
+							<CountryName>Luxembourg</CountryName>
+						</ns2:Country>
+					</ns2:Address>
+				</ns2:PersonDetail>
+				<ns2:Mandate>
+					<ns2:MandateDuration>
+						<MandateNominationDate>2022-01-01</MandateNominationDate>
+						<MandateDurationType>Déterminée</MandateDurationType>
+						<MandateEndYear>2030</MandateEndYear>
+					</ns2:MandateDuration>
+					<ns2:MandateType>
+						<ns2:PersonType>
+							<PersonTypeCode>D</PersonTypeCode>
+							<PersonTypeLabel>Délégué à la gestion journalière</PersonTypeLabel>
+						</ns2:PersonType>
+						<Function>Directeur Financier</Function>
+					</ns2:MandateType>
+				</ns2:Mandate>
+			</ns2:Person>
+			<ns2:Person>
+				<ns2:PersonDetail personType="PhysicalPerson">
+					<ns2:PhysicalPersonIdentity>
+						<LastName>Spécimen</LastName>
+						<FirstName>Karl Josef</FirstName>
+					</ns2:PhysicalPersonIdentity>
+					<ns2:Address>
+						<BuildingNumber>10</BuildingNumber>
+						<StreetName>Am Maeschbommert</StreetName>
+						<PostalCode>4979</PostalCode>
+						<Locality>Fingig</Locality>
+						<ns2:Country>
+							<CountryCode>LUX</CountryCode>
+							<CountryName>Luxembourg</CountryName>
+						</ns2:Country>
+					</ns2:Address>
+				</ns2:PersonDetail>
+				<ns2:Mandate>
+					<ns2:MandateDuration>
+						<MandateNominationDate>2018-01-01</MandateNominationDate>
+						<MandateDurationType>Déterminée</MandateDurationType>
+						<MandateEndYear>2022</MandateEndYear>
+					</ns2:MandateDuration>
+					<ns2:MandateType>
+						<ns2:PersonType>
+							<PersonTypeCode>D</PersonTypeCode>
+							<PersonTypeLabel>Délégué à la gestion journalière</PersonTypeLabel>
+						</ns2:PersonType>
+						<Function>Directeur Technique (COO)</Function>
+					</ns2:MandateType>
+				</ns2:Mandate>
+			</ns2:Person>
+		</ns3:DailyManagementRepresentatives>
+		<ns2:NaceCode>
+			<NaceNumber>90.010</NaceNumber>
+			<NaceLabel>Arts du spectacle vivant</NaceLabel>
+		</ns2:NaceCode>
+	</ns4:HeadOffice>
+</ns4:extract>
