@@ -9,7 +9,8 @@ from ted_sws.core.model.notice import Notice
 
 from ted_data_sampler import STANDARD_TIME_FORMAT
 from ted_data_sampler.core.services.logger import setup_logger
-from ted_data_sampler.core.services.sample_data import sample_data_by_notice_source, store_eform_notices_by_sdk_version
+from ted_data_sampler.core.services.sample_data import sample_data_by_notice_source, store_eform_notices_by_sdk_version, \
+    store_eform_notices_by_sdk_version_type_subtype
 
 
 class DataSamplerException(Exception):
@@ -44,7 +45,7 @@ def main():
 
     try:
         result_notices: List[Notice] = sample_data_by_notice_source(notice_source=notice_source, logger=logger)
-        store_eform_notices_by_sdk_version(output_path=run_path, notices=result_notices, logger=logger)
+        store_eform_notices_by_sdk_version_type_subtype(output_path=run_path, notices=result_notices, logger=logger)
     except Exception as e:
         logger.error(e)
         raise DataSamplerException(e)
