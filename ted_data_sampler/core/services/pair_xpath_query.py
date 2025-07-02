@@ -3,13 +3,14 @@ import re
 from pathlib import Path
 from typing import List
 from math import ceil
-import os  # For os.cpu_count()
+import os
+import multiprocessing
+import gc
 
 from pydantic import BaseModel
 from tqdm import tqdm
 
 from ted_data_sampler.core.adapters.XPathValidator import XPATHValidator
-from pqdm.processes import pqdm  # Using pqdm instead of p_tqdm
 
 PROJECT_PATH: Path = Path("/home/duprijil/work/ted-data-sampler")
 INPUT_PATH_NOTICES: Path = Path("/home/duprijil/Downloads/test_notices")
@@ -32,6 +33,7 @@ console_handler.setLevel(logging.INFO)
 formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 file_handler.setFormatter(formatter)
 console_handler.setFormatter(formatter)
+
 
 class PairXPathQuery(BaseModel):
     xpath1: str
@@ -56,39 +58,53 @@ def is_xpath_exists_in_notice(xpath: str, xpath_validator: XPATHValidator) -> bo
     return True if len(result) > 0 else False
 
 
-def process_notice(notice_path: str, paired_xpaths: list, output_dir: str, logger):
-    from pathlib import Path
-    from ted_data_sampler.core.adapters.XPathValidator import XPATHValidator
-
-    notice_text = Path(notice_path).read_text()
-    xpath_validator = XPATHValidator(xml_content=notice_text, logger=None)
-
-    for xpath1, xpath2 in paired_xpaths:
-        if is_xpath_exists_in_notice(xpath1, xpath_validator) and not is_xpath_exists_in_notice(xpath2,
-                                                                                                xpath_validator):
-            logger.info(f"The XPath: {xpath1} was found in {Path(notice_path).name}")
-            (Path(output_dir) / Path(notice_path).name).write_text(notice_text)
-            #break
-
-    del xpath_validator
-
-
-def process_chunk(args):
+def process_chunk(chunk_data):
     """
     Process a chunk of notices with a progress bar
 
     Args:
-        args: Tuple containing (chunk, paired_xpaths, output_dir, chunk_id)
+        chunk_data: Tuple containing (chunk_id, chunk, paired_xpaths, output_dir)
     """
-    chunk, paired_xpaths, output_dir, chunk_id = args
-    results = []
-    logger = logging.getLogger()
+    chunk_id, chunk, paired_xpaths, output_dir = chunk_data
+
+    # Set up logger
+    logger = logging.getLogger(f"chunk_{chunk_id}")
     logger.setLevel(logging.INFO)
     logger.addHandler(file_handler)
-    for notice_path in tqdm(chunk, desc=f"Chunk {chunk_id}", position=chunk_id, leave=True):
-        process_notice(notice_path, paired_xpaths, output_dir, logger)
-        results.append(True)  # Just to track completion
-    return results
+
+    # Create progress bar
+    with tqdm(total=len(chunk), desc=f"Chunk {chunk_id}", position=chunk_id, leave=True) as pbar:
+        for notice_path in chunk:
+            try:
+                # Read notice
+                notice_text = Path(notice_path).read_text()
+
+                # Create validator
+                xpath_validator = XPATHValidator(xml_content=notice_text, logger=None)
+
+                # Check XPaths
+                for xpath1, xpath2 in paired_xpaths:
+                    if is_xpath_exists_in_notice(xpath1, xpath_validator) and not is_xpath_exists_in_notice(xpath2,
+                                                                                                            xpath_validator):
+                        logger.info(f"The XPath: {xpath1} was found in {Path(notice_path).name}")
+                        (Path(output_dir) / Path(notice_path).name).write_text(notice_text)
+                        break
+
+                # Clean up
+                del xpath_validator
+                del notice_text
+
+                # Update progress
+                pbar.update(1)
+
+                # Garbage collect periodically
+                if pbar.n % 100 == 0:
+                    gc.collect()
+
+            except Exception as e:
+                logger.error(f"Error processing {notice_path}: {str(e)}")
+
+    return True
 
 
 def split_into_chunks(items: List, num_chunks: int) -> List[List]:
@@ -98,51 +114,61 @@ def split_into_chunks(items: List, num_chunks: int) -> List[List]:
 
 
 if __name__ == "__main__":
+    # Fix import path
+    import sys
 
+    project_root = Path(__file__).parent.parent.parent.parent
+    sys.path.insert(0, str(project_root))
 
+    # Create output directories
     OUTPUT_PATH.mkdir(exist_ok=True, parents=True)
     OUTPUT_NOTICES_PATH.mkdir(exist_ok=True, parents=True)
     OUTPUT_LOG_PATH.touch()
 
-    # only eforms
-    pattern = re.compile(r"^\d{8}_\d{4}\.xml$")
-
-    all_notice_folder_paths: List[str] = [str(notice_path) for notice_path in INPUT_PATH_NOTICES.rglob("*.xml")]
-    eform_notice_folder_paths: List[str] = [str(notice_path) for notice_path in INPUT_PATH_NOTICES.rglob("*.xml") if
-                                      pattern.match(notice_path.name)]
-
-    paired_xpaths: List[PairXPathQuery] = get_pair_xpaths(XPATHS_PATH)
-
+    # Set up logging
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.INFO)
-    # Add handlers to the logger
     logger.addHandler(file_handler)
     logger.addHandler(console_handler)
 
+    logger.info("Starting notice collection...")
 
-    logger.info(f"Total number of found notices: {len(all_notice_folder_paths)}")
+    # Find notices
+    eform_pattern = re.compile(r"^\d{8}_\d{4}\.xml$")
+    all_notice_count = 0
+    eform_notice_folder_paths = []
+
+    for notice_path in INPUT_PATH_NOTICES.rglob("*.xml"):
+        all_notice_count += 1
+        if eform_pattern.match(notice_path.name):
+            eform_notice_folder_paths.append(str(notice_path))
+
+    # Get XPath pairs
+    paired_xpaths = get_pair_xpaths(XPATHS_PATH)
+    paired_xpaths_plain = [(px.xpath1, px.xpath2) for px in paired_xpaths]
+
+    logger.info(f"Total number of found notices: {all_notice_count}")
     logger.info(f"Querying {len(eform_notice_folder_paths)} eForms notices")
     logger.info(f"Number of xpaths pairs: {len(paired_xpaths)}")
 
-    # Convert to plain dicts or tuples
-    paired_xpaths_plain = [(px.xpath1, px.xpath2) for px in paired_xpaths]
-
-    # Determine number of chunks based on available CPUs
-    num_processes = min(4, os.cpu_count() or 1)  # Use at most 4 processes or the number of CPUs available
+    # Determine parallelism
+    num_processes = min(4, os.cpu_count() or 1)
     logger.info(f"Using {num_processes} parallel processes")
 
     # Split notices into chunks
     chunks = split_into_chunks(eform_notice_folder_paths, num_processes)
     logger.info(f"Split notices into {len(chunks)} chunks")
 
-    # Prepare arguments for each chunk processor
-    process_args = [
-        (chunk, paired_xpaths_plain, str(OUTPUT_NOTICES_PATH), i)
+    # Prepare chunk data
+    chunk_data = [
+        (i, chunk, paired_xpaths_plain, str(OUTPUT_NOTICES_PATH))
         for i, chunk in enumerate(chunks)
     ]
 
-    # Process each chunk in parallel with pqdm
-    # This will display a progress bar for the overall processing
-    results = pqdm(process_args, process_chunk, n_jobs=num_processes, desc="Overall Progress")
+    logger.info("Starting parallel processing")
 
-    logger.info("Processing completed")
+    # Create process pool and run
+    with multiprocessing.Pool(processes=num_processes) as pool:
+        results = pool.map(process_chunk, chunk_data)
+
+    logger.info("All processes have finished. Processing completed")
