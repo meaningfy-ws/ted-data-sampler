@@ -1,0 +1,7 @@
+Warning: 'query-xpaths-cli' is an entry point defined in pyproject.toml, but it's not installed as a script. You may get improper `sys.argv[0]`.
+
+The support to run uninstalled scripts will be removed in a future release.
+
+Run `poetry install` to resolve and get rid of this message.
+
+  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 129.07it/s]
