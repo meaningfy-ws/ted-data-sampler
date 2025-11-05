@@ -1,0 +1,47 @@
+version: '3.8'
+services:
+  jupyter:
+    container_name: jupyter-${ENVIRONMENT}
+    image: jupyter/scipy-notebook:python-3.11
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+      - JUPYTER_TOKEN=${JUPYTER_TOKEN:-}
+      - PYTHONPATH=/home/jovyan/work/ted-data-sampler
+    working_dir: /home/jovyan/work/ted-data-sampler
+    command: >
+      bash -c "
+        pip install --no-cache-dir -e /home/jovyan/work/ted-data-sampler || true &&
+        exec start-notebook.sh
+      "
+    volumes:
+      - ../../:/home/jovyan/work/ted-data-sampler
+      - jupyter-data:/home/jovyan/work/jupyter-notebooks
+    networks:
+      - jupyter-net
+      - proxy-net
+    labels:
+      #### Labels define the behavior and rules of the traefik proxy for this container ####
+      - "traefik.enable=true" # <== Enable traefik to proxy this container
+      - "traefik.http.routers.${ENVIRONMENT}-jupyter.rule=Host(`jupyter.${SUBDOMAIN}${DOMAIN}`)" # <== Your Domain Name goes here for the http rule
+      - "traefik.http.routers.${ENVIRONMENT}-jupyter.entrypoints=web" # <== Defining the entrypoint for http, **ref: line 30
+      - "traefik.http.routers.${ENVIRONMENT}-jupyter.middlewares=redirect@file" # <== This is a middleware to redirect to https
+      - "traefik.http.routers.${ENVIRONMENT}-jupyter-secured.rule=Host(`jupyter.${SUBDOMAIN}${DOMAIN}`)" # <== Your Domain Name for the https rule
+      - "traefik.http.routers.${ENVIRONMENT}-jupyter-secured.entrypoints=web-secured" # <== Defining entrypoint for https, **ref: line 31
+      - "traefik.http.routers.${ENVIRONMENT}-jupyter-secured.tls.certresolver=mytlschallenge" # <== Defining certsresolvers for https
+      - "traefik.http.services.${ENVIRONMENT}-jupyter.loadbalancer.server.port=8888" # <== Jupyter Notebook default port
+
+volumes:
+  jupyter-data:
+    name: jupyter-data-${ENVIRONMENT}
+
+networks:
+  jupyter-net:
+    internal: true
+    name: jupyter-net-${ENVIRONMENT}
+  proxy-net:
+    external:
+      name: proxy-net
+  common-ext:
+    external:
+      name: common-ext-${ENVIRONMENT}
+
