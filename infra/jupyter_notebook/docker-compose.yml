@@ -2,7 +2,7 @@ version: '3.8'
 services:
   jupyter:
     container_name: jupyter-${ENVIRONMENT}
-    image: jupyter/scipy-notebook:latest
+    image: jupyter/scipy-notebook:python-3.11
     environment:
       - JUPYTER_ENABLE_LAB=yes
       - JUPYTER_TOKEN=${JUPYTER_TOKEN:-}
