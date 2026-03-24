@@ -33,7 +33,8 @@ class NoticeQuerySummary(BaseModel):
     notices_query_result: List[NoticeQueryResult]
 
     def __str__(self):
-        return "{}\t{}\n{}".format("Notice", "\t".join(self.xpaths), "\n".join(str(notice_query_result) for notice_query_result in self.notices_query_result))
+        return "{}\t{}\n{}".format("Notice", "\t".join(self.xpaths), "\n".join(
+            str(notice_query_result) for notice_query_result in self.notices_query_result))
 
 
 def query_notices_with_given_xpaths(xpaths: List[str], notice_paths: List[Path], logger: Logger) -> NoticeQuerySummary:
