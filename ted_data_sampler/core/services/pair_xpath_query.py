@@ -1,13 +1,14 @@
+import gc
 import logging
+import multiprocessing
+import os
 import re
 import time
-import os
-import gc
-import psutil
+from math import ceil
 from pathlib import Path
 from typing import List, Tuple
-from math import ceil
-import multiprocessing
+
+import psutil
 from pydantic import BaseModel
 from tqdm import tqdm
 
@@ -25,6 +26,10 @@ XPATHS_PATH: Path = PROJECT_PATH / "input" / "pair_xpaths.txt"
 # Memory configuration
 MEMORY_LIMIT_MB = 4000  # Adjust based on your system
 BATCH_SIZE = 1000  # Number of notices to process before forced cleanup
+
+# Multiprocessing configuration
+NUM_PROCESSES = 8  # Number of processes per pool
+MAJOR_CHUNKS = 8  # Number of sequential batches to process
 
 # File handler
 file_handler = logging.FileHandler(str(OUTPUT_LOG_PATH))
@@ -108,6 +113,16 @@ def process_notice(notice_path: str, xpath_validator: XPATHValidator,
         return False
 
 
+def safe_close_validator(validator, logger):
+    """Safely close the validator object, handling any attribute errors."""
+    try:
+        validator.close()
+    except AttributeError as e:
+        logger.warning(f"Could not close validator properly: {str(e)}")
+    except Exception as e:
+        logger.error(f"Error closing validator: {str(e)}")
+
+
 def process_chunk(chunk_data):
     """
     Process a chunk of notices with memory management
@@ -139,15 +154,6 @@ def process_chunk(chunk_data):
                 if current_memory > MEMORY_LIMIT_MB:
                     logger.warning(f"High memory usage ({current_memory:.2f} MB). Forcing cleanup.")
                     gc.collect()
-                    #time.sleep(1)  # Give OS time to reclaim memory
-
-                    # If still too high, skip some notices
-                    # if get_memory_usage_mb() > MEMORY_LIMIT_MB * 1.2:
-                    #     skip_count = min(BATCH_SIZE * 2, len(chunk) - pbar.n)
-                    #     logger.warning(f"Memory still too high. Skipping {skip_count} notices.")
-                    #     pbar.update(skip_count)
-                    #     i += skip_count
-                    #     continue
 
                 # Get current batch
                 sub_chunk = chunk[i:i + BATCH_SIZE]
@@ -159,16 +165,13 @@ def process_chunk(chunk_data):
 
                 # Force cleanup after each batch
                 gc.collect()
-
-                # Log memory usage periodically
-                # if i % (BATCH_SIZE * 5) == 0:
-                #     logger.info(f"Memory usage after {pbar.n}/{len(chunk)} notices: {get_memory_usage_mb():.2f} MB")
     except Exception as e:
         logger.error(f"Error in chunk {chunk_id}: {str(e)}")
     finally:
-        # Clean up validator
-        logger.info(f"Cleaning up validator for chunk {chunk_id}")
-        xpath_validator.close()
+        # Clean up validator - safely close it
+        # logger.info(f"Cleaning up validator for chunk {chunk_id}")
+        safe_close_validator(xpath_validator, logger)
+        del xpath_validator
         gc.collect()
 
         # Log final memory usage
@@ -185,24 +188,65 @@ def split_into_chunks(items: List, num_chunks: int) -> List[List]:
     return [items[i:i + chunk_size] for i in range(0, len(items), chunk_size)]
 
 
-if __name__ == "__main__":
-    # Fix import path
-    import sys
+def process_in_batches(notices: List[str], paired_xpaths: List[Tuple[str, str]],
+                       output_dir: str, logger: logging.Logger):
+    """
+    Process notices in sequential batches of multiprocessing pools
+    to manage memory more effectively.
 
-    project_root = Path(__file__).parent.parent.parent.parent
-    sys.path.insert(0, str(project_root))
+    Args:
+        notices: List of notice file paths
+        paired_xpaths: List of XPath pairs to check
+        output_dir: Directory to save matching notices
+        logger: Logger instance
+    """
+    # Split all notices into major chunks that will be processed sequentially
+    major_chunks = split_into_chunks(notices, MAJOR_CHUNKS)
+    logger.info(f"Split all notices into {len(major_chunks)} major chunks for sequential processing")
 
-    # Create output directories
-    OUTPUT_PATH.mkdir(exist_ok=True, parents=True)
-    OUTPUT_NOTICES_PATH.mkdir(exist_ok=True, parents=True)
-    OUTPUT_LOG_PATH.touch()
+    for major_idx, major_chunk in enumerate(major_chunks):
+        logger.info(f"Processing major chunk {major_idx + 1}/{len(major_chunks)} with {len(major_chunk)} notices")
+        logger.info(f"Memory before processing: {get_memory_usage_mb():.2f} MB")
 
-    # Set up logging
-    logger = logging.getLogger(__name__)
-    logger.setLevel(logging.INFO)
-    logger.addHandler(file_handler)
-    logger.addHandler(console_handler)
+        # For each major chunk, create a separate multiprocessing pool
+        # Split the major chunk into smaller chunks for parallel processing
+        sub_chunks = split_into_chunks(major_chunk, NUM_PROCESSES)
 
+        # Prepare chunk data
+        chunk_data = [
+            (i, chunk, paired_xpaths, output_dir)
+            for i, chunk in enumerate(sub_chunks)
+        ]
+
+        # Create process pool and run for this major chunk
+        with multiprocessing.Pool(processes=NUM_PROCESSES) as pool:
+            try:
+                results = pool.map(process_chunk, chunk_data)
+            except Exception as e:
+                logger.error(f"Error in pool.map: {str(e)}")
+                # Force pool termination in case of error
+                pool.terminate()
+                # Wait a moment before continuing
+                time.sleep(2)
+                continue
+
+        # Explicitly close and join the pool
+        pool.close()
+        pool.join()
+
+        # Force cleanup after processing this major chunk
+        gc.collect()
+
+        # Log memory usage after this major chunk
+        # logger.info(f"Major chunk {major_idx + 1} completed. Memory after processing: {get_memory_usage_mb():.2f} MB")
+
+        # Additional memory cleanup
+        time.sleep(1)  # Give OS a moment to reclaim memory
+        gc.collect()
+
+
+def process_notices(logger: logging.Logger):
+    """Main function to process notices"""
     logger.info("Starting notice collection...")
     logger.info(f"Initial memory usage: {get_memory_usage_mb():.2f} MB")
 
@@ -224,26 +268,36 @@ if __name__ == "__main__":
     logger.info(f"Querying {len(eform_notice_folder_paths)} eForms notices")
     logger.info(f"Number of xpaths pairs: {len(paired_xpaths)}")
 
-    # Determine parallelism based on available memory
-    num_processes = 8 #get_optimal_process_count()
-    logger.info(f"Using {num_processes} parallel processes based on available memory")
-
-    # Split notices into chunks
-    chunks = split_into_chunks(eform_notice_folder_paths, num_processes)
-    logger.info(f"Split notices into {len(chunks)} chunks")
-
-    # Prepare chunk data
-    chunk_data = [
-        (i, chunk, paired_xpaths_plain, str(OUTPUT_NOTICES_PATH))
-        for i, chunk in enumerate(chunks)
-    ]
-
-    logger.info("Starting parallel processing")
-
-    # Create process pool and run
-    with multiprocessing.Pool(processes=num_processes) as pool:
-        results = pool.map(process_chunk, chunk_data)
+    # Process notices in batches with hierarchical multiprocessing
+    process_in_batches(
+        notices=eform_notice_folder_paths,
+        paired_xpaths=paired_xpaths_plain,
+        output_dir=str(OUTPUT_NOTICES_PATH),
+        logger=logger
+    )
 
     # Final memory usage check
     logger.info(f"Final memory usage: {get_memory_usage_mb():.2f} MB")
     logger.info("All processes have finished. Processing completed")
+
+
+if __name__ == "__main__":
+    # Fix import path
+    import sys
+
+    project_root = Path(__file__).parent.parent.parent.parent
+    sys.path.insert(0, str(project_root))
+
+    # Create output directories
+    OUTPUT_PATH.mkdir(exist_ok=True, parents=True)
+    OUTPUT_NOTICES_PATH.mkdir(exist_ok=True, parents=True)
+    OUTPUT_LOG_PATH.touch()
+
+    # Set up logging
+    logger = logging.getLogger(__name__)
+    logger.setLevel(logging.INFO)
+    logger.addHandler(file_handler)
+    logger.addHandler(console_handler)
+
+    # Process notices with memory-optimized approach
+    process_notices(logger)

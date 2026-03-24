@@ -1,7 +1,7 @@
 import abc
+import gc
 import io
 import re
-import gc
 from logging import Logger
 from typing import List, Any, Union, Optional
 from xml.etree import ElementTree
@@ -60,7 +60,12 @@ class XPATHValidator(ValidatorABC):
         if self.xqp:
             self.xqp = None
         if self.xp:
-            self.xp.release()
+            # Try to call release if it exists, otherwise just set to None
+            try:
+                if hasattr(self.xp, 'release'):
+                    self.xp.release()
+            except Exception:
+                pass
             self.xp = None
         # Force garbage collection
         gc.collect()
