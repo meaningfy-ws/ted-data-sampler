@@ -9,7 +9,7 @@ readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.9.20"
+python = ">=3.9.20,<3.12"
 jupyter = "^1.1.1"
 numpy = "<2.0.0"
 ted-sws = { git = "https://github.com/OP-TED/ted-rdf-conversion-pipeline.git", rev = "2.0.0-rc.4" }

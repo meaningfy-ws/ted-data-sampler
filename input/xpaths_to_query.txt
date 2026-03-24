@@ -1,0 +1,4 @@
+/*/cbc:ID
+/*/cbc:ID/@schemeName
+/*/cbc:ID[@schemeName='notice-id']
+.//ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Publication/efbc:NoticePublicationID[@schemeName='ojs-notice-id']
