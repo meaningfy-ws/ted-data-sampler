@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns4:extract
+	xmlns="http://ver1.business.services.rcs.mj.etat.lu/basic/components"
+	xmlns:ns2="http://ver1.business.services.rcs.mj.etat.lu/aggregate/components"
+	xmlns:ns3="http://ver1.business.services.rcs.mj.etat.lu/extract/components"
+	xmlns:ns4="http://ver1.business.services.rcs.mj.etat.lu/extract"
+	xmlns:ns5="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+	xmlns:ns6="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+	<ns4:Header>
+		<RegistrationNumber>A5</RegistrationNumber>
+		<Observation>en débiteur admis au bénéfice de la cession de biens</Observation>
+		<RegistrationDate>2006-05-22</RegistrationDate>
+	</ns4:Header>
+	<ns4:HeadOffice>
+		<ns2:RegisteredOffice>
+			<ns2:Address>
+				<BuildingNumber>3</BuildingNumber>
+				<StreetName>Wirwelt</StreetName>
+				<PostalCode>9970</PostalCode>
+				<Locality>Leithum</Locality>
+				<ns2:Country>
+					<CountryCode>LUX</CountryCode>
+					<CountryName>Luxembourg</CountryName>
+				</ns2:Country>
+			</ns2:Address>
+		</ns2:RegisteredOffice>
+		<ns3:Purpose>
+			<Purpose>La société a pour objet tant au Luxembourg qu'à l'étranger, toutes opérations généralement quelconques, commerciales, industrielles, financières, mobilières ou immobilières, se rapportant directement ou indirectement à l'activité d'une agence de voyages et notamment à l'organisation et vente de voyage de séjour, de billets pour tous moyens de transports, de bons de logement et de bons de repas. La société peut s'intéresser par toutes voies dans toutes affaires, entreprises ou sociétés ayant un objet identique, analogue ou connexe ou qui sont de nature à favoriser le développement de son entreprise.</Purpose>
+		</ns3:Purpose>
+		<CreationDate>1998-05-18</CreationDate>
+		<ns3:Managers>
+			<ns2:Person>
+				<ns2:PersonDetail personType="PhysicalPerson">
+					<ns2:PhysicalPersonIdentity>
+						<LastName>Test</LastName>
+						<FirstName>Paul</FirstName>
+					</ns2:PhysicalPersonIdentity>
+					<ns2:Address>
+						<BuildingNumber>2</BuildingNumber>
+						<StreetName>Maison</StreetName>
+						<PostalCode>9758</PostalCode>
+						<Locality>Tintesmühle</Locality>
+						<ns2:Country>
+							<CountryCode>LUX</CountryCode>
+							<CountryName>Luxembourg</CountryName>
+						</ns2:Country>
+					</ns2:Address>
+				</ns2:PersonDetail>
+				<ns2:Mandate>
+					<ns2:MandateType>
+						<ns2:PersonType>
+							<PersonTypeCode>F</PersonTypeCode>
+							<PersonTypeLabel>Gérant - Fondé de pouvoir</PersonTypeLabel>
+						</ns2:PersonType>
+					</ns2:MandateType>
+				</ns2:Mandate>
+			</ns2:Person>
+		</ns3:Managers>
+		<ns3:Authorizations>
+			<ns2:Authorization>
+				<AuthorizationNumber>00112345 / 11</AuthorizationNumber>
+				<AuthorizationType>Autorisation d'établissement</AuthorizationType>
+				<AuthorizationDate>2015-10-18</AuthorizationDate>
+				<ns2:IssuingAuthority>
+					<AuthorityCode>MM</AuthorityCode>
+					<AuthorityName>Ministère des Classes Moyennes</AuthorityName>
+				</ns2:IssuingAuthority>
+			</ns2:Authorization>
+			<ns2:Authorization>
+				<AuthorizationNumber>00112345 / 10</AuthorizationNumber>
+				<AuthorizationType>Autorisation d'établissement</AuthorizationType>
+				<AuthorizationDate>2015-10-18</AuthorizationDate>
+				<ns2:IssuingAuthority>
+					<AuthorityCode>MJ</AuthorityCode>
+					<AuthorityName>Ministère de la Justice</AuthorityName>
+				</ns2:IssuingAuthority>
+			</ns2:Authorization>
+		</ns3:Authorizations>
+		<ns3:CourtRuling>
+			<ns2:Ruling>
+				<ns2:RulingCode>
+					<RulingCodeCode>DC</RulingCodeCode>
+					<RulingCodeLabel>Débiteur admis au bénéfice de la cession de biens</RulingCodeLabel>
+				</ns2:RulingCode>
+				<ns2:RulingType>
+					<RulingTypeCode>DC01</RulingTypeCode>
+					<RulingTypeLabel>Prononcé de l'admission au bénéfice de la cession de biens</RulingTypeLabel>
+				</ns2:RulingType>
+				<RulingReference>641251</RulingReference>
+				<RulingDate>2023-05-04</RulingDate>
+				<ns2:RulingPronouncer>
+					<RulingPronouncerCode>TAL</RulingPronouncerCode>
+					<RulingPronouncerLabel>Tribunal d'arrondissement de Luxembourg</RulingPronouncerLabel>
+				</ns2:RulingPronouncer>
+			</ns2:Ruling>
+			<ns3:LegalAgents>
+				<ns2:Person>
+					<ns2:PersonDetail personType="PhysicalPerson">
+						<ns2:PhysicalPersonIdentity>
+							<LastName>Mustermann</LastName>
+							<FirstName>Marie</FirstName>
+						</ns2:PhysicalPersonIdentity>
+					</ns2:PersonDetail>
+				</ns2:Person>
+			</ns3:LegalAgents>
+		</ns3:CourtRuling>
+	</ns4:HeadOffice>
+	<ns4:PhysicalPersonData>
+		<ns3:PersonalData>
+			<LastName>Specimen</LastName>
+			<FirstName>Mustermann</FirstName>
+			<ns2:Nationality>
+				<NationalityCode></NationalityCode>
+				<NationalityLabel>luxembourgeoise</NationalityLabel>
+			</ns2:Nationality>
+			<ns2:Sex>
+				<SexCode>M</SexCode>
+				<SexLabel>Masculin</SexLabel>
+			</ns2:Sex>
+		</ns3:PersonalData>
+		<ns2:PrivateAddress>
+			<BuildingNumber>38</BuildingNumber>
+			<StreetName>An der Uecht</StreetName>
+			<PostalCode>7713</PostalCode>
+			<Locality>Welsdorf</Locality>
+			<ns2:Country>
+				<CountryCode>LUX</CountryCode>
+				<CountryName>Luxembourg</CountryName>
+			</ns2:Country>
+		</ns2:PrivateAddress>
+		<ns3:CivilStatus>
+			<ns2:CivilStatus>
+				<CivilStatusCode>D</CivilStatusCode>
+				<CivilStatusLabel>Divorcé(e)</CivilStatusLabel>
+			</ns2:CivilStatus>
+			<ns2:MaritalPartnerData>
+				<LastName>non inscrit</LastName>
+				<FirstName>non inscrit</FirstName>
+			</ns2:MaritalPartnerData>
+		</ns3:CivilStatus>
+	</ns4:PhysicalPersonData>
+</ns4:extract>

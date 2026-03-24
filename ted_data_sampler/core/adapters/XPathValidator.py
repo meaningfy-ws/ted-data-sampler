@@ -1,4 +1,5 @@
 import abc
+import gc
 import io
 import re
 from logging import Logger
@@ -8,7 +9,6 @@ from xml.etree import ElementTree
 from pydantic import BaseModel
 from saxonche import PySaxonProcessor, PySaxonApiError, PyXPathProcessor, PyXdmNode, PyXdmValue, XdmNodeKind, \
     PyXQueryProcessor
-
 
 
 class ValidatorABC(abc.ABC, BaseModel):
@@ -23,17 +23,20 @@ class ValidatorABC(abc.ABC, BaseModel):
         """
         pass
 
+
 class XPathAssertionEntry(BaseModel):
     xpath: Optional[str] = None
     value: Optional[str] = None
 
+
 class XPATHValidator(ValidatorABC):
     """
+    XPath validator using Saxon-HE with optimized memory management.
     """
 
-    xp: Any = None # saxon_processor
-    xpp: Any = None # xpath_processor
-    xqp: Any = None # xquery_processor
+    xp: Any = None  # saxon_processor
+    xpp: Any = None  # xpath_processor
+    xqp: Any = None  # xquery_processor
     namespaces: Any = None
     prefixes: Any = None
     DEFAULT_XML_NS_PREFIX: str = ''
@@ -50,6 +53,38 @@ class XPATHValidator(ValidatorABC):
     def validate(self, xpath_expression) -> List[XPathAssertionEntry]:
         return self.get_unique_xpaths(xpath_expression)
 
+    def close(self):
+        """Explicitly release Saxon resources to prevent memory leaks."""
+        if self.xpp:
+            self.xpp = None
+        if self.xqp:
+            self.xqp = None
+        if self.xp:
+            # Try to call release if it exists, otherwise just set to None
+            try:
+                if hasattr(self.xp, 'release'):
+                    self.xp.release()
+            except Exception:
+                pass
+            self.xp = None
+        # Force garbage collection
+        gc.collect()
+
+    def reset_with_new_content(self, xml_content):
+        """Reset the validator with new XML content without creating a new Saxon processor."""
+        # Clear existing processors but keep the main processor
+        if self.xpp:
+            self.xpp = None
+        if self.xqp:
+            self.xqp = None
+
+        # Extract namespaces from new content
+        self.namespaces = self.extract_namespaces(xml_content)
+        self.prefixes = {v: k for k, v in self.namespaces.items()}
+
+        # Re-initialize processors with new content
+        self.init_xp_processors(xml_content)
+
     def check_xpath_condition(self, xquery_expression) -> bool:
         if not xquery_expression:
             return True
@@ -59,7 +94,8 @@ class XPATHValidator(ValidatorABC):
             result: PyXdmValue = self.xqp.run_query_to_value()
             return str(result) == 'true'
         except PySaxonApiError as e:
-            #self.logger.error(f"check_xpath_condition exception error: {e}")
+            if self.logger:
+                self.logger.error(f"check_xpath_condition exception error: {e}")
             return False
 
     def get_ns_tag(self, node: PyXdmNode) -> Union[str, None]:
@@ -71,7 +107,7 @@ class XPATHValidator(ValidatorABC):
         if match:
             ns = match.group(1)
             tag = match.group(2)
-            prefix = self.prefixes[ns]
+            prefix = self.prefixes.get(ns, '')
             return f"{prefix}:{tag}" if prefix else tag
 
         return xpath
@@ -103,46 +139,71 @@ class XPATHValidator(ValidatorABC):
     def extract_namespaces(self, xml_content):
         xml_file = io.StringIO(xml_content)
         namespaces = dict()
-        for event, elem in ElementTree.iterparse(xml_file, events=('start-ns',)):
-            ns, url = elem
-            if ns == '':
-                ns = self.DEFAULT_XML_NS_PREFIX
-            namespaces[ns] = url
+        try:
+            for event, elem in ElementTree.iterparse(xml_file, events=('start-ns',)):
+                ns, url = elem
+                if ns == '':
+                    ns = self.DEFAULT_XML_NS_PREFIX
+                namespaces[ns] = url
+        except Exception as e:
+            if self.logger:
+                self.logger.error(f"Error extracting namespaces: {e}")
+        finally:
+            xml_file.close()
+
         return namespaces
 
     def init_xp_processors(self, xml_content: str):
+        """Initialize XPath and XQuery processors with the XML content."""
+        try:
+            # Create new processors
+            self.xpp = self.xp.new_xpath_processor()
+            self.xqp = self.xp.new_xquery_processor()
 
-        self.xpp: PyXPathProcessor = self.xp.new_xpath_processor()
-        self.xqp: PyXQueryProcessor = self.xp.new_xquery_processor()
+            # Declare namespaces
+            for prefix, ns_uri in self.namespaces.items():
+                self.xpp.declare_namespace(prefix, ns_uri)
+                self.xqp.declare_namespace(prefix, ns_uri)
 
-        for prefix, ns_uri in self.namespaces.items():
-            self.xpp.declare_namespace(prefix, ns_uri)
-            self.xqp.declare_namespace(prefix, ns_uri)
+            # Parse document
+            document = self.xp.parse_xml(xml_text=xml_content)
 
-        document = self.xp.parse_xml(xml_text=xml_content)
-        self.xpp.set_context(xdm_item=document)
-        self.xqp.set_context(xdm_item=document)
+            # Set context
+            self.xpp.set_context(xdm_item=document)
+            self.xqp.set_context(xdm_item=document)
+        except Exception as e:
+            if self.logger:
+                self.logger.error(f"Error initializing XPath processors: {e}")
 
     def check_xpath_expression(self, xpath_expression: str) -> Union[PyXdmValue, None]:
+        """Evaluate an XPath expression and return the result."""
         try:
             return self.xpp.evaluate(xpath_expression)
         except Exception as e:
-            #self.logger.error(f"Error on check_xpath_expression: {e}")
+            if self.logger:
+                self.logger.error(f"Error on check_xpath_expression: {e}")
             return None
 
     def get_unique_xpaths(self, xpath_expression) -> List[XPathAssertionEntry]:
-        """Get unique XPaths that cover elements matching e XPath expression."""
+        """Get unique XPaths that cover elements matching the XPath expression."""
         xpath_assertions = []
-        matching_elements = self.check_xpath_expression(xpath_expression)
-        if matching_elements and matching_elements.size > 0:
-            for element in matching_elements:
-                xpath_node: PyXdmNode = element.get_node_value()
-
-                xpath = self.get_node_xpath(xpath_node)
-                if xpath:
-                    xpath_assertions.append(XPathAssertionEntry(
-                        xpath=xpath,
-                        value=self.get_node_text_value(xpath_node)
-                    ))
+        try:
+            matching_elements = self.check_xpath_expression(xpath_expression)
+            if matching_elements and matching_elements.size > 0:
+                for element in matching_elements:
+                    try:
+                        xpath_node: PyXdmNode = element.get_node_value()
+                        xpath = self.get_node_xpath(xpath_node)
+                        if xpath:
+                            xpath_assertions.append(XPathAssertionEntry(
+                                xpath=xpath,
+                                value=self.get_node_text_value(xpath_node)
+                            ))
+                    except Exception as e:
+                        if self.logger:
+                            self.logger.error(f"Error processing node: {e}")
+        except Exception as e:
+            if self.logger:
+                self.logger.error(f"Error in get_unique_xpaths: {e}")
 
         return xpath_assertions

@@ -90,3 +90,32 @@ def store_eform_notices_by_sdk_version(output_path: Path, notices: List[Notice],
         notice_path.parent.mkdir(parents=True, exist_ok=True)
         notice_path.write_text(notice.xml_manifestation.object_data)
     logger.info("Storing eforms notices by sdk version done")
+
+
+def store_eform_notices_by_sdk_version_type_subtype(output_path: Path, notices: List[Notice], logger: Logger) -> None:
+    """
+    Store eform notices organized by SDK version, notice type, and notice subtype.
+
+    :param output_path: The root directory where notices will be stored
+    :param notices: List of Notice objects to store
+    :param logger: Logger for logging operations
+    """
+    logger.info("Storing eforms notices by sdk version, notice type, and notice subtype")
+    output_path.mkdir(parents=True, exist_ok=True)
+
+    for notice in notices:
+        if notice.status < NoticeStatus.NORMALISED_METADATA or notice.normalised_metadata.notice_source != NoticeSource.ELECTRONIC_FORM:
+            logger.warning(f"Skip store for notice {notice.ted_id}. Check it status or notice source")
+            continue
+
+        # Extract SDK version, notice type, and subtype from normalized metadata
+        sdk_version = notice.normalised_metadata.eform_sdk_version
+        notice_type = notice.normalised_metadata.notice_type
+        notice_subtype = notice.normalised_metadata.eforms_subtype
+
+        # Construct path with SDK version, notice type, and subtype
+        notice_path = output_path / sdk_version / notice_type / notice_subtype / f"{notice.ted_id}.xml"
+        notice_path.parent.mkdir(parents=True, exist_ok=True)
+        notice_path.write_text(notice.xml_manifestation.object_data)
+
+    logger.info("Storing eforms notices by sdk version, notice type, and notice subtype done")

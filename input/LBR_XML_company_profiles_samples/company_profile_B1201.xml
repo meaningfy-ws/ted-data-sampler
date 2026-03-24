@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns4:extract
+	xmlns="http://ver1.business.services.rcs.mj.etat.lu/basic/components"
+	xmlns:ns2="http://ver1.business.services.rcs.mj.etat.lu/aggregate/components"
+	xmlns:ns3="http://ver1.business.services.rcs.mj.etat.lu/extract/components"
+	xmlns:ns4="http://ver1.business.services.rcs.mj.etat.lu/extract"
+	xmlns:ns5="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+	xmlns:ns6="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+	<ns4:Branches>
+		<ns4:Branch>
+			<ns3:BusinessNames>
+				<ns2:BusinessName>
+					<TradeName>Paule deserunt</TradeName>
+				</ns2:BusinessName>
+			</ns3:BusinessNames>
+		</ns4:Branch>
+	</ns4:Branches>
+	<ns4:Header>
+		<Name>Paule Ltd. SARL</Name>
+		<RegistrationNumber>B1201</RegistrationNumber>
+		<ns2:LegalForm>
+			<LegalFormTitle>Société à responsabilité limitée</LegalFormTitle>
+			<ns2:AdditionalMention>
+				<AdditionalMentionAbbreviation>FIS</AdditionalMentionAbbreviation>
+				<AdditionalMentionTitle>Fonds d'investissement spécialisé</AdditionalMentionTitle>
+			</ns2:AdditionalMention>
+		</ns2:LegalForm>
+		<Observation>en liquidation volontaire</Observation>
+		<RegistrationDate>2011-11-14</RegistrationDate>
+	</ns4:Header>
+	<ns4:HeadOffice>
+		<ns3:TradeNames>
+			<ns2:TradeName>
+				<TradeName>Paule Ltd. SARL</TradeName>
+				<TradeNameAbbreviation>Pau Ltd</TradeNameAbbreviation>
+			</ns2:TradeName>
+			<ns2:Translation>
+				<TradeName>Paule Ltd. SARL</TradeName>
+				<TradeNameAbbreviation>Pau Ltd</TradeNameAbbreviation>
+			</ns2:Translation>
+		</ns3:TradeNames>
+		<ns2:LegalForm>
+			<LegalFormTitle>Société à responsabilité limitée</LegalFormTitle>
+			<ns2:AdditionalMention>
+				<AdditionalMentionAbbreviation>FIS</AdditionalMentionAbbreviation>
+				<AdditionalMentionTitle>Fonds d'investissement spécialisé</AdditionalMentionTitle>
+			</ns2:AdditionalMention>
+		</ns2:LegalForm>
+		<ns2:RegisteredOffice>
+			<ns2:Address>
+				<BuildingNumber>20</BuildingNumber>
+				<StreetName>An der Triecht</StreetName>
+				<PostalCode>9837</PostalCode>
+				<Locality>Neidhausen</Locality>
+				<ns2:Country>
+					<CountryCode>LUX</CountryCode>
+					<CountryName>Luxembourg</CountryName>
+				</ns2:Country>
+			</ns2:Address>
+		</ns2:RegisteredOffice>
+		<ns3:Purpose>
+			<Purpose>La société a pour objet exclusif l'acquisition, la détention, la gestion et la réalisation d'actifs financiers tels que les instruments financiers au sens de la loi du 5 août 2005 sur les contrats de garantie financière et les espèces et avoirs de quelque nature que ce soit détenus en compte, à l'exclusion de toute activité commerciale.  La société pourra détenir une participation dans une société à la condition de ne pas s'immiscer dans la gestion de cette société.  Elle prendra toutes mesures pour sauvegarder ses droits et fera toutes opérations généralement quelconques qui se rattachent à son objet ou le favorisent, en restant toutefois dans les limites des dispositions de la loi du 11 mai 2007 relative à la création d'une société de gestion de patrimoine familial (« SPF »).</Purpose>
+		</ns3:Purpose>
+		<ns3:ShareCapital>
+			<CapitalType>Fixe</CapitalType>
+			<Amount currencyID="EUR">37800.00</Amount>
+			<ReleaseState>Partiel</ReleaseState>
+			<ReleasePercentage>20.000</ReleasePercentage>
+		</ns3:ShareCapital>
+		<CreationDate>2011-10-28</CreationDate>
+		<ns3:Duration>
+			<DurationType>Illimitée</DurationType>
+			<DurationEndDate>2030-01-01</DurationEndDate>
+		</ns3:Duration>
+		<ns3:FinancialYear>
+			<ns2:FirstFinancialYear>
+				<FirstFinancialYearStartDate>2011-10-28</FirstFinancialYearStartDate>
+				<FirstFinancialYearEndDate>2011-12-31</FirstFinancialYearEndDate>
+			</ns2:FirstFinancialYear>
+			<ns2:FinancialYear>
+				<FinancialYearStartDate>10-28</FinancialYearStartDate>
+				<FinancialYearEndDate>12-31</FinancialYearEndDate>
+			</ns2:FinancialYear>
+		</ns3:FinancialYear>
+		<ns3:Partners>
+			<ns2:Person>
+				<ns2:PersonDetail personType="DomesticMoralPerson">
+					<ns2:MoralPersonIdentity>
+						<MoralPersonIdentityURI></MoralPersonIdentityURI>
+						<RegistrationNumber>21151</RegistrationNumber>
+					</ns2:MoralPersonIdentity>
+				</ns2:PersonDetail>
+				<ns2:Mandate>
+					<ns2:MandateType>
+						<ns2:PersonType>
+							<PersonTypeCode>A</PersonTypeCode>
+							<PersonTypeLabel>Associé</PersonTypeLabel>
+						</ns2:PersonType>
+					</ns2:MandateType>
+				</ns2:Mandate>
+			</ns2:Person>
+			<ns2:Person>
+				<ns2:PersonDetail personType="DomesticMoralPerson">
+					<ns2:MoralPersonIdentity>
+						<MoralPersonIdentityURI></MoralPersonIdentityURI>
+						<RegistrationNumber>G51</RegistrationNumber>
+					</ns2:MoralPersonIdentity>
+				</ns2:PersonDetail>
+				<ns2:Mandate>
+					<ns2:MandateType>
+						<ns2:PersonType>
+							<PersonTypeCode>A</PersonTypeCode>
+							<PersonTypeLabel>Associé</PersonTypeLabel>
+						</ns2:PersonType>
+					</ns2:MandateType>
+				</ns2:Mandate>
+			</ns2:Person>
+			<ns2:Person>
+				<ns2:PersonDetail personType="PhysicalPerson">
+					<ns2:PhysicalPersonIdentity>
+						<LastName>Test</LastName>
+						<FirstName>Décès</FirstName>
+					</ns2:PhysicalPersonIdentity>
+					<ns2:Address>
+						<BuildingNumber>17</BuildingNumber>
+						<StreetName>Op Bolicht</StreetName>
+						<PostalCode>9648</PostalCode>
+						<Locality>Erpeldange</Locality>
+						<ns2:Country>
+							<CountryCode>LUX</CountryCode>
+							<CountryName>Luxembourg</CountryName>
+						</ns2:Country>
+					</ns2:Address>
+				</ns2:PersonDetail>
+				<ns2:Mandate>
+					<ns2:MandateType>
+						<ns2:PersonType>
+							<PersonTypeCode>A</PersonTypeCode>
+							<PersonTypeLabel>Associé</PersonTypeLabel>
+						</ns2:PersonType>
+					</ns2:MandateType>
+				</ns2:Mandate>
+			</ns2:Person>
+		</ns3:Partners>
+		<ns3:VoluntaryLiquidation>
+			<LiquidationDate>2012-01-01</LiquidationDate>
+			<ns3:Liquidators>
+				<ns2:Person>
+					<ns2:PersonDetail personType="PhysicalPerson">
+						<ns2:PhysicalPersonIdentity>
+							<LastName>Doe</LastName>
+							<FirstName>John</FirstName>
+						</ns2:PhysicalPersonIdentity>
+						<ns2:Address>
+							<BuildingNumber>11</BuildingNumber>
+							<StreetName>Rue de Lidice</StreetName>
+							<PostalCode>4466</PostalCode>
+							<Locality>Soleuvre</Locality>
+							<ns2:Country>
+								<CountryCode>LUX</CountryCode>
+								<CountryName>Luxembourg</CountryName>
+							</ns2:Country>
+						</ns2:Address>
+					</ns2:PersonDetail>
+				</ns2:Person>
+			</ns3:Liquidators>
+		</ns3:VoluntaryLiquidation>
+		<ns2:NaceCode>
+			<NaceNumber>93.120</NaceNumber>
+			<NaceLabel>Activités de clubs de sports</NaceLabel>
+		</ns2:NaceCode>
+	</ns4:HeadOffice>
+</ns4:extract>

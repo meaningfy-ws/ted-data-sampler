@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns4:extract
+	xmlns="http://ver1.business.services.rcs.mj.etat.lu/basic/components"
+	xmlns:ns2="http://ver1.business.services.rcs.mj.etat.lu/aggregate/components"
+	xmlns:ns3="http://ver1.business.services.rcs.mj.etat.lu/extract/components"
+	xmlns:ns4="http://ver1.business.services.rcs.mj.etat.lu/extract"
+	xmlns:ns5="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+	xmlns:ns6="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+	<ns4:Branches>
+		<ns4:Branch>
+			<ns3:BusinessNames>
+				<ns2:BusinessName>
+					<TradeName>Claude minim</TradeName>
+				</ns2:BusinessName>
+			</ns3:BusinessNames>
+		</ns4:Branch>
+	</ns4:Branches>
+	<ns4:Header>
+		<Name>Claude Limited S.A.</Name>
+		<RegistrationNumber>B1306</RegistrationNumber>
+		<ns2:LegalForm>
+			<LegalFormTitle>Société anonyme</LegalFormTitle>
+			<ns2:AdditionalMention>
+				<AdditionalMentionAbbreviation>SIS</AdditionalMentionAbbreviation>
+				<AdditionalMentionTitle>Société d'impact sociétal</AdditionalMentionTitle>
+			</ns2:AdditionalMention>
+		</ns2:LegalForm>
+		<RegistrationDate>2015-12-14</RegistrationDate>
+	</ns4:Header>
+	<ns4:HeadOffice>
+		<ns3:TradeNames>
+			<ns2:TradeName>
+				<TradeName>Claude Limited S.A.</TradeName>
+				<TradeNameAbbreviation>Cla Lim</TradeNameAbbreviation>
+			</ns2:TradeName>
+		</ns3:TradeNames>
+		<ns2:LegalForm>
+			<LegalFormTitle>Société anonyme</LegalFormTitle>
+			<ns2:AdditionalMention>
+				<AdditionalMentionAbbreviation>SIS</AdditionalMentionAbbreviation>
+				<AdditionalMentionTitle>Société d'impact sociétal</AdditionalMentionTitle>
+			</ns2:AdditionalMention>
+		</ns2:LegalForm>
+		<ns2:RegisteredOffice>
+			<Denunciation>Le domiciliataire Maxime private SICAV dénonce le fait que la convention de domiciliation a pris fin. Les effets de la convention et les obligations qui en découlent cessent à partir de la date de dépôt de la dénonciation au registre de commerce et des sociétés, à savoir le 04/12/2023.</Denunciation>
+			<ns2:Address>
+				<BuildingNumber>84</BuildingNumber>
+				<StreetName>Crest Line</StreetName>
+				<PostalCode>5470</PostalCode>
+				<Locality>Wellenstein</Locality>
+				<ns2:Country>
+					<CountryCode>LUX</CountryCode>
+					<CountryName>Luxembourg</CountryName>
+				</ns2:Country>
+			</ns2:Address>
+		</ns2:RegisteredOffice>
+		<ns3:Purpose>
+			<IncompletePurpose>Incomplete</IncompletePurpose>
+			<Purpose>Objet social MOD</Purpose>
+		</ns3:Purpose>
+		<ns3:ShareCapital>
+			<CapitalType>Variable</CapitalType>
+		</ns3:ShareCapital>
+		<CreationDate>2015-12-14</CreationDate>
+		<ns3:Duration>
+			<DurationType>Illimitée</DurationType>
+		</ns3:Duration>
+		<ns3:FinancialYear>
+			<ns2:FirstFinancialYear>
+				<FirstFinancialYearStartDate>2015-12-14</FirstFinancialYearStartDate>
+				<FirstFinancialYearEndDate>2015-12-31</FirstFinancialYearEndDate>
+			</ns2:FirstFinancialYear>
+			<ns2:FinancialYear>
+				<FinancialYearStartDate>01-01</FinancialYearStartDate>
+				<FinancialYearEndDate>12-31</FinancialYearEndDate>
+			</ns2:FinancialYear>
+		</ns3:FinancialYear>
+		<ns3:Administrators>
+			<StatutorySignatureRegime>La société est valablement engagée par la seule signature de M. E.C. X.</StatutorySignatureRegime>
+			<ns2:Person>
+				<ns2:PersonDetail personType="PhysicalPerson">
+					<ns2:PhysicalPersonIdentity>
+						<LastName>Mustermann</LastName>
+						<FirstName>Test Deux</FirstName>
+					</ns2:PhysicalPersonIdentity>
+					<ns2:Address>
+						<BuildingNumber>17</BuildingNumber>
+						<StreetName>Buurschterwee</StreetName>
+						<PostalCode>9191</PostalCode>
+						<Locality>Welscheid</Locality>
+						<ns2:Country>
+							<CountryCode>LUX</CountryCode>
+							<CountryName>Luxembourg</CountryName>
+						</ns2:Country>
+					</ns2:Address>
+				</ns2:PersonDetail>
+				<ns2:Mandate>
+					<ns2:MandateDuration>
+						<MandateNominationDate>2021-01-01</MandateNominationDate>
+						<MandateDurationType>Déterminée</MandateDurationType>
+						<MandateEndYear>2025</MandateEndYear>
+					</ns2:MandateDuration>
+					<ns2:MandateType>
+						<ns2:PersonType>
+							<PersonTypeCode>G</PersonTypeCode>
+							<PersonTypeLabel>Administrateur - Gérant</PersonTypeLabel>
+						</ns2:PersonType>
+						<Function>Directeur Général</Function>
+					</ns2:MandateType>
+				</ns2:Mandate>
+			</ns2:Person>
+			<ns2:Person>
+				<ns2:PersonDetail personType="DomesticMoralPerson">
+					<ns2:MoralPersonIdentity>
+						<MoralPersonIdentityIsRESA>true</MoralPersonIdentityIsRESA>
+						<RegistrationNumber>B352</RegistrationNumber>
+					</ns2:MoralPersonIdentity>
+				</ns2:PersonDetail>
+				<ns2:Mandate>
+					<ns2:MandateDuration>
+						<MandateNominationDate>2021-01-01</MandateNominationDate>
+						<MandateDurationType>Déterminée</MandateDurationType>
+						<MandateEndYear>2025</MandateEndYear>
+					</ns2:MandateDuration>
+					<ns2:MandateType>
+						<ns2:PersonType>
+							<PersonTypeCode>G</PersonTypeCode>
+							<PersonTypeLabel>Administrateur - Gérant</PersonTypeLabel>
+						</ns2:PersonType>
+						<Function>Gérant</Function>
+					</ns2:MandateType>
+				</ns2:Mandate>
+			</ns2:Person>
+			<ns2:Person>
+				<ns2:PersonDetail personType="DomesticMoralPerson">
+					<ns2:MoralPersonIdentity>
+						<MoralPersonIdentityIsRESA>true</MoralPersonIdentityIsRESA>
+						<RegistrationNumber>E50</RegistrationNumber>
+					</ns2:MoralPersonIdentity>
+					<ns2:Representative>
+						<ns2:PhysicalPersonIdentity>
+							<LastName>Spécimen</LastName>
+							<FirstName>Veuve</FirstName>
+						</ns2:PhysicalPersonIdentity>
+						<ns2:Address>
+							<BuildingNumber>26</BuildingNumber>
+							<StreetName>Aire de Wasserbillig</StreetName>
+							<PostalCode>6655</PostalCode>
+							<Locality>Wasserbillig</Locality>
+							<ns2:Country>
+								<CountryCode>LUX</CountryCode>
+								<CountryName>Luxembourg</CountryName>
+							</ns2:Country>
+						</ns2:Address>
+					</ns2:Representative>
+				</ns2:PersonDetail>
+				<ns2:Mandate>
+					<ns2:MandateDuration>
+						<MandateNominationDate>2020-01-01</MandateNominationDate>
+						<MandateDurationType>Déterminée</MandateDurationType>
+					</ns2:MandateDuration>
+					<ns2:MandateType>
+						<ns2:PersonType>
+							<PersonTypeCode>G</PersonTypeCode>
+							<PersonTypeLabel>Administrateur - Gérant</PersonTypeLabel>
+						</ns2:PersonType>
+						<Function>Administrateur + président du conseil d'administration</Function>
+					</ns2:MandateType>
+				</ns2:Mandate>
+			</ns2:Person>
+			<ns2:Person>
+				<ns2:PersonDetail personType="DomesticMoralPerson">
+					<ns2:MoralPersonIdentity>
+						<MoralPersonIdentityIsRESA>true</MoralPersonIdentityIsRESA>
+						<RegistrationNumber>H51</RegistrationNumber>
+					</ns2:MoralPersonIdentity>
+				</ns2:PersonDetail>
+				<ns2:Mandate>
+					<ns2:MandateDuration>
+						<MandateNominationDate>2021-01-01</MandateNominationDate>
+						<MandateDurationType>Déterminée</MandateDurationType>
+						<MandateEndYear>2025</MandateEndYear>
+					</ns2:MandateDuration>
+					<ns2:MandateType>
+						<ns2:PersonType>
+							<PersonTypeCode>G</PersonTypeCode>
+							<PersonTypeLabel>Administrateur - Gérant</PersonTypeLabel>
+						</ns2:PersonType>
+						<CorporateBody>Conseil 1</CorporateBody>
+						<Function>Adminstrateur</Function>
+					</ns2:MandateType>
+				</ns2:Mandate>
+			</ns2:Person>
+		</ns3:Administrators>
+		<ns3:MergerDemerger>
+			<ns2:OperationType>
+				<OperationTypeCode>F</OperationTypeCode>
+				<OperationTypeLabel>Fusion</OperationTypeLabel>
+			</ns2:OperationType>
+			<ns2:OperationMethod>
+				<OperationMethodCode>A</OperationMethodCode>
+				<OperationMethodLabel>Par absorption</OperationMethodLabel>
+			</ns2:OperationMethod>
+			<ns3:ParticipatingCompanies>
+				<ns2:Person>
+					<ns2:PersonDetail personType="DomesticMoralPerson">
+						<ns2:MoralPersonIdentity>
+							<MoralPersonIdentityIsRESA>true</MoralPersonIdentityIsRESA>
+							<RegistrationNumber>B1252</RegistrationNumber>
+						</ns2:MoralPersonIdentity>
+					</ns2:PersonDetail>
+				</ns2:Person>
+			</ns3:ParticipatingCompanies>
+		</ns3:MergerDemerger>
+		<ns3:Authorizations>
+			<ns2:Authorization>
+				<AuthorizationNumber>59561</AuthorizationNumber>
+				<AuthorizationType>Agrément ministériel visant les sociétés d'impact sociétal</AuthorizationType>
+				<AuthorizationDate>2015-10-18</AuthorizationDate>
+				<ns2:IssuingAuthority>
+					<AuthorityCode>TE</AuthorityCode>
+					<AuthorityName>Ministère du Travail, de l'Emploi et de l'Economie sociale et solidaire</AuthorityName>
+				</ns2:IssuingAuthority>
+			</ns2:Authorization>
+		</ns3:Authorizations>
+		<ns2:NaceCode>
+			<NaceNumber>10.410</NaceNumber>
+			<NaceLabel>Fabrication d'huiles et graisses</NaceLabel>
+		</ns2:NaceCode>
+	</ns4:HeadOffice>
+</ns4:extract>
