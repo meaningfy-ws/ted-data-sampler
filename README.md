@@ -41,6 +41,12 @@ Or with Make:
 make download-notices
 ```
 
+Run in background:
+
+```bash
+make download-notices-nohup
+```
+
 Arguments:
 - `-o, --output`: Path to output folder
 - `-r, --range`: Year-month range (e.g., `2024:1-2025:6`)
@@ -61,6 +67,12 @@ Or with Make:
 make load-notices-from-folder
 ```
 
+Run in background:
+
+```bash
+make load-notices-from-folder-nohup
+```
+
 Arguments:
 - `-i, --input`: Path to input folder with XML files
 
@@ -78,6 +90,12 @@ Or with Make:
 
 ```bash
 make sample-data-eforms
+```
+
+Run in background:
+
+```bash
+make sample-data-eforms-nohup
 ```
 
 Arguments:
