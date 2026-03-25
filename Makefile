@@ -54,11 +54,11 @@ sample-data-eforms-nohup:
 
 load-notices-from-folder:
 	@ echo -e "$(BUILD_PRINT)Running load-notices-cli $(END_BUILD_PRINT)"
-	poetry run load-notices-cli -i $(NOTICES_INPUT_FOLDER)
+	poetry run load-notices-cli -i $(NOTICES_INPUT_FOLDER) $(if $(NOTICES_LOG_FOLDER),-o $(NOTICES_LOG_FOLDER),)
 
 load-notices-from-folder-nohup:
 	@ echo -e "$(BUILD_PRINT)Running load-notices-cli in background $(END_BUILD_PRINT)"
-	@ nohup poetry run load-notices-cli -i $(NOTICES_INPUT_FOLDER) > /dev/null 2>&1 &
+	@ nohup poetry run load-notices-cli -i $(NOTICES_INPUT_FOLDER) $(if $(NOTICES_LOG_FOLDER),-o $(NOTICES_LOG_FOLDER),) > /dev/null 2>&1 &
 
 download-notices:
 	@ echo -e "$(BUILD_PRINT)Running download-notices-cli $(END_BUILD_PRINT)"
