@@ -12,10 +12,13 @@ ENV_FILE := .env
 
 install: install-poetry
 	@ echo -e "$(BUILD_PRINT)$(ICON_PROGRESS) Installing MSSDK requirements$(END_BUILD_PRINT)"
-	@ poetry lock
 	@ poetry install --all-groups
 	@ echo -e "$(BUILD_PRINT)$(ICON_DONE) MSSDK requirements are installed$(END_BUILD_PRINT)"
 
+lock:
+	@ echo -e "$(BUILD_PRINT)$(ICON_PROGRESS) Locking MSSDK dependencies$(END_BUILD_PRINT)"
+	@ poetry lock
+	@ echo -e "$(BUILD_PRINT)$(ICON_DONE) MSSDK dependencies are locked$(END_BUILD_PRINT)"
 install-poetry:
 	@ echo -e "$(BUILD_PRINT)$(ICON_PROGRESS) Installing Poetry for MSSDK$(END_BUILD_PRINT)"
 	@ pip install "poetry==2.0.1"
