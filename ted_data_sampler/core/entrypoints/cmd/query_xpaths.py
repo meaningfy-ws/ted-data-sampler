@@ -2,14 +2,14 @@ import argparse
 from logging import Logger
 from pathlib import Path
 
-from future.moves import sys
-
 from ted_data_sampler.core.services.logger import setup_logger
 from ted_data_sampler.core.services.xpath_query_service import query_notices_with_given_xpaths
 
 
 class QueryXPathsException(Exception):
-    """"""
+    """
+
+    """
 
 
 def main():
@@ -37,7 +37,8 @@ def main():
 
     try:
         result = query_notices_with_given_xpaths(xpaths=xpaths_file.read_text().splitlines(),
-                                                 notice_paths=[Path(notice_path_str) for notice_path_str in notices_file_path.read_text().splitlines()],
+                                                 notice_paths=[Path(notice_path_str) for notice_path_str in
+                                                               notices_file_path.read_text().splitlines()],
                                                  logger=logger)
         output_file_path.write_text(str(result))
     except Exception as e:

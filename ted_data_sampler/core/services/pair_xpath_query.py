@@ -14,8 +14,8 @@ from tqdm import tqdm
 
 from ted_data_sampler.core.adapters.XPathValidator import XPATHValidator
 
-PROJECT_PATH: Path = Path("/home/duprijil/work/ted-data-sampler")
-INPUT_PATH_NOTICES: Path = Path("/home/duprijil/Downloads/test_notices")
+PROJECT_PATH: Path = Path("--PATH--")
+INPUT_PATH_NOTICES: Path = Path("--PATH--")
 
 OUTPUT_PATH: Path = PROJECT_PATH / "output" / "pair_xpaths"
 OUTPUT_LOG_PATH: Path = OUTPUT_PATH / "logs.txt"
@@ -279,25 +279,3 @@ def process_notices(logger: logging.Logger):
     # Final memory usage check
     logger.info(f"Final memory usage: {get_memory_usage_mb():.2f} MB")
     logger.info("All processes have finished. Processing completed")
-
-
-if __name__ == "__main__":
-    # Fix import path
-    import sys
-
-    project_root = Path(__file__).parent.parent.parent.parent
-    sys.path.insert(0, str(project_root))
-
-    # Create output directories
-    OUTPUT_PATH.mkdir(exist_ok=True, parents=True)
-    OUTPUT_NOTICES_PATH.mkdir(exist_ok=True, parents=True)
-    OUTPUT_LOG_PATH.touch()
-
-    # Set up logging
-    logger = logging.getLogger(__name__)
-    logger.setLevel(logging.INFO)
-    logger.addHandler(file_handler)
-    logger.addHandler(console_handler)
-
-    # Process notices with memory-optimized approach
-    process_notices(logger)

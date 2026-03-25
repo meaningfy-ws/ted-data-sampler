@@ -9,7 +9,10 @@ from ted_data_sampler.core.services.logger import setup_logger
 
 
 class EformDetectorException(Exception):
-    """"""
+    """
+
+    """
+
 
 def main():
     parser = argparse.ArgumentParser(description="Detect eforms from folder of notices.")
@@ -25,7 +28,6 @@ def main():
 
     if not notices_folder_path.is_dir():
         raise EformDetectorException(f"File {notices_folder_path} does not exist")
-
 
     logger: Logger = setup_logger([sys.stdout])
 
