@@ -110,7 +110,7 @@ def store_eform_notices_by_sdk_version_type_subtype(output_path: Path, notices: 
 
         # Extract SDK version, notice type, and subtype from normalized metadata
         sdk_version = notice.normalised_metadata.eform_sdk_version
-        notice_type = notice.normalised_metadata.notice_type
+        notice_type = notice.normalised_metadata.notice_type.split("/")[-1]
         notice_subtype = notice.normalised_metadata.eforms_subtype
 
         # Construct path with SDK version, notice type, and subtype

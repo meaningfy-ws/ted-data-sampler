@@ -10,6 +10,16 @@ ENV_FILE := .env
 # include .env files if they exist
 -include .env
 
+install: install-poetry
+	@ echo -e "$(BUILD_PRINT)$(ICON_PROGRESS) Installing MSSDK requirements$(END_BUILD_PRINT)"
+	@ poetry lock
+	@ poetry install --all-groups
+	@ echo -e "$(BUILD_PRINT)$(ICON_DONE) MSSDK requirements are installed$(END_BUILD_PRINT)"
+
+install-poetry:
+	@ echo -e "$(BUILD_PRINT)$(ICON_PROGRESS) Installing Poetry for MSSDK$(END_BUILD_PRINT)"
+	@ pip install "poetry==2.0.1"
+	@ echo -e "$(BUILD_PRINT)$(ICON_DONE) Poetry for MSSDK is installed$(END_BUILD_PRINT)"
 
 build-externals:
 	@ echo -e "$(BUILD_PRINT)Creating the necessary volumes, networks and folders and setting the special rights"
@@ -32,3 +42,16 @@ start-jupyter:
 stop-jupyter:
 	@ echo -e "$(BUILD_PRINT)Stopping the jupyter services $(END_BUILD_PRINT)"
 	@ docker-compose -p common --file ./infra/jupyter_notebook/docker-compose.yml --env-file ${ENV_FILE} down
+
+sample-data-eforms:
+	@ echo -e "$(BUILD_PRINT)Running data-sampler-cli $(END_BUILD_PRINT)"
+	@ nohup poetry run data-sampler-cli -o $(OUTPUT_FOLDER) > /dev/null 2>&1 &
+	@ echo -e "$(BUILD_PRINT)Job started in background. Check logs in $(OUTPUT_FOLDER) $(END_BUILD_PRINT)"
+
+load-notices-from-folder:
+	@ echo -e "$(BUILD_PRINT)Running load-notices-cli $(END_BUILD_PRINT)"
+	poetry run load-notices-cli -i $(NOTICES_INPUT_FOLDER)
+
+download-notices:
+	@ echo -e "$(BUILD_PRINT)Running download-notices-cli $(END_BUILD_PRINT)"
+	poetry run download-notices-cli -o $(NOTICES_DOWNLOAD_FOLDER) -r $(YEAR_MONTH_RANGE)

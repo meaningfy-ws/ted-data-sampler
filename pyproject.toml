@@ -24,6 +24,8 @@ data-sampler-cli = "ted_data_sampler.core.entrypoints.cmd.data_sampler:main"
 data-coverage-cli = "ted_data_sampler.core.entrypoints.cmd.data_coverage:main"
 detect-eforms-cli = "ted_data_sampler.core.entrypoints.cmd.detect_eforms:main"
 query-xpaths-cli = "ted_data_sampler.core.entrypoints.cmd.query_xpaths:main"
+load-notices-cli = "ted_data_sampler.core.entrypoints.cmd.load_notices:main"
+download-notices-cli = "ted_data_sampler.core.entrypoints.cmd.download_notices:main"
 
 [build-system]
 requires = ["poetry-core"]
