@@ -1,3 +1,4 @@
+import itertools
 import logging
 from pathlib import Path
 from typing import Optional
@@ -23,12 +24,14 @@ def load_notices_to_mongodb(input_folder: Path,
     if not input_folder.is_dir():
         raise LoadNoticesException(f"Input folder does not exist: {input_folder}")
 
-    xml_files = list(input_folder.rglob("*.xml"))
-    logger.info(f"Found {len(xml_files)} XML files in {input_folder}")
+    xml_files_iter = input_folder.rglob("*.xml")
+    first_file = next(xml_files_iter, None)
 
-    if not xml_files:
+    if first_file is None:
         logger.warning("No XML files found")
         return 0
+
+    logger.info(f"Loading XML files from {input_folder}")
 
     mongodb_client = MongoClient(config.MONGO_DB_AUTH_URL)
     notice_repository = NoticeRepository(mongodb_client=mongodb_client)
@@ -36,7 +39,7 @@ def load_notices_to_mongodb(input_folder: Path,
     loaded_count = 0
     error_count = 0
 
-    for xml_file in xml_files:
+    for xml_file in itertools.chain([first_file], xml_files_iter):
         try:
             xml_content = xml_file.read_text(encoding="utf-8")
 
