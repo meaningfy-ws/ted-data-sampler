@@ -77,7 +77,7 @@ def load_notices_to_mongodb(input_folder: Path,
 def extract_ted_id_from_filename(filename: str) -> Optional[str]:
     """
     Extract TED ID from filename.
-    Expected format: 00361695_2024.xml -> 361695-2024
+    Expected format: 00361695_2024.xml -> 00361695-2024
     """
     if not filename.endswith(".xml"):
         return None
