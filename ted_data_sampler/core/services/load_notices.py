@@ -33,42 +33,40 @@ def load_notices_to_mongodb(input_folder: Path,
 
     logger.info(f"Loading XML files from {input_folder}")
 
-    mongodb_client = MongoClient(config.MONGO_DB_AUTH_URL)
-    notice_repository = NoticeRepository(mongodb_client=mongodb_client)
-
     loaded_count = 0
     error_count = 0
+    with MongoClient(config.MONGO_DB_AUTH_URL) as mongodb_client:
+        notice_repository = NoticeRepository(mongodb_client=mongodb_client)
+        for xml_file in itertools.chain([first_file], xml_files_iter):
+            try:
+                xml_content = xml_file.read_text(encoding="utf-8")
 
-    for xml_file in itertools.chain([first_file], xml_files_iter):
-        try:
-            xml_content = xml_file.read_text(encoding="utf-8")
+                xml_manifestation = XMLManifestation(object_data=xml_content)
+                original_metadata = TEDMetadata()
+                ted_id = extract_ted_id_from_filename(xml_file.name)
 
-            xml_manifestation = XMLManifestation(object_data=xml_content)
-            original_metadata = TEDMetadata()
-            ted_id = extract_ted_id_from_filename(xml_file.name)
+                if not ted_id:
+                    logger.warning(f"Could not extract TED ID from filename: {xml_file.name}")
+                    error_count += 1
+                    continue
 
-            if not ted_id:
-                logger.warning(f"Could not extract TED ID from filename: {xml_file.name}")
+                notice = Notice(ted_id=ted_id)
+
+                notice.set_xml_manifestation(xml_manifestation)
+                notice.set_original_metadata(original_metadata)
+
+                if should_normalise_notice:
+                    indexed_notice = index_notice(notice=notice)
+                    notice = normalise_notice(notice=indexed_notice)
+
+                notice_repository.add(notice)
+
+                loaded_count += 1
+                logger.info(f"Loaded{' normalised' if should_normalise_notice else ''} notice: {ted_id}")
+
+            except Exception as e:
+                logger.exception(f"Error loading {xml_file.name}: {str(e)}")
                 error_count += 1
-                continue
-
-            notice = Notice(ted_id=ted_id)
-
-            notice.set_xml_manifestation(xml_manifestation)
-            notice.set_original_metadata(original_metadata)
-
-            if should_normalise_notice:
-                indexed_notice = index_notice(notice=notice)
-                notice = normalise_notice(notice=indexed_notice)
-
-            notice_repository.add(notice)
-
-            loaded_count += 1
-            logger.info(f"Loaded{' normalised' if should_normalise_notice else ''} notice: {ted_id}")
-
-        except Exception as e:
-            logger.exception(f"Error loading {xml_file.name}: {str(e)}")
-            error_count += 1
 
     logger.info(f"Loading complete: {loaded_count} loaded, {error_count} errors")
     return loaded_count
