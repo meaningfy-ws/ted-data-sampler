@@ -106,8 +106,8 @@ def download_monthly_notices(year: int, month: int, output_path: Path, logger: l
     """
     month_folder = output_path / str(year) / f"{month:02d}"
 
-    if month_folder.exists() and month_folder.is_dir():
-        logger.info(f"Skipping {year}-{month:02d}: folder already exists")
+    if month_folder.is_dir() and any(month_folder.glob("*.xml")):
+        logger.info(f"Skipping {year}-{month:02d}: folder already exists with XML files")
         return True
 
     month_folder.mkdir(parents=True, exist_ok=True)
