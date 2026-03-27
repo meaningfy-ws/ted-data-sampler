@@ -103,7 +103,6 @@ def download_monthly_notices(year: int, month: int, output_path: Path, logger: l
     :param logger: Logger instance
     :return: True if successful or skipped, False on error
     """
-    assert logger is not None, "Logger cannot be None"
     month_folder = output_path / str(year) / f"{month:02d}"
     
     if month_folder.exists() and month_folder.is_dir():
