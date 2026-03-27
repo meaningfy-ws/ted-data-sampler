@@ -38,6 +38,9 @@ def parse_year_month_range(range_str: str) -> List[Tuple[int, int]]:
     if not (1 <= start_month <= 12) or not (1 <= end_month <= 12):
         raise ValueError("Month must be between 1 and 12")
 
+    if end_year < start_year:
+        raise ValueError("End year must be smaller then start year")
+
     result = []
     current_year = start_year
     current_month = start_month
