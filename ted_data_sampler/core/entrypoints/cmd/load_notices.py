@@ -16,6 +16,8 @@ class LoadNoticesCLIException(Exception):
 def main():
     parser = argparse.ArgumentParser(description="Load XML notices from folder to MongoDB.")
     parser.add_argument("-i", "--input", required=True, help="Path to input folder with XML files.")
+    parser.add_argument("-o", "--output", required=False, default=None,
+                        help="Path to output folder for logs. Defaults to current working directory.")
 
     args = parser.parse_args()
     input_folder_path = Path(args.input)
@@ -23,7 +25,8 @@ def main():
     if not input_folder_path.is_dir():
         raise LoadNoticesCLIException(f"Input folder does not exist: {input_folder_path}")
 
-    run_path = input_folder_path / f"load_notices_run_{datetime.now().strftime(STANDARD_TIME_FORMAT)}"
+    output_folder_path = Path(args.output) if args.output else Path.cwd()
+    run_path = output_folder_path / f"load_notices_run_{datetime.now().strftime(STANDARD_TIME_FORMAT)}"
     run_path.mkdir(parents=True, exist_ok=True)
 
     log_file_path = run_path / "logs.log"
