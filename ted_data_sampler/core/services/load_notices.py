@@ -67,7 +67,7 @@ def load_notices_to_mongodb(input_folder: Path,
             logger.info(f"Loaded{' normalised' if should_normalise_notice else ''} notice: {ted_id}")
 
         except Exception as e:
-            logger.error(f"Error loading {xml_file.name}: {str(e)}")
+            logger.exception(f"Error loading {xml_file.name}: {str(e)}")
             error_count += 1
 
     logger.info(f"Loading complete: {loaded_count} loaded, {error_count} errors")
