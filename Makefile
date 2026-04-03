@@ -64,7 +64,7 @@ download-notices-nohup:
 
 fill-gaps-nohup:
 	@ echo -e "$(BUILD_PRINT)Running fill-gaps-cli in background $(END_BUILD_PRINT)"
-	@ (nohup poetry run fill-gaps-cli -x $(MISSING_XPATHS_FILE) -n $(NOTICES_LIST_FILE) -o $(FILL_GAPS_OUTPUT) $(if $(EXCLUDE_FILE),-e $(EXCLUDE_FILE),) > /dev/null 2>&1 & echo "Started with PID: $$!")
+	@ mkdir -p $(FILL_GAPS_OUTPUT) && (nohup poetry run fill-gaps-cli -x $(MISSING_XPATHS_FILE) -n $(NOTICES_LIST_FILE) -o $(FILL_GAPS_OUTPUT) $(if $(EXCLUDE_FILE),-e $(EXCLUDE_FILE),) > $(FILL_GAPS_OUTPUT)/nohup.log 2>&1 & echo "Started with PID: $$!")
 
 detect-eforms:
 	@ echo -e "$(BUILD_PRINT)Running detect-eforms-cli $(END_BUILD_PRINT)"
