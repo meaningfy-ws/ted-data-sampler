@@ -26,6 +26,7 @@ detect-eforms-cli = "ted_data_sampler.core.entrypoints.cmd.detect_eforms:main"
 query-xpaths-cli = "ted_data_sampler.core.entrypoints.cmd.query_xpaths:main"
 load-notices-cli = "ted_data_sampler.core.entrypoints.cmd.load_notices:main"
 download-notices-cli = "ted_data_sampler.core.entrypoints.cmd.download_notices:main"
+fill-gaps-cli = "ted_data_sampler.minimal_set.entrypoints.cmd.fill_gaps:main"
 
 [build-system]
 requires = ["poetry-core"]

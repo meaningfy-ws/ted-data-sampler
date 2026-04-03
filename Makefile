@@ -52,21 +52,20 @@ sample-data-eforms:
 
 sample-data-eforms-nohup:
 	@ echo -e "$(BUILD_PRINT)Running data-sampler-cli in background $(END_BUILD_PRINT)"
-	@ nohup poetry run data-sampler-cli -o $(OUTPUT_FOLDER) -n eforms > /dev/null 2>&1 &
-	@ echo -e "$(BUILD_PRINT)Job started in background. Check logs in $(OUTPUT_FOLDER) $(END_BUILD_PRINT)"
-
-load-notices-from-folder:
-	@ echo -e "$(BUILD_PRINT)Running load-notices-cli $(END_BUILD_PRINT)"
-	poetry run load-notices-cli -i $(NOTICES_INPUT_FOLDER) $(if $(NOTICES_LOG_FOLDER),-o $(NOTICES_LOG_FOLDER),)
+	@ (nohup poetry run data-sampler-cli -o $(OUTPUT_FOLDER) -n eforms > /dev/null 2>&1 & echo "Started with PID: $$")
 
 load-notices-from-folder-nohup:
 	@ echo -e "$(BUILD_PRINT)Running load-notices-cli in background $(END_BUILD_PRINT)"
-	@ nohup poetry run load-notices-cli -i $(NOTICES_INPUT_FOLDER) $(if $(NOTICES_LOG_FOLDER),-o $(NOTICES_LOG_FOLDER),) > /dev/null 2>&1 &
-
-download-notices:
-	@ echo -e "$(BUILD_PRINT)Running download-notices-cli $(END_BUILD_PRINT)"
-	poetry run download-notices-cli -o $(NOTICES_DOWNLOAD_FOLDER) -r $(YEAR_MONTH_RANGE)
+	@ (nohup poetry run load-notices-cli -i $(NOTICES_INPUT_FOLDER) $(if $(NOTICES_LOG_FOLDER),-o $(NOTICES_LOG_FOLDER),) > /dev/null 2>&1 & echo "Started with PID: $$")
 
 download-notices-nohup:
 	@ echo -e "$(BUILD_PRINT)Running download-notices-cli in background $(END_BUILD_PRINT)"
-	@ nohup poetry run download-notices-cli -o $(NOTICES_DOWNLOAD_FOLDER) -r $(YEAR_MONTH_RANGE) > /dev/null 2>&1 &
+	@ (nohup poetry run download-notices-cli -o $(NOTICES_DOWNLOAD_FOLDER) -r $(YEAR_MONTH_RANGE) > /dev/null 2>&1 & echo "Started with PID: $$")
+
+fill-gaps-nohup:
+	@ echo -e "$(BUILD_PRINT)Running fill-gaps-cli in background $(END_BUILD_PRINT)"
+	@ (nohup poetry run fill-gaps-cli -x $(MISSING_XPATHS_FILE) -n $(NOTICES_LIST_FILE) -o $(FILL_GAPS_OUTPUT) $(if $(EXCLUDE_FILE),-e $(EXCLUDE_FILE),) > /dev/null 2>&1 & echo "Started with PID: $$!")
+
+detect-eforms:
+	@ echo -e "$(BUILD_PRINT)Running detect-eforms-cli $(END_BUILD_PRINT)"
+	poetry run detect-eforms-cli -d $(NOTICES_INPUT_FOLDER) -o $(DETECT_EFORMS_OUTPUT)
