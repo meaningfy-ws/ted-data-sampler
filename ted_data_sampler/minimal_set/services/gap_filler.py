@@ -62,7 +62,6 @@ def fill_gaps(
     selected_notices: list[str] = []
     coverage: dict[str, list[str]] = {}
     covered_ids: Set[str] = set()
-    xml_cache: dict[str, XPATHValidator] = {}
 
     for entry in tqdm(pool, desc="Greedy selection", file=tqdm_file, mininterval=5):
         if entry.sdk_element_id in covered_ids:
@@ -74,15 +73,12 @@ def fill_gaps(
             if notice_path in selected_notices or notice_path in exclude_paths:
                 continue
 
-            if notice_path not in xml_cache:
-                try:
-                    xml_content = Path(notice_path).read_text(encoding="utf-8")
-                    xml_cache[notice_path] = XPATHValidator(xml_content=xml_content, logger=logger)
-                except Exception as e:
-                    logger.warning(f"Could not parse {notice_path}: {e}")
-                    continue
-
-            validator = xml_cache[notice_path]
+            try:
+                xml_content = Path(notice_path).read_text(encoding="utf-8")
+                validator = XPATHValidator(xml_content=xml_content, logger=logger)
+            except Exception as e:
+                logger.warning(f"Could not parse {notice_path}: {e}")
+                continue
 
             logger.debug(
                 f"Trying {Path(notice_path).name} for {entry.sdk_element_id}"
@@ -110,7 +106,10 @@ def fill_gaps(
                         )
 
                 coverage[notice_path] = notice_covered
+                validator.close()
                 break
+            else:
+                validator.close()
 
     unresolved = [e.sdk_element_id for e in pool if e.sdk_element_id not in covered_ids]
 
@@ -129,14 +128,5 @@ def fill_gaps(
     if output_path:
         result.save(output_path)
         logger.info(f"Results saved to {output_path}")
-
-    if xml_cache:
-        logger.info(f"Closing {len(xml_cache)} cached XML validators...")
-        for path, validator in tqdm(xml_cache.items(), desc="Closing validators", file=tqdm_file, mininterval=5):
-            try:
-                validator.close()
-            except Exception as e:
-                logger.warning(f"Error closing validator for {path}: {e}")
-        logger.info(f"All {len(xml_cache)} validators closed")
 
     return result
