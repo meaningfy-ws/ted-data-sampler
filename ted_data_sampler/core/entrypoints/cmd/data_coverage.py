@@ -22,7 +22,7 @@ def main():
     parser = argparse.ArgumentParser(description="Xpath coverage based on eforms sdk and stored notices.")
     parser.add_argument("-o", "--output", required=True, help="Path to the output folder.", type=str)
     parser.add_argument("-i", "--input_notices", required=True, help="Path to notices folder (recursive)", type=str)
-    parser.add_argument("-n", "--sdk_versions", default="eforms", help="eforms or standard_forms",
+    parser.add_argument("-n", "--sdk_versions", required=True, help="list of sdk versions comma separated",
                         type=get_list_of_strings_from_arg)
 
     args = parser.parse_args()

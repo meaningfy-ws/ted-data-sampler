@@ -1,5 +1,4 @@
 import abc
-import gc
 import io
 import re
 from logging import Logger
@@ -7,8 +6,7 @@ from typing import List, Any, Union, Optional
 from xml.etree import ElementTree
 
 from pydantic import BaseModel
-from saxonche import PySaxonProcessor, PySaxonApiError, PyXPathProcessor, PyXdmNode, PyXdmValue, XdmNodeKind, \
-    PyXQueryProcessor
+from saxonche import PySaxonProcessor, PySaxonApiError, PyXdmNode, PyXdmValue, XdmNodeKind
 
 
 class ValidatorABC(abc.ABC, BaseModel):
@@ -41,6 +39,7 @@ class XPATHValidator(ValidatorABC):
     prefixes: Any = None
     DEFAULT_XML_NS_PREFIX: str = ''
     logger: Optional[Any] = None
+    doc_ref: Any = None  # parsed XML document node
 
     def __init__(self, xml_content, logger: Logger, **data: Any):
         super().__init__(**data)
@@ -67,8 +66,7 @@ class XPATHValidator(ValidatorABC):
             except Exception:
                 pass
             self.xp = None
-        # Force garbage collection
-        gc.collect()
+
 
     def reset_with_new_content(self, xml_content):
         """Reset the validator with new XML content without creating a new Saxon processor."""
@@ -84,6 +82,11 @@ class XPATHValidator(ValidatorABC):
 
         # Re-initialize processors with new content
         self.init_xp_processors(xml_content)
+
+    def restore_document_context(self):
+        """Restore XPath processor context to the root document node."""
+        if self.doc_ref and self.xpp:
+            self.xpp.set_context(xdm_item=self.doc_ref)
 
     def check_xpath_condition(self, xquery_expression) -> bool:
         if not xquery_expression:
@@ -166,11 +169,11 @@ class XPATHValidator(ValidatorABC):
                 self.xqp.declare_namespace(prefix, ns_uri)
 
             # Parse document
-            document = self.xp.parse_xml(xml_text=xml_content)
+            self.doc_ref = self.xp.parse_xml(xml_text=xml_content)
 
             # Set context
-            self.xpp.set_context(xdm_item=document)
-            self.xqp.set_context(xdm_item=document)
+            self.xpp.set_context(xdm_item=self.doc_ref)
+            self.xqp.set_context(xdm_item=self.doc_ref)
         except Exception as e:
             if self.logger:
                 self.logger.error(f"Error initializing XPath processors: {e}")
